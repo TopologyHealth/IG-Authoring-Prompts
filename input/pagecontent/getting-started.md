@@ -215,10 +215,4 @@ You only need to input the role on the first prompt for your chat, or if you're 
 - **Provide examples** of what you want to achieve
 - **Validate LLM outputs** against FHIR specifications and best practices
 
-## 🔗 Related Resources
 
-- [Profile Creation Prompts](profile-creation.html) - Next step after getting started
-- [Extension Definition Prompts](extension-definition.html) - For custom extensions
-- [Value Set Creation Prompts](value-set-creation.html) - For terminology management
-- [Prompt Templates](prompt-templates.html) - Reusable prompt structures
-- [LLM Integration Strategies](llm-integration.html) - For LLM setup and workflows

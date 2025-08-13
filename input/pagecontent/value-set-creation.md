@@ -327,12 +327,4 @@ My value set mapping should support [describe your integration needs] and be mai
 - **Generate value set documentation** and examples with LLMs  
 - **Iterate on value set design** using LLM feedback and validation  
 
-## 🔗 Related Resources
 
-- [Profile Creation Prompts](profile-creation.html) - For integrating value sets into profiles  
-- [Extension Definition Prompts](extension-definition.html) - For extension terminology  
-- [Validation & Testing Prompts](validation-testing.html) - For value set validation  
-- [Troubleshooting Prompts](troubleshooting.html) - For resolving value set creation issues  
-- [Prompt Templates](prompt-templates.html) - Reusable prompt structures  
-- [LLM Integration Strategies](llm-integration.html) - For value set generation from structured data  
-- [Examples Creation Prompts](examples-creation.html) - For creating value set examples  

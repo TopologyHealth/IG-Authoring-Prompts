@@ -223,23 +223,40 @@ Please help me:
 I want my profile documentation to be [describe your documentation goals].
 ```
 
-### Profile Examples
+### Profile Invariant Creation
 
 ```plaintext
-You are a FHIR Profile Authoring Specialist experienced in creating example instances for profiles.
-Ensure examples comply with [FHIR R4/R5] and demonstrate best practices.
+You are a FHIR Profile Authoring Specialist with expertise in FHIRPath/XPath and invariant authoring in FHIR Shorthand (FSH). Ensure outputs meet [FHIR R4/R5] conformance and pass `sushi` and IGPublisher validation without errors.
 
-I need to create examples for my [resource type] profile.
-My profile will be used in [describe your scenarios] and I want to demonstrate proper usage.
+I need to define an invariant for my [resource type] profile to enforce this business rule:
+"[state the rule in plain language, e.g., Either Patient.name.given and/or Patient.name.family SHALL be present.]"
 
-Please help me:
-1. Design realistic example instances
-2. Show different constraint scenarios
-3. Demonstrate extension usage
-4. Include edge cases and variations
-5. Ensure examples follow FHIR best practices
+Please provide:
+1. A precise **FHIRPath** expression implementing the rule.
+2. A corresponding **XPath** expression.
+3. A complete **FSH invariant** snippet with: `Invariant: [id]`, `Description`, `* severity = #[error|warning]`, `* expression = "[...]"`, `* xpath = "[...]"`.
+4. The **FSH usage** showing how to apply the invariant with `* obeys [id]` at the correct element path (root vs. specific element) and any required `^constraint` metadata if applicable.
+5. A minimal **test instance** outline (JSON) that should **pass**, and one that should **fail**, with a one-line explanation for each.
+6. Notes on edge cases and how the invariant interacts with cardinality, bindings, and slicing (if relevant).
 
-My examples should help implementers understand [describe your key concepts].
+Context:
+- Resource/Profile: [name]
+- Element scope for invariant (root or element path): [e.g., Patient.name]
+- Severity: [#error or #warning]
+- Related constraints or slices: [list]
+
+Example (for reference only; do not copy blindly):
+Plain rule: "Either Patient.name.given and/or Patient.name.family SHALL be present."
+FHIRPath: `(family.exists() or given.exists())`
+XPath: `(/f:name/f:family or /f:name/f:given)`
+FSH:
+Invariant: ca-core-pat-1
+Description: "Either Patient.name.given and/or Patient.name.family SHALL be present."
+* severity = #error
+* expression = "(family.exists() or given.exists())"
+* xpath = "(/f:name/f:family or /f:name/f:given)"
+Usage:
+* name obeys ca-core-pat-1
 ```
 
 ### Profile Review Checklist
@@ -288,12 +305,4 @@ I want my profile to be [describe your quality goals].
 - **Provide context** about your IG and existing profiles
 - **Use iterative prompting** for complex profile structures
 
-## 🔗 Related Resources
 
-- [Extension Definition Prompts](extension-definition.html) - For custom extensions
-- [Value Set Creation Prompts](value-set-creation.html) - For terminology bindings
-- [Validation & Testing Prompts](validation-testing.html) - For profile validation
-- [Troubleshooting Prompts](troubleshooting.html) - For resolving profile creation issues
-- [Prompt Templates](prompt-templates.html) - Reusable prompt structures
-- [LLM Integration Strategies](llm-integration.html) - For FSH development with LLMs
-- [Examples Creation Prompts](examples-creation.html) - For creating profile examples

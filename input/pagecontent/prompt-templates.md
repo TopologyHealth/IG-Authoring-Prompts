@@ -314,13 +314,7 @@ I want to ensure seamless integration that maintains [describe your quality crit
 4. **Unclear goals** or success criteria
 5. **Ignoring the audience** of your IG
 
-## 🔗 Related Resources
 
-- [Getting Started Prompts](getting-started.html) - For beginners
-- [Profile Creation Prompts](profile-creation.html) - For profile development
-- [Extension Definition Prompts](extension-definition.html) - For extensions
-- [Value Set Creation Prompts](value-set-creation.html) - For terminology
-- [LLM Integration Strategies](llm-integration.html) - For comprehensive LLM workflows
 
 ---
 

@@ -189,11 +189,4 @@ I want my extension to evolve with [describe your changing needs] while maintain
 - **Validate extension constraints** against FHIR best practices
 - **Iterate on extension design** using LLM feedback
 
-## 🔗 Related Resources
 
-- [Profile Creation Prompts](profile-creation.html) - For integrating extensions into profiles
-- [Value Set Creation Prompts](value-set-creation.html) - For extension terminology
-- [Validation & Testing Prompts](validation-testing.html) - For extension validation
-- [Prompt Templates](prompt-templates.html) - Reusable prompt structures
-- [LLM Integration Strategies](llm-integration.html) - For extension generation with LLMs
-- [Examples Creation Prompts](examples-creation.html) - For creating extension examples

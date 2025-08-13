@@ -385,12 +385,4 @@ I want to build a support network for troubleshooting help.
 - **Provide examples** of troubleshooting results you want to achieve
 - **Validate LLM outputs** against FHIR specifications and your troubleshooting standards
 
-## 🔗 Related Resources
 
-- [Getting Started Prompts](getting-started.html) - For initial IG planning and setup
-- [Validation & Testing Prompts](validation-testing.html) - For validation troubleshooting
-- [Profile Creation Prompts](profile-creation.html) - For profile-specific issues
-- [Extension Definition Prompts](extension-definition.html) - For extension issues
-- [Value Set Creation Prompts](value-set-creation.html) - For terminology issues
-- [Prompt Templates](prompt-templates.html) - For reusable prompt structures
-- [LLM Integration Strategies](llm-integration.html) - For LLM-assisted troubleshooting

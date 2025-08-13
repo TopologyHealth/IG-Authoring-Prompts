@@ -294,11 +294,4 @@ I want to refine my content to [describe your refinement goals].
 - **Provide examples** of the writing style and tone you want
 - **Validate LLM outputs** against FHIR specifications and your IG requirements
 
-## 🔗 Related Resources
 
-- [Getting Started Prompts](getting-started.html) - For initial IG planning and setup
-- [Profile Creation Prompts](profile-creation.html) - For profile-specific documentation
-- [Extension Definition Prompts](extension-definition.html) - For extension documentation
-- [Value Set Creation Prompts](value-set-creation.html) - For terminology documentation
-- [Prompt Templates](prompt-templates.html) - For reusable prompt structures
-- [LLM Integration Strategies](llm-integration.html) - For LLM-assisted content creation

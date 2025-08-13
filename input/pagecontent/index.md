@@ -101,3 +101,19 @@ He walks through building an AI stack for FHIR IG development and offers practic
 - **Surprisingly good at generating ValueSets and FQL tables** from structured data
 
 *This presentation provides the foundation for many of the strategies and prompts in this guide.*
+
+### Dependencies
+
+{% include dependency-table.xhtml %}
+
+### Cross Version Analysis
+
+{% include cross-version-analysis.xhtml %}
+
+### Global Profiles
+
+{% include globals-table.xhtml %}
+
+### IP Statements
+
+{% include ip-statements.xhtml %}

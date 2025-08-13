@@ -347,12 +347,4 @@ I want to design prompts that produce successful publication results.
 - **Provide examples** of publication results you want to achieve
 - **Validate LLM outputs** against FHIR specifications and your publication standards
 
-## 🔗 Related Resources
 
-- [Getting Started Prompts](getting-started.html) - For initial IG planning and setup
-- [Validation & Testing Prompts](validation-testing.html) - For pre-publication validation
-- [Profile Creation Prompts](profile-creation.html) - For profile publication
-- [Extension Definition Prompts](extension-definition.html) - For extension publication
-- [Value Set Creation Prompts](value-set-creation.html) - For terminology publication
-- [Prompt Templates](prompt-templates.html) - For reusable prompt structures
-- [LLM Integration Strategies](llm-integration.html) - For LLM-assisted publishing

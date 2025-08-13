@@ -22,6 +22,27 @@ This section contains prompts to help you create effective FHIR examples for you
 
 ## 🏗️ Example Planning and Strategy
 
+### Simple Example Generation
+
+Use this prompt to define some simple examples. Provide your profiles as part of the context.
+
+```plaintext
+You are a FHIR Profile Authoring Specialist experienced in creating example instances for profiles.
+Ensure examples comply with [FHIR R4/R5] and demonstrate best practices.
+
+I need to create examples for my [resource type] profile.
+My profile will be used in [describe your scenarios] and I want to demonstrate proper usage.
+
+Please help me:
+1. Design realistic example instances
+2. Show different constraint scenarios
+3. Demonstrate extension usage
+4. Include edge cases and variations
+5. Ensure examples follow FHIR best practices
+
+My examples should help implementers understand [describe your key concepts].
+```
+
 ### Example Scope Definition
 
 ```plaintext
@@ -407,11 +428,4 @@ I want my example documentation to be [describe your documentation goals].
 6. **Create ExampleScenarios** - document how resources work together in workflows
 7. **Reference existing instances** - build ExampleScenarios from your patient-based examples
 
-## 🔗 Related Resources
 
-- [Profile Creation Prompts](profile-creation.html) - For creating profiles that examples will demonstrate
-- [Extension Definition Prompts](extension-definition.html) - For extensions used in examples
-- [Value Set Creation Prompts](value-set-creation.html) - For terminology used in examples
-- [Troubleshooting Prompts](troubleshooting.html) - For resolving example creation issues
-- [LLM Integration Strategies](llm-integration.html) - For LLM-assisted example generation
-- [Prompt Templates](prompt-templates.html) - For effective prompt design

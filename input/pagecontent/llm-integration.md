@@ -220,21 +220,25 @@ You are an expert in FHIR Implementation Guide development with:
 [Include complete, valid FSH code]
 ```
 
-### Explanation:
+### Explanation
+
 - Brief explanation of what the code does
 - Key points about syntax or structure
 - Important considerations or warnings
 
-### Validation Steps:
+### Validation Steps
+
 1. Run `sushi` to validate FSH syntax
 2. Check with IGPublisher for IG structure
 3. Validate against FHIR specifications
 4. Test with example instances
 
-### Related Resources:
+### Related Resources
+
 - Link to relevant FHIR specifications
 - Reference to similar examples or patterns
 - Additional documentation or guidance
+
 ```
 
 ## ✅ Quality and Validation Rules
@@ -383,13 +387,4 @@ You are an expert in FHIR Implementation Guide development with:
 
 ---
 
-## 🔗 Related Resources
 
-- [Getting Started Prompts](getting-started.html) - For foundational IG development guidance
-- [Profile Creation Prompts](profile-creation.html) - For profile development assistance
-- [Extension Definition Prompts](extension-definition.html) - For extension design guidance
-- [Value Set Creation Prompts](value-set-creation.html) - For terminology management
-- [Examples Creation Prompts](examples-creation.html) - For example generation assistance
-- [Validation & Testing Prompts](validation-testing.html) - For quality assurance guidance
-- [Troubleshooting Prompts](troubleshooting.html) - For issue resolution assistance
-- [Prompt Templates](prompt-templates.html) - For effective communication patterns

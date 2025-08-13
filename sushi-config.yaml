@@ -54,12 +54,20 @@ pages:
     title: Extension Definition Prompts
   value-set-creation.md:
     title: Value Set Creation Prompts
+  examples-creation.md:
+    title: Examples Creation Prompts
+  validation-testing.md:
+    title: Validation & Testing Prompts
+  troubleshooting.md:
+    title: Troubleshooting Guidance
+  narrative-content.md:
+    title: Narrative Content Prompts
   prompt-templates.md:
     title: Prompt Templates
   llm-integration.md:
     title: LLM Strategy & Integration
-  examples-creation.md:
-    title: Examples Creation Prompts
+  publishing-deployment.md:
+    title: Publishing & Deployment Prompts
 #
 #
 # The parameters property represents IG.definition.parameter. Rather
@@ -86,12 +94,19 @@ pages:
 menu:
   Home: index.html
   Getting Started: getting-started.html
-  Profile Creation: profile-creation.html
-  Extensions: extension-definition.html
-  Value Sets: value-set-creation.html
-  Templates: prompt-templates.html
-  LLM Integration: llm-integration.html
-  Examples: examples-creation.html
+  Core Development:
+    Profile Creation: profile-creation.html
+    Extensions: extension-definition.html
+    Value Sets: value-set-creation.html
+    Examples: examples-creation.html
+  Quality & Testing:
+    Validation: validation-testing.html
+    Troubleshooting: troubleshooting.html
+    Narrative: narrative-content.html
+  Tools & Templates:
+    Prompt Templates: prompt-templates.html
+    LLM Integration: llm-integration.html
+    Publishing: publishing-deployment.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
