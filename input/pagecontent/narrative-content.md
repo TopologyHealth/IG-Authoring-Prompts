@@ -7,6 +7,7 @@ This section contains prompts to help you write effective narrative content for 
 ### Content Strategy Development
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to develop a content strategy for my [describe your IG component] narrative content.
 My IG will be used by [describe your audience] for [describe your purpose].
 
@@ -23,6 +24,7 @@ I want my narrative content to be [describe your content goals].
 ### Content Organization
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I'm organizing the narrative content for my [describe your IG component].
 I need to structure [describe your content scope] in a logical, navigable way.
 
@@ -41,6 +43,7 @@ I want my content organization to support [describe your user experience goals].
 ### Introduction and Overview
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to write an introduction and overview for my [describe your IG component].
 My IG will be used by [describe your audience] for [describe your purpose].
 
@@ -57,6 +60,7 @@ I want my introduction to be [describe your writing goals].
 ### Purpose and Scope Definition
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to clearly define the purpose and scope of my [describe your IG component].
 This component will be used in [describe your context] by [describe your users].
 
@@ -73,6 +77,7 @@ I want users to clearly understand [describe your clarity goals].
 ### Use Case Documentation
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to document use cases for my [describe your IG component].
 My component supports [describe your functionality] in [describe your domain].
 
@@ -89,6 +94,7 @@ I want my use case documentation to help implementers [describe your implementat
 ### Implementation Guidance
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to write implementation guidance for my [describe your IG component].
 My component will be implemented by [describe your implementers] in [describe your environment].
 
@@ -107,6 +113,7 @@ I want my implementation guidance to be [describe your guidance goals].
 ### Profile Documentation
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist. Profile Documentation Specialist
 I need to write narrative content for my [describe your profile] profile.
 My profile extends [describe your base resource] for [describe your use case].
 
@@ -123,6 +130,7 @@ I want my profile documentation to help implementers [describe your understandin
 ### Extension Documentation
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist. Extension Documentation Specialist
 I need to write narrative content for my [describe your extension] extension.
 My extension adds [describe your functionality] to [describe your resources].
 
@@ -139,6 +147,7 @@ I want my extension documentation to be [describe your documentation goals].
 ### Value Set Documentation
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist. Value Set Documentation Specialist
 I need to write narrative content for my [describe your value set] value set.
 My value set provides [describe your terminology] for [describe your domain].
 
@@ -157,6 +166,7 @@ I want my value set documentation to help implementers [describe your terminolog
 ### Example Documentation
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to write narrative content for my examples in [describe your IG component].
 My examples demonstrate [describe your functionality] and show [describe your use cases].
 
@@ -173,6 +183,7 @@ I want my example documentation to help implementers [describe your learning goa
 ### Workflow Documentation
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to document workflows for my [describe your IG component].
 My component supports [describe your processes] in [describe your domain].
 
@@ -191,6 +202,7 @@ I want my workflow documentation to help users [describe your process goals].
 ### Content Review and Validation
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to review and validate my narrative content for [describe your IG component].
 My content covers [describe your scope] and targets [describe your audience].
 
@@ -207,6 +219,7 @@ I want my content to meet [describe your quality standards].
 ### Content Maintenance
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to plan for maintaining my narrative content for [describe your IG component].
 My content will need to [describe your maintenance needs] as [describe your evolution factors].
 
@@ -225,6 +238,7 @@ I want my content maintenance to support [describe your maintenance goals].
 ### Content Generation with LLMs
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I need to generate narrative content for my [describe your IG component] using an LLM.
 My component includes [describe your features] and targets [describe your audience].
 
@@ -241,6 +255,7 @@ I want to use LLMs to [describe your LLM goals] while maintaining [describe your
 ### Content Refinement and Enhancement
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
 I have draft narrative content for my [describe your IG component] that needs refinement.
 My current content covers [describe your scope] but needs [describe your improvements].
 

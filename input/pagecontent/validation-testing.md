@@ -188,38 +188,6 @@ I want to ensure my component performs well under expected load.
 
 ## 🚨 Error Handling and Troubleshooting
 
-### Error Analysis and Resolution
-
-```plaintext
-I'm encountering validation errors in my [describe your IG component].
-The errors include [describe your errors] and I need to resolve them.
-
-Please help me:
-1. Analyze the root cause of each error
-2. Suggest specific fixes and solutions
-3. Provide corrected code or configuration
-4. Explain the validation rules that were violated
-5. Help prevent similar errors in the future
-
-I want to resolve all errors quickly and understand the underlying issues.
-```
-
-### Common Validation Issues
-
-```plaintext
-I want to understand common validation issues in FHIR IG development.
-My IG includes [describe your components] and I want to avoid common pitfalls.
-
-Please help me:
-1. Identify common validation issues and their causes
-2. Provide prevention strategies and best practices
-3. Explain validation rules and requirements
-4. Share troubleshooting approaches and tools
-5. Help establish validation best practices
-
-I want to prevent validation issues before they occur.
-```
-
 ### Validation Error Prevention
 
 ```plaintext

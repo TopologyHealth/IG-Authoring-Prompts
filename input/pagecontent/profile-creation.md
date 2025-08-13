@@ -7,10 +7,10 @@ This section contains prompts to help you create and design FHIR profiles. Use t
 ### Profile Scope Definition
 
 ```plaintext
-You are a FHIR Implementation Guide Authoring Expert specializing in FHIR Shorthand (FSH) and IGPublisher. 
+You are a FHIR Implementation Guide Authoring Expert specializing in FHIR Shorthand (FSH) and IGPublisher.
 Base all recommendations on [FHIR R4/R5] and ensure outputs align with HL7 best practices.
 
-I'm creating a FHIR profile for [describe your resource type] in my Implementation Guide. 
+I'm creating a FHIR profile for [describe your resource type] in my Implementation Guide.
 This profile will be used for [describe your use case] in [describe your domain].
 
 Please help me:
@@ -26,7 +26,10 @@ My profile will be used by [describe your implementers] for [describe your speci
 ### Profile Requirements Analysis
 
 ```plaintext
-I need to analyze the requirements for my [resource type] profile. 
+You are a FHIR Profile Requirements Analyst specializing in translating user needs into FHIR profiles.
+Base all analysis on [FHIR R4/R5] standards and best practices.
+
+I need to analyze the requirements for my [resource type] profile.
 My profile must support [list your key requirements] and integrate with [describe your existing systems].
 
 Please help me:
@@ -44,7 +47,10 @@ I want to ensure my profile is both flexible and constrained appropriately.
 ### Element Selection and Organization
 
 ```plaintext
-I'm designing the structure for my [resource type] profile. 
+You are a FHIR Profile Authoring Specialist with expertise in designing profile structures using FSH.
+Ensure all design decisions comply with [FHIR R4/R5] and HL7 best practices.
+
+I'm designing the structure for my [resource type] profile.
 I need to include elements for [describe your data requirements] while following FHIR best practices.
 
 Please help me:
@@ -60,10 +66,10 @@ My profile should be [simple/complex] and focus on [describe your primary use ca
 ### Element Constraints and Bindings
 
 ```plaintext
-You are a FHIR Profile Authoring Specialist with expertise in creating valid FSH profiles for IGPublisher. 
+You are a FHIR Profile Authoring Specialist with expertise in creating valid FSH profiles for IGPublisher.
 Ensure outputs meet [FHIR R4/R5] conformance and pass `sushi` validation without errors.
 
-I need to define constraints for elements in my [resource type] profile. 
+I need to define constraints for elements in my [resource type] profile.
 I want to ensure [describe your constraint goals] while maintaining flexibility.
 
 Please help me:
@@ -81,7 +87,10 @@ I want my profile to be [describe your constraint philosophy].
 ### Cardinality Planning
 
 ```plaintext
-I'm planning the cardinality for elements in my [resource type] profile. 
+You are a FHIR Profile Authoring Specialist experienced in cardinality planning for FHIR profiles.
+Ensure all cardinality decisions comply with [FHIR R4/R5] standards and support interoperability.
+
+I'm planning the cardinality for elements in my [resource type] profile.
 I need to balance [describe your requirements] with [describe your flexibility needs].
 
 Please help me:
@@ -97,7 +106,10 @@ My profile will be used in [describe your scenarios] where [describe your data a
 ### Slicing Strategy
 
 ```plaintext
-I need to implement slicing for [describe your slicing needs] in my [resource type] profile. 
+You are a FHIR Profile Authoring Specialist with expertise in slicing strategies for FHIR profiles.
+Ensure slicing designs comply with [FHIR R4/R5] and support clear differentiation of element types.
+
+I need to implement slicing for [describe your slicing needs] in my [resource type] profile.
 I want to differentiate between [describe your different types] of the same element.
 
 Please help me:
@@ -115,7 +127,10 @@ My slices will represent [describe your different categories] and need to be [de
 ### Extension Integration
 
 ```plaintext
-I need to integrate extensions into my [resource type] profile. 
+You are a FHIR Profile Authoring Specialist experienced in integrating extensions into FHIR profiles.
+Ensure extensions follow [FHIR R4/R5] best practices and maintain profile compatibility.
+
+I need to integrate extensions into my [resource type] profile.
 I want to extend FHIR to support [describe your extension needs] that aren't covered by the base resource.
 
 Please help me:
@@ -131,7 +146,10 @@ My extensions will support [describe your specific functionality] and be used by
 ### Modifier Extension Usage
 
 ```plaintext
-I need to use modifier extensions in my [resource type] profile to [describe your modification needs]. 
+You are a FHIR Profile Authoring Specialist knowledgeable in modifier extensions and their appropriate use.
+Ensure modifier extension usage complies with [FHIR R4/R5] and does not compromise data integrity.
+
+I need to use modifier extensions in my [resource type] profile to [describe your modification needs].
 I want to change the meaning of base FHIR elements for [describe your use case].
 
 Please help me:
@@ -149,7 +167,10 @@ My modifier extensions will change the interpretation of [describe your elements
 ### Profile Inheritance and Composition
 
 ```plaintext
-I'm designing a family of related profiles for [describe your domain]. 
+You are a FHIR Profile Authoring Specialist with expertise in profile inheritance and composition.
+Ensure profile relationships align with [FHIR R4/R5] standards and support maintainability.
+
+I'm designing a family of related profiles for [describe your domain].
 I need to understand how to structure [describe your profile relationships] effectively.
 
 Please help me:
@@ -165,7 +186,10 @@ My profiles will be used together to support [describe your complete workflow].
 ### Reference Constraints
 
 ```plaintext
-I need to define reference constraints in my [resource type] profile. 
+You are a FHIR Profile Authoring Specialist experienced in defining reference constraints.
+Ensure reference constraints comply with [FHIR R4/R5] and support data integrity.
+
+I need to define reference constraints in my [resource type] profile.
 My profile will reference [describe your related resources] and I want to ensure proper relationships.
 
 Please help me:
@@ -183,7 +207,10 @@ My profile references will support [describe your workflow] and ensure [describe
 ### Profile Narrative Content
 
 ```plaintext
-I need to write narrative content for my [resource type] profile. 
+You are a FHIR Profile Authoring Specialist skilled in writing clear and comprehensive profile documentation.
+Ensure narrative content aligns with [FHIR R4/R5] and supports implementer understanding.
+
+I need to write narrative content for my [resource type] profile.
 My profile will be used by [describe your audience] for [describe your purpose].
 
 Please help me:
@@ -199,7 +226,10 @@ I want my profile documentation to be [describe your documentation goals].
 ### Profile Examples
 
 ```plaintext
-I need to create examples for my [resource type] profile. 
+You are a FHIR Profile Authoring Specialist experienced in creating example instances for profiles.
+Ensure examples comply with [FHIR R4/R5] and demonstrate best practices.
+
+I need to create examples for my [resource type] profile.
 My profile will be used in [describe your scenarios] and I want to demonstrate proper usage.
 
 Please help me:
@@ -215,7 +245,10 @@ My examples should help implementers understand [describe your key concepts].
 ### Profile Review Checklist
 
 ```plaintext
-I'm reviewing my [resource type] profile before finalizing it. 
+You are a FHIR Profile Authoring Specialist tasked with reviewing profiles for quality and compliance.
+Ensure checklist items align with [FHIR R4/R5] standards and best practices.
+
+I'm reviewing my [resource type] profile before finalizing it.
 I want to ensure quality and compliance with FHIR standards.
 
 Please help me create a checklist to verify:

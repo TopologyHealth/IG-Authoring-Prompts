@@ -7,6 +7,7 @@ This section contains prompts to help you publish and deploy your FHIR Implement
 ### Publication Readiness Assessment
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist.
 I need to assess if my FHIR Implementation Guide is ready for publication.
 My IG includes [describe your components] and targets [describe your audience].
 
@@ -23,6 +24,7 @@ I want to ensure my IG is publication-ready before proceeding.
 ### Final Review and Quality Check
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist.
 I'm conducting a final review of my FHIR IG before publication.
 My IG covers [describe your scope] and must meet [describe your quality standards].
 
@@ -39,6 +41,7 @@ I want to catch any issues before publication.
 ### Publication Checklist Creation
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist.
 I need to create a comprehensive publication checklist for my FHIR IG.
 My IG includes [describe your components] and targets [describe your audience].
 
@@ -57,6 +60,7 @@ I want a systematic approach to publication.
 ### IG Publisher Configuration
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. IG Publisher Configuration Specialist.
 I need to configure IG Publisher for publishing my FHIR Implementation Guide.
 My IG includes [describe your components] and targets [describe your audience].
 
@@ -73,6 +77,7 @@ I want to configure IG Publisher correctly for successful publication.
 ### Publication Execution
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist.
 I'm ready to execute the publication of my FHIR Implementation Guide.
 My IG includes [describe your components] and targets [describe your audience].
 
@@ -89,6 +94,7 @@ I want to successfully publish my IG without issues.
 ### Publication Output Validation
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. Validation and QA Specialist.
 I need to validate the output from my IG publication process.
 My publication generated [describe your output] and I need to verify quality.
 
@@ -107,6 +113,7 @@ I want to verify my publication output is correct and complete.
 ### Deployment Strategy Planning
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. Hosting and Infrastructure Specialist.
 I need to plan the deployment strategy for my published FHIR IG.
 My IG will be deployed to [describe your environment] for [describe your audience].
 
@@ -123,6 +130,7 @@ I want to ensure successful deployment and availability.
 ### Hosting Platform Selection
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. Hosting and Infrastructure Specialist.
 I need to select a hosting platform for my published FHIR IG.
 My IG includes [describe your components] and targets [describe your audience].
 
@@ -139,6 +147,7 @@ I want to select a hosting platform that meets my requirements.
 ### Deployment Configuration
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. Hosting and Infrastructure Specialist.
 I need to configure deployment for my published FHIR IG.
 My IG will be deployed to [describe your platform] with [describe your requirements].
 
@@ -157,6 +166,7 @@ I want to configure deployment for reliability and security.
 ### Publication Monitoring
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. Hosting and Infrastructure Specialist.
 I need to monitor my published FHIR IG for issues and performance.
 My IG is deployed at [describe your location] and serves [describe your audience].
 
@@ -173,6 +183,7 @@ I want to ensure my published IG is reliable and performant.
 ### Maintenance and Updates
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist.
 I need to plan for maintenance and updates of my published FHIR IG.
 My IG includes [describe your components] and will need [describe your maintenance needs].
 
@@ -189,6 +200,7 @@ I want to ensure my published IG remains current and useful.
 ### User Support and Documentation
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist.
 I need to provide user support and documentation for my published FHIR IG.
 My IG serves [describe your audience] and needs [describe your support requirements].
 
@@ -207,6 +219,7 @@ I want to ensure users can effectively use my published IG.
 ### Publication Success Metrics
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist.
 I need to define success metrics for my FHIR IG publication.
 My IG targets [describe your audience] and aims to achieve [describe your goals].
 
@@ -223,6 +236,7 @@ I want to measure the success of my IG publication.
 ### User Engagement Tracking
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist.
 I need to track user engagement with my published FHIR IG.
 My IG serves [describe your audience] and I want to understand usage patterns.
 
@@ -241,6 +255,7 @@ I want to understand how users engage with my published IG.
 ### Publication Security
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. Security and Compliance Specialist.
 I need to ensure security for my published FHIR Implementation Guide.
 My IG contains [describe your content] and serves [describe your audience].
 
@@ -257,6 +272,7 @@ I want to ensure my published IG is secure and compliant.
 ### Compliance and Governance
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. Security and Compliance Specialist.
 I need to ensure compliance and governance for my published FHIR IG.
 My IG must meet [describe your compliance requirements] and follow [describe your governance].
 
@@ -275,6 +291,7 @@ I want to ensure my published IG meets all compliance requirements.
 ### LLM-Enhanced Publication
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. LLM Integration Specialist.
 I want to use LLMs to enhance my FHIR IG publication process.
 My IG includes [describe your components] and I want to improve publication efficiency.
 
@@ -291,6 +308,7 @@ I want to use LLMs to [describe your LLM goals] while maintaining [describe your
 ### Publication Prompt Design
 
 ```plaintext
+You are a FHIR Implementation Guide Publishing and Deployment Specialist. LLM Integration Specialist.
 I need to design effective prompts for LLM-assisted publication.
 My publication tasks include [describe your tasks] and target [describe your quality goals].
 

@@ -7,6 +7,7 @@ This section contains prompts to help you troubleshoot common issues in FHIR Imp
 ### Issue Analysis Framework
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I'm experiencing an issue with my [describe your IG component] and need help troubleshooting.
 The problem is [describe your issue] and I'm seeing [describe your symptoms].
 
@@ -23,6 +24,7 @@ I want to resolve this issue quickly and understand what went wrong.
 ### Error Message Interpretation
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I'm getting an error message while working with my FHIR IG.
 The error is: [paste the exact error message]
 
@@ -41,6 +43,7 @@ I need to understand and resolve this error quickly.
 ### Symptom-Based Troubleshooting
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I'm experiencing [describe your symptoms] with my [describe your IG component].
 The symptoms include [describe specific behaviors or issues] and started [describe when].
 
@@ -59,6 +62,7 @@ I want to systematically identify and resolve the underlying issue.
 ### SUSHI Issues
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist and SUSHI Troubleshooting Specialist.
 I'm having problems with SUSHI while processing my FHIR IG.
 The issue is [describe your SUSHI problem] and I'm seeing [describe your error messages].
 
@@ -77,6 +81,7 @@ I need to get SUSHI processing my IG correctly.
 ### IG Publisher Problems
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist and IG Publisher Debugging Specialist.
 I'm encountering issues with IG Publisher while building my FHIR IG.
 The problem is [describe your IG Publisher issue] and I'm getting [describe your errors].
 
@@ -95,6 +100,7 @@ I need to successfully build my IG with IG Publisher.
 ### FSH Syntax Errors
 
 ```plaintext
+You are a FHIR Validation & QA Specialist for [FHIR R4/R5] and a FHIR Implementation Guide Troubleshooting Specialist.
 You are a FHIR Validation & QA Specialist for [FHIR R4/R5].
 I will paste errors from [SUSHI|IGPublisher|HL7 FHIR Validator]. Provide minimal, specific fixes.
 
@@ -124,6 +130,7 @@ Please:
 ### Configuration Issues
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist and Configuration & Dependency Management Specialist.
 I'm having configuration problems with my [describe your tool or component].
 The configuration includes [describe your current settings] and I'm seeing [describe your issues].
 
@@ -140,6 +147,7 @@ I want to fix my configuration and prevent future issues.
 ### Dependency and Reference Problems
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist and Configuration & Dependency Management Specialist.
 I'm having dependency or reference issues with my [describe your IG component].
 The problem involves [describe your dependencies/references] and I'm seeing [describe your errors].
 
@@ -156,6 +164,7 @@ I want to resolve these dependency issues and ensure proper references.
 ### Resource and File Issues
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I'm having problems with resources or files in my FHIR IG.
 The issue involves [describe your resources/files] and I'm seeing [describe your problems].
 
@@ -176,6 +185,7 @@ I want to fix these file issues and improve organization.
 ### Build Failures
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 My FHIR IG build is completely failing and I need immediate help.
 The build fails at [describe where it fails] with [describe your error messages].
 
@@ -194,6 +204,7 @@ I need to get my IG building again as quickly as possible.
 ### Validation Failures
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 My FHIR IG is failing all validation checks and I need urgent help.
 The validation failures include [describe your validation errors] and affect [describe your components].
 
@@ -210,6 +221,7 @@ I need to get my IG passing validation immediately.
 ### Publication Blockers
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I have a critical publication blocker for my FHIR IG that needs immediate resolution.
 The blocker is [describe your publication issue] and prevents [describe what you can't do].
 
@@ -228,6 +240,7 @@ I need to resolve this publication blocker immediately.
 ### Troubleshooting Methodology
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I want to establish a systematic troubleshooting approach for my FHIR IG development.
 My IG includes [describe your components] and I encounter [describe your common issues].
 
@@ -244,6 +257,7 @@ I want to be more systematic and efficient at troubleshooting.
 ### Problem Prevention Strategies
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I want to prevent common problems in my FHIR IG development.
 My IG includes [describe your components] and I want to avoid [describe your common issues].
 
@@ -260,6 +274,7 @@ I want to prevent problems before they occur.
 ### Troubleshooting Documentation
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I need to document troubleshooting procedures for my FHIR IG development.
 My IG includes [describe your components] and I want to document [describe your troubleshooting needs].
 
@@ -278,6 +293,7 @@ I want to create comprehensive troubleshooting documentation.
 ### LLM-Enhanced Problem Solving
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I want to use LLMs to enhance my troubleshooting capabilities for FHIR IG development.
 My IG includes [describe your components] and I want to improve [describe your troubleshooting goals].
 
@@ -294,6 +310,7 @@ I want to use LLMs to [describe your LLM goals] while maintaining [describe your
 ### Troubleshooting Prompt Design
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I need to design effective prompts for LLM-assisted troubleshooting.
 My troubleshooting tasks include [describe your tasks] and target [describe your resolution goals].
 
@@ -312,6 +329,7 @@ I want to design prompts that produce effective troubleshooting results.
 ### Tool and Resource Identification
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I need to identify troubleshooting tools and resources for my FHIR IG development.
 My IG includes [describe your components] and I need help with [describe your troubleshooting areas].
 
@@ -328,6 +346,7 @@ I want to build a comprehensive troubleshooting toolkit.
 ### Community and Support Resources
 
 ```plaintext
+You are a FHIR Implementation Guide Troubleshooting Specialist.
 I need to identify community and support resources for FHIR IG troubleshooting.
 My IG includes [describe your components] and I need help with [describe your issues].
 

@@ -29,6 +29,10 @@ This section provides reusable templates and guidelines for creating effective p
 ## 📋 Basic Prompt Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
+
+You are a FHIR Implementation Guide Authoring Expert with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
+
 I'm working on [describe your FHIR IG task] and need help with [describe your specific need].
 
 [Provide relevant context about your domain, audience, and requirements]
@@ -48,9 +52,13 @@ I want to ensure [describe your goals or quality criteria].
 ### Example Usage
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
+
+You are a FHIR Implementation Guide Authoring Expert with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
+
 I'm working on creating a Patient profile for my oncology IG and need help with defining appropriate constraints.
 
-My IG will be used by cancer registries and oncology practices to standardize patient data collection for clinical trials and research.
+My IG will be used by [specify use case].
 
 Please help me:
 1. Identify which Patient elements are most relevant for oncology
@@ -67,6 +75,8 @@ I want to ensure the profile is flexible enough for different cancer types but c
 ### Problem-Solving Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, Problem-Solving Specialist.
+
 I'm encountering [describe the problem] while [describe what you're trying to do].
 
 [Describe what you've already tried and the current error/issue]
@@ -86,6 +96,8 @@ I need to resolve this quickly because [describe your timeline or urgency].
 ### Learning and Understanding Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, Educational Specialist.
+
 I need to understand [describe the concept or topic] in the context of FHIR IG authoring.
 
 [Describe your current level of knowledge and specific areas of confusion]
@@ -105,6 +117,8 @@ I want to ensure I understand this correctly before [describe your next steps].
 ### Review and Validation Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, Validation and QA Specialist.
+
 I need to review and validate [describe what you're reviewing] for my FHIR IG.
 
 [Describe the current state and what you want to achieve]
@@ -126,6 +140,8 @@ I want to ensure this meets [describe your quality standards] before publishing.
 ### FSH/SUSHI Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, FSH/SUSHI Specialist.
+
 I need help with [describe your FSH/SUSHI task] for my FHIR IG.
 
 [Describe your current FSH code and what you're trying to achieve]
@@ -145,6 +161,8 @@ I want to ensure my FSH is correct and follows SUSHI conventions.
 ### IG Publisher Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, IG Publisher Specialist.
+
 I'm having issues with the IG Publisher for my FHIR IG.
 
 [Describe the specific problem or error you're encountering]
@@ -164,6 +182,8 @@ I need to get my IG published by [describe your deadline].
 ### Validation Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, Validation and QA Specialist.
+
 I need to validate [describe what you're validating] in my FHIR IG.
 
 [Describe your validation goals and current approach]
@@ -185,6 +205,8 @@ I want to ensure my IG passes all validation checks before publication.
 ### Narrative Content Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, Profile Documentation Specialist.
+
 I need to write narrative content for [describe your IG component].
 
 [Describe the purpose, audience, and scope of this content]
@@ -204,6 +226,8 @@ I want the content to be [describe your quality goals].
 ### Example Creation Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, Profile Documentation Specialist.
+
 I need to create examples for [describe your IG component].
 
 [Describe what the examples should demonstrate]
@@ -225,6 +249,8 @@ I want the examples to help implementers understand [describe your key concepts]
 ### Architecture and Design Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, Architecture and Design Specialist.
+
 I'm designing the architecture for [describe your IG component or system].
 
 [Describe your requirements, constraints, and goals]
@@ -244,6 +270,8 @@ I want to create an architecture that supports [describe your long-term goals].
 ### Integration Template
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert, Integration Specialist.
+
 I need to integrate my FHIR IG with [describe the external system or standard].
 
 [Describe your current IG and the integration requirements]

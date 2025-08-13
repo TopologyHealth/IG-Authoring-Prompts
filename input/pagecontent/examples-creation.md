@@ -25,8 +25,9 @@ This section contains prompts to help you create effective FHIR examples for you
 ### Example Scope Definition
 
 ```plaintext
-I need to create examples for my [describe your IG component] in my Implementation Guide. 
-This component will be used for [describe your use case] and I want to demonstrate [describe your goals].
+You are a FHIR Example Authoring and Implementation Guide Specialist. Generate a plan to define the scope and purpose of examples for your [describe your IG component] in your Implementation Guide. Design scenarios that cover realistic patient data and clinical situations, including edge cases and variations. Ensure examples support your IG's objectives.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples where applicable, and pass `sushi` and IGPublisher validation without errors or warnings. Reference applicable FHIR specification sections as needed.
 
 Please help me:
 1. Define the scope and purpose of these examples
@@ -41,8 +42,9 @@ My examples should help implementers understand [describe your key concepts].
 ### Example Requirements Analysis
 
 ```plaintext
-I need to analyze the requirements for examples in my [describe your IG component]. 
-My examples must demonstrate [list your key requirements] and integrate with [describe your existing components].
+You are a FHIR Example Design and Validation Expert. Design a structure that breaks down functional requirements into example scenarios for your [describe your IG component]. Identify required versus optional example elements, determine appropriate complexity levels, and plan for example validation and testing. Consider maintenance and updates to ensure long-term usability.
+
+All examples must comply with FHIR R4/R5 standards, include FSH and JSON samples, and successfully pass `sushi` and IGPublisher validation without errors or warnings. Reference relevant FHIR specification sections where appropriate.
 
 Please help me:
 1. Break down functional requirements into example scenarios
@@ -59,8 +61,9 @@ I want to ensure my examples are both comprehensive and follow FHIR best practic
 ### Patient Instance Definition
 
 ```plaintext
-I need to create a patient instance based on my [describe your Patient profile] profile.
-I want to demonstrate [describe your patient characteristics] and support [describe your use cases].
+You are a FHIR Clinical Data Modeling Specialist. Generate realistic patient instances based on your [describe your Patient profile] profile that demonstrate [describe your patient characteristics] and support [describe your use cases]. Include appropriate identifiers, contact information, profile constraints, and extensions. Create variations for different patient types to support diverse example scenarios.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON representations, and pass `sushi` and IGPublisher validation with no errors or warnings. Use proper medical terminology and clinically coherent workflows.
 
 Please help me:
 1. Generate realistic patient demographics
@@ -75,8 +78,9 @@ My patient instance should be realistic and demonstrate proper profile usage.
 ### Related Resource Instances
 
 ```plaintext
-I need to create instances related to my IG about the patient I defined.
-My IG covers [describe your scope] and I want to show [describe your workflow].
+You are a FHIR Clinical Data Modeling Specialist. Design comprehensive related resource instances for your IG that demonstrate your scope [describe your scope] and workflow [describe your workflow]. Create realistic clinical scenarios with proper resource relationships, references, value set codes, and extensions. Demonstrate the complete workflow from start to finish.
+
+All examples must comply with FHIR R4/R5, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings. Use appropriate clinical terminology and ensure clinical coherence.
 
 Please help me:
 1. Identify which resources to include in the episode of care
@@ -93,8 +97,9 @@ I want to create a comprehensive example that shows how all my IG components wor
 ### ExampleScenario Resource Creation
 
 ```plaintext
-In the folder there is a patient with an instance ID of [describe your patient instance].
-For that resource and the resources which reference it, can you create an ExampleScenario FHIR Resource instance in FSH?
+You are a FHIR Workflow and ExampleScenario Specialist. Identify all resources referencing the patient instance with ID [describe your patient instance]. Create an ExampleScenario FHIR Resource instance in FSH that documents the complete workflow, including proper resource references, relationships, and a detailed scenario narrative and purpose.
+
+Ensure the ExampleScenario is FHIR R4/R5 compliant, includes both FSH and JSON examples, and passes `sushi` and IGPublisher validation without errors or warnings. Reference applicable FHIR specification sections as needed.
 
 Please help me:
 1. Identify all resources that reference the patient instance
@@ -109,8 +114,9 @@ I want to create a comprehensive ExampleScenario that shows how all my resources
 ### Complete Episode of Care
 
 ```plaintext
-I need to create a complete episode of care example for my [describe your IG].
-I want to demonstrate [describe your workflow] using [describe your resources].
+You are a FHIR Clinical Data Modeling Specialist. Design a realistic clinical episode of care example for your [describe your IG]. Include all necessary resources, ensure proper relationships and references, apply appropriate terminology and extensions, and create a narrative that explains the example clearly.
+
+All examples must be FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings. Use realistic clinical data and terminology consistent with FHIR standards.
 
 Please help me:
 1. Design a realistic clinical scenario
@@ -125,8 +131,9 @@ My episode of care should be clinically realistic and demonstrate proper IG usag
 ### Extension Integration Examples
 
 ```plaintext
-I need to create examples that properly use my [describe your extension] extension.
-My extension StructureDefinition is: [paste your extension definition]
+You are a FHIR Extension and Profiling Specialist. Generate examples that correctly use your [describe your extension] extension, based on the provided StructureDefinition [paste your extension definition]. Use appropriate values for extension elements, demonstrate proper cardinality and constraints, and create variations showing different extension values.
+
+Ensure all examples comply with FHIR R4/R5, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings. Reference relevant FHIR specification sections about extensions.
 
 Please help me:
 1. Generate examples that include this extension
@@ -141,8 +148,9 @@ I want examples that show implementers how to use my extensions correctly.
 ### Value Set Demonstration
 
 ```plaintext
-I need to create examples that demonstrate my [describe your value set] value set.
-My value set includes [describe your codes] and is used for [describe your purpose].
+You are a FHIR Terminology Binding Specialist. Generate examples that demonstrate your [describe your value set] value set, which includes [describe your codes] and is used for [describe your purpose]. Show different code combinations and scenarios, demonstrate proper terminology binding, and include edge cases and variations.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings. Reference relevant FHIR terminology binding specifications.
 
 Please help me:
 1. Generate examples using appropriate value set codes
@@ -159,8 +167,9 @@ I want examples that help implementers understand proper value set usage.
 ### ExampleScenario Resources
 
 ```plaintext
-I need to create ExampleScenario resources to document and organize my examples.
-I want to show how [describe your resources] work together in [describe your clinical scenarios].
+You are a FHIR Workflow and ExampleScenario Specialist. Design ExampleScenario resource structures for your use cases that show how [describe your resources] work together in [describe your clinical scenarios]. Include proper actor definitions, workflow steps, resource relationships, dependencies, and realistic clinical narratives.
+
+Ensure ExampleScenarios are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Design ExampleScenario structure for my use cases
@@ -175,8 +184,9 @@ I want ExampleScenarios that help implementers understand the complete picture.
 ### FSH Instance Structure
 
 ```plaintext
-I need to organize my examples in the fsh/instances folder for SUSHI processing.
-I have examples for [describe your resources] and want to ensure proper organization.
+You are a FHIR IG File Organization and Standards Specialist. Plan the folder structure for your examples in the `fsh/instances` folder for SUSHI processing. Define naming conventions for instance files, organize examples by resource type or scenario, and ensure all examples can be processed correctly. Plan for example maintenance and updates.
+
+Ensure organization and naming comply with FHIR R4/R5 IG standards, and all examples pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Plan the folder structure for my examples
@@ -191,8 +201,9 @@ I want my examples to be well-organized and easy to maintain.
 ### Instance File Naming
 
 ```plaintext
-I need to establish naming conventions for my FSH instance files.
-My examples include [describe your resource types] and I want consistent naming.
+You are a FHIR IG File Organization and Standards Specialist. Create clear and consistent naming conventions for your FSH instance files, including resource type and scenario information. Ensure names are descriptive, searchable, and support versioning and updates.
+
+Comply with FHIR R4/R5 IG naming standards and ensure all files pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Create clear naming conventions for instance files
@@ -209,8 +220,9 @@ I want my instance files to be easy to find and understand.
 ### Clinical Realism
 
 ```plaintext
-I need to create clinically realistic examples for my [describe your IG].
-My examples will be used by [describe your audience] in [describe your environment].
+You are a Clinical Informatics and FHIR Authoring Specialist. Generate clinically realistic examples for your [describe your IG], intended for [describe your audience] in [describe your environment]. Include realistic clinical scenarios, appropriate medical terminology, believable patient demographics, clinically coherent workflows, and relevant clinical context and details.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Generate realistic clinical scenarios
@@ -225,8 +237,9 @@ I want my examples to be believable and useful for clinical implementers.
 ### Edge Cases and Variations
 
 ```plaintext
-I need to create examples that cover edge cases and variations for my [describe your IG].
-I want to demonstrate [describe your scenarios] and show [describe your flexibility].
+You are a Clinical Informatics and FHIR Authoring Specialist. Identify important edge cases and variations for your [describe your IG]. Create examples showing boundary conditions, different usage patterns, error conditions, exceptions, and demonstrate flexibility and adaptability.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Identify important edge cases to cover
@@ -243,8 +256,9 @@ I want my examples to help implementers understand the full scope of my IG.
 ### ExampleScenario from Patient Instances
 
 ```plaintext
-I have a patient instance with ID [describe your patient instance ID] in my fsh/instances folder.
-I want to create an ExampleScenario that shows how this patient and all related resources work together.
+You are a FHIR Workflow and ExampleScenario Specialist. Identify all resources referencing the patient instance with ID [describe your patient instance ID] in your `fsh/instances` folder. Create an ExampleScenario documenting the complete workflow with proper resource references, relationships, scenario narrative, and purpose. Generate the FSH code for the ExampleScenario.
+
+Ensure the ExampleScenario is FHIR R4/R5 compliant, includes FSH and JSON examples, and passes `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Identify all resources that reference this patient instance
@@ -259,8 +273,9 @@ I want to create a comprehensive ExampleScenario that demonstrates my IG's capab
 ### Context-Aware Example Creation
 
 ```plaintext
-I need to generate examples for my [describe your profile] profile using an LLM.
-My profile includes extensions for [describe your extensions] and uses value sets for [describe your terminology].
+You are a FHIR Clinical Data Modeling Specialist. Generate examples for your [describe your profile] profile using an LLM. Include extensions for [describe your extensions] and value sets for [describe your terminology]. Generate realistic patient demographics, relevant conditions and procedures, proper use of extensions, appropriate value set codes, and a complete episode of care example.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Generate realistic patient demographics
@@ -275,8 +290,9 @@ I want examples that demonstrate proper extension usage and realistic clinical s
 ### StructureDefinition-Enhanced Examples
 
 ```plaintext
-I need to generate examples that properly use my [describe your extension] extension.
-My extension StructureDefinition is: [paste your extension definition]
+You are a FHIR Extension and Profiling Specialist. Generate examples that properly use your [describe your extension] extension, based on the provided StructureDefinition [paste your extension definition]. Use appropriate values for extension elements, demonstrate proper cardinality and constraints, and create variations showing different extension values.
+
+Ensure all examples comply with FHIR R4/R5, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Generate examples that include this extension
@@ -291,8 +307,9 @@ I want examples that show implementers how to use my extensions correctly.
 ### Medication Example Generation
 
 ```plaintext
-I need to generate a medication example for my [describe your profile] profile.
-I want to include [describe your medication details] with proper terminology.
+You are a FHIR Medication Resource Specialist. Generate a clinically realistic medication example for your [describe your profile] profile. Include appropriate SNOMED CT codes for substances, proper dosage and administration details, and variations for different medication scenarios.
+
+Ensure the example complies with FHIR R4/R5 medication resource standards, includes FSH and JSON examples, and passes `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Generate a clinically realistic medication example
@@ -309,8 +326,9 @@ I want examples that demonstrate proper medication representation in FHIR.
 ### Example Testing Strategy
 
 ```plaintext
-I need to validate my examples before publishing my IG.
-My examples include [describe your examples] and I want to ensure they work correctly.
+You are a FHIR Validation and QA Specialist. Generate a comprehensive testing approach for your examples before publishing your IG. Test examples with IG Publisher and validation tools, verify profile constraints and bindings, test extension usage and context, and validate value set bindings and terminology.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Plan a comprehensive testing approach for examples
@@ -325,8 +343,9 @@ I want to catch any issues before [describe your deployment timeline].
 ### Example Review Checklist
 
 ```plaintext
-I'm reviewing my examples before finalizing my IG.
-I want to ensure quality and compliance with FHIR standards.
+You are a FHIR Validation and QA Specialist. Create a checklist to verify example structure and organization, clinical realism and accuracy, profile constraint compliance, extension usage and context, value set binding correctness, FHIR compliance and best practices, and file organization and naming.
+
+Ensure the checklist supports producing examples compliant with FHIR R4/R5, includes FSH and JSON examples, and passes `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me create a checklist to verify:
 1. Example structure and organization
@@ -345,8 +364,9 @@ I want my examples to be [describe your quality goals].
 ### Example Versioning Strategy
 
 ```plaintext
-I need to plan for the evolution of my examples as my IG evolves.
-My examples will need to [describe your evolution needs] and I want to ensure maintainability.
+You are a FHIR IG Governance and Documentation Specialist. Plan for the evolution of your examples as your IG evolves. Consider versioning strategies, backwards compatibility requirements, updates and maintenance, extensibility, governance, and quality.
+
+Ensure all versioning and maintenance plans align with FHIR R4/R5 IG standards and support examples that pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Plan for example versioning strategies
@@ -361,8 +381,9 @@ I want my examples to evolve with [describe your changing needs] while maintaini
 ### Example Documentation
 
 ```plaintext
-I need to document my examples for maintainability and clarity.
-My examples will be used by [describe your audience] and I want to ensure understanding.
+You are a FHIR IG Governance and Documentation Specialist. Write clear documentation for each example to ensure maintainability and clarity. Explain the purpose and scope, document relationships and dependencies, provide usage guidance and best practices, and include maintenance and update procedures.
+
+Ensure documentation supports FHIR R4/R5 compliance and helps examples pass `sushi` and IGPublisher validation without errors or warnings.
 
 Please help me:
 1. Write clear documentation for each example

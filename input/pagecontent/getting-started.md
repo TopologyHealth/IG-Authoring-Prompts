@@ -7,7 +7,7 @@ This section contains prompts to help you get started with FHIR Implementation G
 ### Project Scope Definition
 
 ```plaintext
-You are a FHIR IG Authoring Assistant. 
+You are a FHIR Implementation Guide Authoring Expert. You are also a FHIR IG Authoring Assistant.
 I'm starting a new FHIR Implementation Guide project for [describe your use case]. 
 Please base all recommendations on [FHIR R4/R5] and ensure alignment with [parent or jurisdictional IG if applicable].
 
@@ -27,6 +27,7 @@ Context:
 ### Tool Selection Guidance
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
 I'm new to FHIR IG development and need help choosing the right tools. 
 I want to create a [simple/complex] Implementation Guide for [describe your use case].
 
@@ -44,6 +45,7 @@ I'm comfortable with [describe your technical background].
 ### Basic IG Structure
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
 I'm creating my first FHIR Implementation Guide using SUSHI. 
 I want to create a basic structure for [describe your IG purpose].
 
@@ -59,6 +61,7 @@ My IG will focus on [describe your main resources/profiles].
 ### IG Metadata Setup
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
 I need help setting up the metadata for my FHIR Implementation Guide. 
 My IG is for [describe your organization/domain] and will be used by [describe your audience].
 
@@ -77,6 +80,7 @@ My organization is [describe your organization].
 ### Resource Planning
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
 I'm planning my FHIR IG and need help organizing the resources. 
 My IG will cover [describe your scope] and include [list main resources].
 
@@ -93,6 +97,7 @@ I want to ensure my IG follows FHIR best practices.
 ### Implementation Strategy
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
 I'm planning the implementation of my FHIR Implementation Guide. 
 My IG will be used by [describe your implementers] in [describe your environment].
 
@@ -111,7 +116,7 @@ I want to ensure smooth adoption by my target audience.
 ### SUSHI Configuration
 
 ```plaintext
-You are a FHIR Shorthand (FSH) and IGPublisher expert. 
+You are a FHIR Implementation Guide Authoring Expert and a FHIR Shorthand (FSH) and IGPublisher expert.
 I'm setting up SUSHI for my FHIR IG project ([describe your IG]).
 
 Please:
@@ -129,6 +134,7 @@ Existing artifacts: [list or link]
 ### Development Environment
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
 I'm setting up my development environment for FHIR IG authoring. 
 I want to use [list your preferred tools] and work on [describe your platform].
 
@@ -147,6 +153,7 @@ I'm working on [Windows/Mac/Linux] and prefer [describe your tool preferences].
 ### FHIR Basics Review
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
 I need to refresh my understanding of FHIR basics before starting my IG. 
 I'm focusing on [describe your specific FHIR areas of interest].
 
@@ -163,6 +170,7 @@ I have [basic/intermediate/advanced] FHIR knowledge.
 ### IG Authoring Best Practices
 
 ```plaintext
+You are a FHIR Implementation Guide Authoring Expert.
 I want to learn the best practices for FHIR IG authoring. 
 I'm creating an IG for [describe your use case] and want to ensure quality.
 
@@ -191,6 +199,8 @@ I want to create an IG that others can easily understand and implement.
 ### Role Assumption
 
 Unless otherwise specified, you should specify in the prompt that the LLM is acting as a **FHIR Implementation Guide Authoring Expert** with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
+
+You only need to input the role on the first prompt for your chat, or if you're changing the role. If you've already specified a role, feel free to remove it from the prompt.
 
 ### Three Core Prompting Principles (Based on Real-World Experience)
 
