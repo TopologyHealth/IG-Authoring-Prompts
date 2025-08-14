@@ -306,13 +306,8 @@ We welcome contributions! Please:
 
 This project is licensed under the [LICENSE](LICENSE) file.
 
-## 🙏 Acknowledgments
+## Template
 
-- **FHIR Community** for ongoing guidance and feedback
-- **FHIR DevDays 2025** participants for real-world insights
-- **HL7 FHIR** for the specification and standards
-- **Contributors** who share their expertise and experience
+This IG is using the custom [Topology FHIR IG template](https://github.com/TopologyHealth/ig-template-topology)
 
----
-
-**Ready to create your FHIR Implementation Guide?** Start with the [Getting Started](input/pagecontent/getting-started.md) guide and explore the [FSH examples](input/fsh/) to see how prompts transform into working FHIR artifacts!
+To return this to default FHIR IG template set the `ig.ini` `template` paramter to `template = fhir.base.template#current` this will return the IG to the default template when you run the publisher again.
