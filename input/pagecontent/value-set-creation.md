@@ -1,10 +1,10 @@
-# Value Set Creation Prompts
+## Value Set Creation Prompts
 
 This section contains prompts to help you create and manage FHIR value sets. Use these prompts with AI assistants to guide your value set development process.
 
-## 🏗️ Value Set Design and Planning
+### 🏗️ Value Set Design and Planning
 
-### Value Set Scope Definition
+#### Value Set Scope Definition
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert with experience in ValueSet creation in FHIR Shorthand (FSH) and JSON. 
@@ -24,7 +24,7 @@ Existing artifacts: [list ValueSets, spreadsheets, or code lists].
 My value set will be used by [describe your implementers] for [describe your specific scenarios].
 ```
 
-### Value Set Requirements Analysis
+#### Value Set Requirements Analysis
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert focused on requirements analysis for value sets. 
@@ -43,9 +43,9 @@ Please help me:
 I want to ensure my value set is both comprehensive and follows FHIR best practices.
 ```
 
-## 🔧 Value Set Structure and Content
+### 🔧 Value Set Structure and Content
 
-### Code System Selection
+#### Code System Selection
 
 ```plaintext
 You are a FHIR Terminology Binding Specialist. 
@@ -64,7 +64,7 @@ Please help me:
 My value set should support [describe your use cases] and be accessible to [describe your audience].
 ```
 
-### Code Selection and Filtering
+#### Code Selection and Filtering
 
 ```plaintext
 You are a FHIR Terminology Binding Specialist. 
@@ -83,9 +83,9 @@ Please:
 Existing source list or spreadsheet: [link or attach].
 ```
 
-## 📊 Value Set Organization and Hierarchy
+### 📊 Value Set Organization and Hierarchy
 
-### Value Set Organization
+#### Value Set Organization
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert specializing in value set organization and usability. 
@@ -102,7 +102,7 @@ Please help me:
 My value set organization should help implementers [describe your usability goals].
 ```
 
-### Hierarchical Structure Design
+#### Hierarchical Structure Design
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert with expertise in hierarchical value set design. 
@@ -119,9 +119,9 @@ Please help me:
 My hierarchical structure should support [describe your workflow needs] and be intuitive for users.
 ```
 
-## 🔌 Value Set Integration
+### 🔌 Value Set Integration
 
-### Profile Integration
+#### Profile Integration
 
 ```plaintext
 You are a FHIR IG Authoring Expert specializing in terminology bindings. 
@@ -139,7 +139,7 @@ Please:
 Existing profile FSH: [link or paste snippet].
 ```
 
-### Extension Integration
+#### Extension Integration
 
 ```plaintext
 You are a FHIR IG Authoring Expert specializing in extension terminology bindings. 
@@ -156,9 +156,9 @@ Please help me:
 My value set integration should support [describe your terminology needs] and be maintainable.
 ```
 
-## 📝 Value Set Documentation
+### 📝 Value Set Documentation
 
-### Value Set Narrative Content
+#### Value Set Narrative Content
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert skilled in documentation. 
@@ -175,7 +175,7 @@ Please help me:
 I want my value set documentation to be [describe your documentation goals].
 ```
 
-### Value Set Examples
+#### Value Set Examples
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert experienced in example creation. 
@@ -192,9 +192,9 @@ Please help me:
 My examples should help implementers understand [describe your key concepts].
 ```
 
-## ✅ Value Set Validation and Testing
+### ✅ Value Set Validation and Testing
 
-### Value Set Testing Strategy
+#### Value Set Testing Strategy
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert focused on validation and testing. 
@@ -211,7 +211,7 @@ Please help me:
 I want to catch any issues before [describe your deployment timeline].
 ```
 
-### Value Set Review Checklist
+#### Value Set Review Checklist
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert specializing in quality assurance. 
@@ -226,12 +226,12 @@ Please help me create a checklist to verify:
 5. FHIR compliance and best practices.
 6. Integration with profiles and extensions.
 
-I want my value set to be [describe your quality goals].
+I want my value set to be [describe your value set] value set to be [describe your quality goals].
 ```
 
-## 🚀 Advanced Value Set Topics
+### 🚀 Advanced Value Set Topics
 
-### Value Set Composition
+#### Value Set Composition
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert experienced in value set composition. 
@@ -248,7 +248,7 @@ Please help me:
 My value set composition should support [describe your integration needs] and be maintainable.
 ```
 
-### Value Set Governance
+#### Value Set Governance
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert focused on governance and maintenance. 
@@ -265,9 +265,9 @@ Please help me:
 I want to establish governance that supports [describe your long-term goals] and maintains [describe your quality standards].
 ```
 
-## 🔗 Value Set Relationships
+### 🔗 Value Set Relationships
 
-### Value Set Dependencies
+#### Value Set Dependencies
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert skilled in dependency management. 
@@ -284,7 +284,7 @@ Please help me:
 My dependency management should support [describe your stability goals] and ensure [describe your quality].
 ```
 
-### Value Set Mapping
+#### Value Set Mapping
 
 ```plaintext
 You are a FHIR Terminology and IG Authoring Expert experienced in value set mapping. 
@@ -303,7 +303,7 @@ My value set mapping should support [describe your integration needs] and be mai
 
 ---
 
-## 💡 Tips for Using These Prompts
+### 💡 Tips for Using These Prompts
 
 1. **Start with scope definition** to ensure your value set meets actual needs  
 2. **Consider your audience** - technical vs. clinical implementers have different terminology needs  
@@ -311,16 +311,16 @@ My value set mapping should support [describe your integration needs] and be mai
 4. **Document everything** - clear documentation is crucial for adoption  
 5. **Test thoroughly** - validation catches many issues before they become problems  
 
-## 🤖 LLM-Specific Tips for Value Set Creation
+### 🤖 LLM-Specific Tips for Value Set Creation
 
-### Value Set Generation from Structured Data
+#### Value Set Generation from Structured Data
 
 - **Provide Excel or structured data** to improve LLM accuracy  
 - **Use LLMs for code system selection** and evaluation  
 - **Generate FSH ValueSets directly** from structured data sources  
 - **Validate terminology bindings** against FHIR specifications  
 
-### LLM-Assisted Terminology Workflows
+#### LLM-Assisted Terminology Workflows
 
 - **Break down large value sets** into manageable components  
 - **Use LLMs for terminology mapping** between different code systems  

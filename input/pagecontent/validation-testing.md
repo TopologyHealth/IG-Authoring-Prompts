@@ -1,10 +1,10 @@
-# Validation & Testing Prompts
+## Validation & Testing Prompts
 
 This section contains prompts to help you validate and test your FHIR Implementation Guide. Use these prompts with AI assistants to ensure your IG meets quality standards and passes all validation checks.
 
-## 🔍 Validation Strategy and Planning
+### 🔍 Validation Strategy and Planning
 
-### Validation Strategy Development
+#### Validation Strategy Development
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -21,7 +21,7 @@ Please help me:
 I want to ensure my IG meets [describe your quality standards] before publication.
 ```
 
-### Testing Plan Development
+#### Testing Plan Development
 
 ```plaintext
 You are a FHIR Testing and Quality Assurance Specialist.
@@ -38,9 +38,9 @@ Please help me:
 I want my testing plan to ensure [describe your reliability goals].
 ```
 
-## 🛠️ Tool-Specific Validation
+### 🛠️ Tool-Specific Validation
 
-### SUSHI Validation
+#### SUSHI Validation
 
 ```plaintext
 You are a FHIR Validation Tool Integration Specialist.
@@ -57,7 +57,7 @@ Please help me:
 I want to resolve all SUSHI validation issues before proceeding.
 ```
 
-### IG Publisher Validation
+#### IG Publisher Validation
 
 ```plaintext
 You are a FHIR Validation Tool Integration Specialist.
@@ -74,7 +74,7 @@ Please help me:
 I want to pass all IG Publisher validation checks.
 ```
 
-### FHIR Validator Integration
+#### FHIR Validator Integration
 
 ```plaintext
 You are a FHIR Validation Tool Integration Specialist.
@@ -91,9 +91,9 @@ Please help me:
 I want to ensure continuous validation throughout development.
 ```
 
-## 📋 Component-Specific Validation
+### 📋 Component-Specific Validation
 
-### Profile Validation
+#### Profile Validation
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -110,7 +110,7 @@ Please help me:
 I want to ensure my profile is valid and compliant.
 ```
 
-### Extension Validation
+#### Extension Validation
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -127,7 +127,7 @@ Please help me:
 I want to ensure my extension is valid and properly integrated.
 ```
 
-### Value Set Validation
+#### Value Set Validation
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -144,9 +144,9 @@ Please help me:
 I want to ensure my value set is valid and properly integrated.
 ```
 
-## 🧪 Testing and Quality Assurance
+### 🧪 Testing and Quality Assurance
 
-### Component and Integration Testing
+#### Component and Integration Testing
 
 ```plaintext
 You are a FHIR Testing and Quality Assurance Specialist.
@@ -163,7 +163,7 @@ Please help me:
 I want to ensure my components function correctly individually and work seamlessly together.
 ```
 
-### Performance Testing
+#### Performance Testing
 
 ```plaintext
 You are a FHIR Testing and Quality Assurance Specialist.
@@ -180,9 +180,9 @@ Please help me:
 I want to ensure my component performs well under expected load.
 ```
 
-## 🚨 Error Handling and Troubleshooting
+### 🚨 Error Handling and Troubleshooting
 
-### Validation Error Prevention
+#### Validation Error Prevention
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -199,9 +199,9 @@ Please help me:
 I want to prevent validation errors through proactive measures.
 ```
 
-## 📊 Validation Reporting and Monitoring
+### 📊 Validation Reporting and Monitoring
 
-### Validation Results Analysis
+#### Validation Results Analysis
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -219,7 +219,7 @@ Please help me:
 I want to understand my validation results and improve quality.
 ```
 
-### Quality Metrics and KPIs
+#### Quality Metrics and KPIs
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -236,9 +236,9 @@ Please help me:
 I want to establish measurable quality standards for my IG.
 ```
 
-## 🤖 LLM-Assisted Validation
+### 🤖 LLM-Assisted Validation
 
-### LLM-Enhanced Validation
+#### LLM-Enhanced Validation
 
 ```plaintext
 You are a FHIR Implementation Guide LLM Validation Specialist.
@@ -256,7 +256,7 @@ Please help me:
 I want to use LLMs to [describe your LLM goals] while maintaining [describe your quality standards].
 ```
 
-### Validation Prompt Design
+#### Validation Prompt Design
 
 ```plaintext
 You are a FHIR Implementation Guide LLM Validation Specialist.
@@ -276,7 +276,7 @@ I want to design prompts that produce accurate validation results.
 
 ---
 
-## 💡 Tips for Using These Prompts
+### 💡 Tips for Using These Prompts
 
 1. **Customize the prompts** by replacing the bracketed text with your specific details  
 2. **Provide context** about your IG components, validation tools, and quality goals  
@@ -284,15 +284,15 @@ I want to design prompts that produce accurate validation results.
 4. **Save successful prompts** for future use and share them with the community  
 5. **Iterate and refine** prompts based on the responses you receive  
 
-## 🤖 LLM-Specific Tips for Validation
+### 🤖 LLM-Specific Tips for Validation
 
-### Three Core Prompting Principles (Based on Real-World Experience)
+#### Three Core Prompting Principles (Based on Real-World Experience)
 
 1. **Be Descriptive** - Clearly explain what you want to validate and include examples when possible  
 2. **Be Specific** - Focus the LLM on specific validation tasks, avoid vague requests  
 3. **Break It Down** - Divide complex validation into smaller, manageable tasks  
 
-### LLM Integration Strategies
+#### LLM Integration Strategies
 
 - **Start with simple validation tasks** and build complexity iteratively  
 - **Use the same LLM consistently** for related validation tasks to maintain context  

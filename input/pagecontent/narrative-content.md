@@ -1,10 +1,10 @@
-# Narrative Content Prompts
+## Narrative Content Prompts
 
 This section contains prompts to help you write effective narrative content for your FHIR Implementation Guide. Use these prompts with AI assistants to create clear, comprehensive documentation.
 
-## 📝 Content Planning and Structure
+### 📝 Content Planning and Structure
 
-### Content Strategy Development
+#### Content Strategy Development
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -21,7 +21,7 @@ Please help me:
 I want my narrative content to be [describe your content goals].
 ```
 
-### Content Organization
+#### Content Organization
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -38,9 +38,9 @@ Please help me:
 I want my content organization to support [describe your user experience goals].
 ```
 
-## ✍️ Writing and Documentation
+### ✍️ Writing and Documentation
 
-### Introduction and Overview
+#### Introduction and Overview
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -57,7 +57,7 @@ Please help me:
 I want my introduction to be [describe your writing goals].
 ```
 
-### Purpose and Scope Definition
+#### Purpose and Scope Definition
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -74,7 +74,7 @@ Please help me:
 I want users to clearly understand [describe your clarity goals].
 ```
 
-### Use Case Documentation
+#### Use Case Documentation
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -91,7 +91,7 @@ Please help me:
 I want my use case documentation to help implementers [describe your implementation goals].
 ```
 
-### Implementation Guidance
+#### Implementation Guidance
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -108,9 +108,9 @@ Please help me:
 I want my implementation guidance to be [describe your guidance goals].
 ```
 
-## 🔧 Technical Documentation
+### 🔧 Technical Documentation
 
-### Profile Documentation
+#### Profile Documentation
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist. Profile Documentation Specialist
@@ -127,7 +127,7 @@ Please help me:
 I want my profile documentation to help implementers [describe your understanding goals].
 ```
 
-### Extension Documentation
+#### Extension Documentation
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist. Extension Documentation Specialist
@@ -144,7 +144,7 @@ Please help me:
 I want my extension documentation to be [describe your documentation goals].
 ```
 
-### Value Set Documentation
+#### Value Set Documentation
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist. Value Set Documentation Specialist
@@ -161,9 +161,9 @@ Please help me:
 I want my value set documentation to help implementers [describe your terminology goals].
 ```
 
-## 📊 Examples and Illustrations
+### 📊 Examples and Illustrations
 
-### Example Documentation
+#### Example Documentation
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -180,7 +180,7 @@ Please help me:
 I want my example documentation to help implementers [describe your learning goals].
 ```
 
-### Workflow Documentation
+#### Workflow Documentation
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -197,9 +197,9 @@ Please help me:
 I want my workflow documentation to help users [describe your process goals].
 ```
 
-## 🔍 Content Quality and Review
+### 🔍 Content Quality and Review
 
-### Content Review and Validation
+#### Content Review and Validation
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -216,7 +216,7 @@ Please help me:
 I want my content to meet [describe your quality standards].
 ```
 
-### Content Maintenance
+#### Content Maintenance
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -233,9 +233,9 @@ Please help me:
 I want my content maintenance to support [describe your maintenance goals].
 ```
 
-## 🤖 LLM-Assisted Content Creation
+### 🤖 LLM-Assisted Content Creation
 
-### Content Generation with LLMs
+#### Content Generation with LLMs
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -252,7 +252,7 @@ Please help me:
 I want to use LLMs to [describe your LLM goals] while maintaining [describe your quality standards].
 ```
 
-### Content Refinement and Enhancement
+#### Content Refinement and Enhancement
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring and Narrative Content Specialist.
@@ -271,7 +271,7 @@ I want to refine my content to [describe your refinement goals].
 
 ---
 
-## 💡 Tips for Using These Prompts
+### 💡 Tips for Using These Prompts
 
 1. **Customize the prompts** by replacing the bracketed text with your specific details
 2. **Provide context** about your IG component, audience, and goals
@@ -279,15 +279,15 @@ I want to refine my content to [describe your refinement goals].
 4. **Save successful prompts** for future use and share them with the community
 5. **Iterate and refine** prompts based on the responses you receive
 
-## 🤖 LLM-Specific Tips for Narrative Content
+### 🤖 LLM-Specific Tips for Narrative Content
 
-### Three Core Prompting Principles (Based on Real-World Experience)
+#### Three Core Prompting Principles (Based on Real-World Experience)
 
 1. **Be Descriptive** - Clearly explain what you want and include examples when possible
 2. **Be Specific** - Focus the LLM on a tightly scoped task, avoid vague requests
 3. **Break It Down** - Divide complex content creation into smaller, manageable sections
 
-### LLM Integration Strategies
+#### LLM Integration Strategies
 
 - **Start with content outlines** and build detail iteratively
 - **Use the same LLM consistently** for related content to maintain style consistency

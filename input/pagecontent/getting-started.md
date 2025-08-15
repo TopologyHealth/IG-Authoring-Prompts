@@ -1,10 +1,10 @@
-# Getting Started with FHIR IGs
+## Getting Started with FHIR IGs
 
 This section contains prompts to help you get started with FHIR Implementation Guide development. Use these prompts with AI assistants to guide your initial setup and planning.
 
-## 🏗️ Project Setup and Planning
+### 🏗️ Project Setup and Planning
 
-### Project Scope Definition
+#### Project Scope Definition
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert. You are also a FHIR IG Authoring Assistant.
@@ -24,7 +24,7 @@ Context:
 - Existing artifacts: [link or describe any existing profiles, extensions, or ValueSets]
 ```
 
-### Tool Selection Guidance
+#### Tool Selection Guidance
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -40,9 +40,9 @@ Please recommend:
 I'm comfortable with [describe your technical background].
 ```
 
-## 🚀 First IG Creation
+### 🚀 First IG Creation
 
-### Basic IG Structure
+#### Basic IG Structure
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -58,7 +58,7 @@ Please help me:
 My IG will focus on [describe your main resources/profiles].
 ```
 
-### IG Metadata Setup
+#### IG Metadata Setup
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -75,9 +75,9 @@ Please help me configure:
 My organization is [describe your organization].
 ```
 
-## 📋 Planning and Organization
+### 📋 Planning and Organization
 
-### Resource Planning
+#### Resource Planning
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -94,7 +94,7 @@ Please help me:
 I want to ensure my IG follows FHIR best practices.
 ```
 
-### Implementation Strategy
+#### Implementation Strategy
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -111,9 +111,9 @@ Please help me:
 I want to ensure smooth adoption by my target audience.
 ```
 
-## 🔧 Configuration and Setup
+### 🔧 Configuration and Setup
 
-### SUSHI Configuration
+#### SUSHI Configuration
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert and a FHIR Shorthand (FSH) and IGPublisher expert.
@@ -131,7 +131,7 @@ My IG will be published at [your canonical URL].
 Existing artifacts: [list or link]
 ```
 
-### Development Environment
+#### Development Environment
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -148,9 +148,9 @@ Please help me:
 I'm working on [Windows/Mac/Linux] and prefer [describe your tool preferences].
 ```
 
-## 📚 Learning and Resources
+### 📚 Learning and Resources
 
-### FHIR Basics Review
+#### FHIR Basics Review
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -167,7 +167,7 @@ Please help me:
 I have [basic/intermediate/advanced] FHIR knowledge.
 ```
 
-### IG Authoring Best Practices
+#### IG Authoring Best Practices
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -186,7 +186,7 @@ I want to create an IG that others can easily understand and implement.
 
 ---
 
-## 💡 Tips for Using These Prompts
+### 💡 Tips for Using These Prompts
 
 1. **Customize the prompts** by replacing the bracketed text with your specific details
 2. **Provide context** about your domain, audience, and technical background
@@ -194,21 +194,21 @@ I want to create an IG that others can easily understand and implement.
 4. **Save successful prompts** for future use and share them with the community
 5. **Iterate and refine** prompts based on the responses you receive
 
-## 🤖 LLM-Specific Tips for Getting Started
+### 🤖 LLM-Specific Tips for Getting Started
 
-### Role Assumption
+#### Role Assumption
 
 Unless otherwise specified, you should specify in the prompt that the LLM is acting as a **FHIR Implementation Guide Authoring Expert** with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
 
 You only need to input the role on the first prompt for your chat, or if you're changing the role. If you've already specified a role, feel free to remove it from the prompt.
 
-### Three Core Prompting Principles (Based on Real-World Experience)
+#### Three Core Prompting Principles (Based on Real-World Experience)
 
 1. **Be Descriptive** - Clearly explain what you want and include examples when possible
 2. **Be Specific** - Focus the LLM on a tightly scoped task, avoid vague requests
 3. **Break It Down** - Divide complex goals into smaller, manageable steps
 
-### LLM Integration Strategies
+#### LLM Integration Strategies
 
 - **Start with simple prompts** and build complexity iteratively
 - **Use the same LLM consistently** for related tasks to maintain context

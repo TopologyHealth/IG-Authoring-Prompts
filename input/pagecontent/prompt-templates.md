@@ -1,23 +1,23 @@
-# Prompt Templates
+## Prompt Templates
 
 This section provides reusable templates and guidelines for creating effective prompts for FHIR IG authoring. Use these templates as a starting point and customize them for your specific needs.
 
-## 🚀 Three Core Prompting Principles (Based on Real-World Experience)
+### 🚀 Three Core Prompting Principles (Based on Real-World Experience)
 
-### 1. Be Descriptive
+#### 1. Be Descriptive
 
 - **Clearly explain what you want** and include examples when possible
 - **Provide context** about your domain, audience, and requirements
 - **Include relevant details** about your current situation and constraints
 
-### 2. Be Specific
+#### 2. Be Specific
 
 - **Focus the LLM on a tightly scoped task** - avoid vague requests
 - **Break large tasks into smaller, focused prompts**
 - **Specify which IG, spec, and context to follow**
 - **Include your goals and quality criteria**
 
-### 3. Break It Down
+#### 3. Break It Down
 
 - **Divide complex goals into smaller, manageable steps**
 - **Use iterative prompting** for complex tasks
@@ -26,7 +26,7 @@ This section provides reusable templates and guidelines for creating effective p
 
 ---
 
-## 📋 Basic Prompt Template
+### 📋 Basic Prompt Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -49,7 +49,7 @@ Please help me:
 I want to ensure [describe your goals or quality criteria].
 ```
 
-### Example Usage
+#### Example Usage
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert.
@@ -70,9 +70,9 @@ Please help me:
 I want to ensure the profile is flexible enough for different cancer types but constrained enough for interoperability.
 ```
 
-## 🎯 Specialized Prompt Templates
+### 🎯 Specialized Prompt Templates
 
-### Problem-Solving Template
+#### Problem-Solving Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, Problem-Solving Specialist.
@@ -93,7 +93,7 @@ Please help me:
 I need to resolve this quickly because [describe your timeline or urgency].
 ```
 
-### Learning and Understanding Template
+#### Learning and Understanding Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, Educational Specialist.
@@ -114,7 +114,7 @@ Please help me:
 I want to ensure I understand this correctly before [describe your next steps].
 ```
 
-### Review and Validation Template
+#### Review and Validation Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, Validation and QA Specialist.
@@ -135,9 +135,9 @@ Please help me:
 I want to ensure this meets [describe your quality standards] before publishing.
 ```
 
-## 🔧 Technical Prompt Templates
+### 🔧 Technical Prompt Templates
 
-### FSH/SUSHI Template
+#### FSH/SUSHI Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, FSH/SUSHI Specialist.
@@ -158,7 +158,7 @@ Please help me:
 I want to ensure my FSH is correct and follows SUSHI conventions.
 ```
 
-### IG Publisher Template
+#### IG Publisher Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, IG Publisher Specialist.
@@ -179,7 +179,7 @@ Please help me:
 I need to get my IG published by [describe your deadline].
 ```
 
-### Validation Template
+#### Validation Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, Validation and QA Specialist.
@@ -200,9 +200,9 @@ Please help me:
 I want to ensure my IG passes all validation checks before publication.
 ```
 
-## 📝 Documentation Prompt Templates
+### 📝 Documentation Prompt Templates
 
-### Narrative Content Template
+#### Narrative Content Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, Profile Documentation Specialist.
@@ -223,7 +223,7 @@ Please help me:
 I want the content to be [describe your quality goals].
 ```
 
-### Example Creation Template
+#### Example Creation Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, Profile Documentation Specialist.
@@ -244,9 +244,9 @@ Please help me:
 I want the examples to help implementers understand [describe your key concepts].
 ```
 
-## 🚀 Advanced Prompt Templates
+### 🚀 Advanced Prompt Templates
 
-### Architecture and Design Template
+#### Architecture and Design Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, Architecture and Design Specialist.
@@ -267,7 +267,7 @@ Please help me:
 I want to create an architecture that supports [describe your long-term goals].
 ```
 
-### Integration Template
+#### Integration Template
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert, Integration Specialist.
@@ -288,9 +288,9 @@ Please help me:
 I want to ensure seamless integration that maintains [describe your quality criteria].
 ```
 
-## 💡 Tips for Using These Templates
+### 💡 Tips for Using These Templates
 
-### Customization Guidelines
+#### Customization Guidelines
 
 1. **Replace bracketed text** with your specific details
 2. **Add relevant context** about your domain and requirements
@@ -298,7 +298,7 @@ I want to ensure seamless integration that maintains [describe your quality crit
 4. **Include specific examples** or code when relevant
 5. **Specify your audience** and their technical level
 
-### Best Practices
+#### Best Practices
 
 1. **Be specific** about what you need help with
 2. **Provide context** about your situation and constraints
@@ -306,7 +306,7 @@ I want to ensure seamless integration that maintains [describe your quality crit
 4. **Include relevant details** about your current approach
 5. **Specify your goals** and quality criteria
 
-### Common Mistakes to Avoid
+#### Common Mistakes to Avoid
 
 1. **Vague requests** that don't give enough context
 2. **Too many requests** in a single prompt
@@ -318,27 +318,27 @@ I want to ensure seamless integration that maintains [describe your quality crit
 
 ---
 
-## 📚 Template Examples by Use Case
+### 📚 Template Examples by Use Case
 
-### For Beginners
+#### For Beginners
 
 - Use the **Basic Prompt Template** with simple, clear language
 - Focus on understanding concepts before implementation
 - Ask for step-by-step guidance
 
-### For Intermediate Users
+#### For Intermediate Users
 
 - Use **Technical Prompt Templates** for specific implementation needs
 - Include your current approach and ask for improvements
 - Request best practices and optimization suggestions
 
-### For Advanced Users
+#### For Advanced Users
 
 - Use **Advanced Prompt Templates** for complex architectural decisions
 - Focus on scalability, maintainability, and future-proofing
 - Request validation of your approach and identification of potential issues
 
-### For Contributors
+#### For Contributors
 
 - Use **Review and Validation Templates** to ensure quality
 - Focus on consistency and best practices

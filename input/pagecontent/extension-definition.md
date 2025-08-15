@@ -1,10 +1,10 @@
-# Extension Definition Prompts
+## Extension Definition Prompts
 
 This section contains prompts to help you create and design FHIR extensions. Use these prompts with AI assistants to guide your extension development process.
 
-## 🏗️ Extension Design and Planning
+### 🏗️ Extension Design and Planning
 
-### Extension Scope Definition
+#### Extension Scope Definition
 
 ```plaintext
 You are a FHIR Extension and IG Authoring Expert.
@@ -14,7 +14,7 @@ Define the appropriate context for the extension, determine if this should be a 
 My extension will be used by [describe your implementers] for [describe your specific scenarios].
 ```
 
-### Extension Requirements Analysis
+#### Extension Requirements Analysis
 
 ```plaintext
 You are a FHIR Extension and IG Authoring Expert.
@@ -24,9 +24,9 @@ Break down functional requirements into extension elements, identify required vs
 I want to ensure my extension is both useful and follows FHIR best practices.
 ```
 
-## 🔧 Extension Structure and Elements
+### 🔧 Extension Structure and Elements
 
-### Extension Element Design
+#### Extension Element Design
 
 ```plaintext
 You are a FHIR Extension and IG Authoring Expert.
@@ -34,7 +34,7 @@ Design a structure for my [describe your extension] extension that includes elem
 My extension should be [simple/complex] and focus on [describe your primary use case].
 ```
 
-### Extension Data Type Selection
+#### Extension Data Type Selection
 
 ```plaintext
 You are a FHIR Data Modeling Specialist.
@@ -43,9 +43,9 @@ Choose appropriate data types for elements in my [describe your extension] exten
 I want my extension to be easy to implement while supporting [describe your data needs].
 ```
 
-## 🔌 Extension Context and Usage
+### 🔌 Extension Context and Usage
 
-### Extension Context Definition
+#### Extension Context Definition
 
 ```plaintext
 You are a FHIR Profiling and Extension Integration Specialist.
@@ -54,7 +54,7 @@ Identify the appropriate extension context for my [describe your extension] exte
 My extension context should support [describe your usage patterns] and be clear to implementers.
 ```
 
-### Extension Cardinality Planning
+#### Extension Cardinality Planning
 
 ```plaintext
 You are a FHIR Profiling and Extension Integration Specialist.
@@ -63,9 +63,9 @@ Set appropriate cardinality for the [describe your extension] extension and its 
 My extension will be used in [describe your scenarios] where [describe your data availability].
 ```
 
-## 📊 Extension Validation and Constraints
+### 📊 Extension Validation and Constraints
 
-### Extension Constraint Design
+#### Extension Constraint Design
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -74,7 +74,7 @@ Define constraints for my [describe your extension] extension to ensure [describ
 I want my extension to be [describe your constraint philosophy].
 ```
 
-### Extension Validation Strategy
+#### Extension Validation Strategy
 
 ```plaintext
 You are a FHIR Validation and QA Specialist.
@@ -83,9 +83,9 @@ Plan validation for my [describe your extension] extension to ensure [describe y
 I want to catch validation issues before [describe your deployment timeline].
 ```
 
-## 🔗 Extension Integration
+### 🔗 Extension Integration
 
-### Extension Profile Integration
+#### Extension Profile Integration
 
 ```plaintext
 You are a FHIR Profiling and Extension Integration Specialist.
@@ -94,7 +94,7 @@ Plan integration of my [describe your extension] extension into my [describe you
 My extension integration should support [describe your workflow] and be clear to implementers.
 ```
 
-### Extension Value Set Integration
+#### Extension Value Set Integration
 
 ```plaintext
 You are a FHIR Terminology Binding Specialist.
@@ -103,9 +103,9 @@ Plan integration of value sets with my [describe your extension] extension. Plan
 My value set integration should support [describe your terminology needs] and be maintainable.
 ```
 
-## 📝 Extension Documentation
+### 📝 Extension Documentation
 
-### Extension Narrative Content
+#### Extension Narrative Content
 
 ```plaintext
 You are a FHIR Documentation and Implementation Guidance Specialist.
@@ -114,7 +114,7 @@ Write narrative content for my [describe your extension] extension. Provide a cl
 I want my extension documentation to be [describe your documentation goals].
 ```
 
-### Extension Examples
+#### Extension Examples
 
 ```plaintext
 You are a FHIR Documentation and Implementation Guidance Specialist.
@@ -123,9 +123,9 @@ Create examples for my [describe your extension] extension that demonstrate prop
 My examples should help implementers understand [describe your key concepts].
 ```
 
-## ✅ Extension Testing and Validation
+### ✅ Extension Testing and Validation
 
-### Extension Testing Strategy
+#### Extension Testing Strategy
 
 ```plaintext
 You are a FHIR QA and Testing Specialist.
@@ -134,7 +134,7 @@ Plan comprehensive testing for my [describe your extension] extension before pub
 I want to catch any issues before [describe your deployment timeline].
 ```
 
-### Extension Review Checklist
+#### Extension Review Checklist
 
 ```plaintext
 You are a FHIR QA and Testing Specialist.
@@ -143,9 +143,9 @@ Create a checklist to verify my [describe your extension] extension before final
 I want my extension to be [describe your quality goals].
 ```
 
-## 🚀 Advanced Extension Topics
+### 🚀 Advanced Extension Topics
 
-### Modifier Extension Design
+#### Modifier Extension Design
 
 ```plaintext
 You are a FHIR Extension Governance Specialist.
@@ -154,7 +154,7 @@ Determine if a modifier extension is appropriate for [describe your modification
 My modifier extension will change the interpretation of [describe your elements] to mean [describe your modified meaning].
 ```
 
-### Extension Evolution and Versioning
+#### Extension Evolution and Versioning
 
 ```plaintext
 You are a FHIR Extension Governance Specialist.
@@ -165,7 +165,7 @@ I want my extension to evolve with [describe your changing needs] while maintain
 
 ---
 
-## 💡 Tips for Using These Prompts
+### 💡 Tips for Using These Prompts
 
 1. **Start with scope definition** to ensure your extension meets actual needs
 2. **Consider the context carefully** - extensions should be placed where they make sense
@@ -173,16 +173,16 @@ I want my extension to evolve with [describe your changing needs] while maintain
 4. **Document everything** - clear documentation is crucial for adoption
 5. **Test thoroughly** - validation catches many issues before they become problems
 
-## 🤖 LLM-Specific Tips for Extension Development
+### 🤖 LLM-Specific Tips for Extension Development
 
-### Extension Generation with LLMs
+#### Extension Generation with LLMs
 
 - **Provide existing extension examples** to improve LLM output quality
 - **Use LLMs for repetitive extension patterns** across multiple resources
 - **Validate extension context** - LLMs can suggest inappropriate placement
 - **Test extension integration** with profiles to ensure proper usage
 
-### LLM-Assisted Extension Workflows
+#### LLM-Assisted Extension Workflows
 
 - **Generate extension structure** with LLMs, then refine manually
 - **Use LLMs for extension documentation** and examples

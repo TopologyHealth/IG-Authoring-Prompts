@@ -1,10 +1,10 @@
-# Publishing & Deployment Prompts
+## Publishing & Deployment Prompts
 
 This section contains prompts to help you publish and deploy your FHIR Implementation Guide. Use these prompts with AI assistants to ensure successful publication and deployment of your IG.
 
-## 📋 Pre-Publication Preparation
+### 📋 Pre-Publication Preparation
 
-### Publication Readiness Assessment
+#### Publication Readiness Assessment
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist.
@@ -21,7 +21,7 @@ Please help me:
 I want to ensure my IG is publication-ready before proceeding.
 ```
 
-### Final Review and Quality Check
+#### Final Review and Quality Check
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist.
@@ -38,7 +38,7 @@ Please help me:
 I want to catch any issues before publication.
 ```
 
-### Publication Checklist Creation
+#### Publication Checklist Creation
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist.
@@ -55,9 +55,9 @@ Please help me:
 I want a systematic approach to publication.
 ```
 
-## 🚀 Publication Process
+### 🚀 Publication Process
 
-### IG Publisher Configuration
+#### IG Publisher Configuration
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. IG Publisher Configuration Specialist.
@@ -74,7 +74,7 @@ Please help me:
 I want to configure IG Publisher correctly for successful publication.
 ```
 
-### Publication Execution
+#### Publication Execution
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist.
@@ -91,7 +91,7 @@ Please help me:
 I want to successfully publish my IG without issues.
 ```
 
-### Publication Output Validation
+#### Publication Output Validation
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. Validation and QA Specialist.
@@ -108,9 +108,9 @@ Please help me:
 I want to verify my publication output is correct and complete.
 ```
 
-## 🌐 Deployment and Hosting
+### 🌐 Deployment and Hosting
 
-### Deployment Strategy Planning
+#### Deployment Strategy Planning
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. Hosting and Infrastructure Specialist.
@@ -127,7 +127,7 @@ Please help me:
 I want to ensure successful deployment and availability.
 ```
 
-### Hosting Platform Selection
+#### Hosting Platform Selection
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. Hosting and Infrastructure Specialist.
@@ -144,7 +144,7 @@ Please help me:
 I want to select a hosting platform that meets my requirements.
 ```
 
-### Deployment Configuration
+#### Deployment Configuration
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. Hosting and Infrastructure Specialist.
@@ -161,9 +161,9 @@ Please help me:
 I want to configure deployment for reliability and security.
 ```
 
-## 🔧 Post-Publication Management
+### 🔧 Post-Publication Management
 
-### Publication Monitoring
+#### Publication Monitoring
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. Hosting and Infrastructure Specialist.
@@ -180,7 +180,7 @@ Please help me:
 I want to ensure my published IG is reliable and performant.
 ```
 
-### Maintenance and Updates
+#### Maintenance and Updates
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist.
@@ -197,7 +197,7 @@ Please help me:
 I want to ensure my published IG remains current and useful.
 ```
 
-### User Support and Documentation
+#### User Support and Documentation
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist.
@@ -214,9 +214,9 @@ Please help me:
 I want to ensure users can effectively use my published IG.
 ```
 
-## 📊 Publication Analytics and Metrics
+### 📊 Publication Analytics and Metrics
 
-### Publication Success Metrics
+#### Publication Success Metrics
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist.
@@ -233,7 +233,7 @@ Please help me:
 I want to measure the success of my IG publication.
 ```
 
-### User Engagement Tracking
+#### User Engagement Tracking
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist.
@@ -250,9 +250,9 @@ Please help me:
 I want to understand how users engage with my published IG.
 ```
 
-## 🔒 Security and Compliance
+### 🔒 Security and Compliance
 
-### Publication Security
+#### Publication Security
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. Security and Compliance Specialist.
@@ -269,7 +269,7 @@ Please help me:
 I want to ensure my published IG is secure and compliant.
 ```
 
-### Compliance and Governance
+#### Compliance and Governance
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. Security and Compliance Specialist.
@@ -286,9 +286,9 @@ Please help me:
 I want to ensure my published IG meets all compliance requirements.
 ```
 
-## 🤖 LLM-Assisted Publishing
+### 🤖 LLM-Assisted Publishing
 
-### LLM-Enhanced Publication
+#### LLM-Enhanced Publication
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. LLM Integration Specialist.
@@ -305,7 +305,7 @@ Please help me:
 I want to use LLMs to [describe your LLM goals] while maintaining [describe your quality standards].
 ```
 
-### Publication Prompt Design
+#### Publication Prompt Design
 
 ```plaintext
 You are a FHIR Implementation Guide Publishing and Deployment Specialist. LLM Integration Specialist.
@@ -324,7 +324,7 @@ I want to design prompts that produce successful publication results.
 
 ---
 
-## 💡 Tips for Using These Prompts
+### 💡 Tips for Using These Prompts
 
 1. **Customize the prompts** by replacing the bracketed text with your specific details
 2. **Provide context** about your IG components, publication goals, and deployment requirements
@@ -332,15 +332,15 @@ I want to design prompts that produce successful publication results.
 4. **Save successful prompts** for future use and share them with the community
 5. **Iterate and refine** prompts based on the responses you receive
 
-## 🤖 LLM-Specific Tips for Publishing
+### 🤖 LLM-Specific Tips for Publishing
 
-### Three Core Prompting Principles (Based on Real-World Experience)
+#### Three Core Prompting Principles (Based on Real-World Experience)
 
 1. **Be Descriptive** - Clearly explain what you want to publish and include examples when possible
 2. **Be Specific** - Focus the LLM on specific publication tasks, avoid vague requests
 3. **Break It Down** - Divide complex publication into smaller, manageable steps
 
-### LLM Integration Strategies
+#### LLM Integration Strategies
 
 - **Start with simple publication tasks** and build complexity iteratively
 - **Use the same LLM consistently** for related publication tasks to maintain context

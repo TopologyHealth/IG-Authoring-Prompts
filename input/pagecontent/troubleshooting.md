@@ -1,10 +1,10 @@
-# Troubleshooting Prompts
+## Troubleshooting Prompts
 
 This section contains prompts to help you troubleshoot common issues in FHIR Implementation Guide development. Use these prompts with AI assistants to quickly identify and resolve problems.
 
-## 🔍 Problem Identification and Analysis
+### 🔍 Problem Identification and Analysis
 
-### Issue Analysis Framework
+#### Issue Analysis Framework
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -21,7 +21,7 @@ Please help me:
 I want to resolve this issue quickly and understand what went wrong.
 ```
 
-### Error Message Interpretation
+#### Error Message Interpretation
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -40,7 +40,7 @@ Please help me:
 I need to understand and resolve this error quickly.
 ```
 
-### Symptom-Based Troubleshooting
+#### Symptom-Based Troubleshooting
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -57,9 +57,9 @@ Please help me:
 I want to systematically identify and resolve the underlying issue.
 ```
 
-## 🛠️ Tool-Specific Troubleshooting
+### 🛠️ Tool-Specific Troubleshooting
 
-### SUSHI Issues
+#### SUSHI Issues
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist and SUSHI Troubleshooting Specialist.
@@ -78,7 +78,7 @@ Please help me:
 I need to get SUSHI processing my IG correctly.
 ```
 
-### IG Publisher Problems
+#### IG Publisher Problems
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist and IG Publisher Debugging Specialist.
@@ -97,7 +97,7 @@ Please help me:
 I need to successfully build my IG with IG Publisher.
 ```
 
-### FSH Syntax Errors
+#### FSH Syntax Errors
 
 ```plaintext
 You are a FHIR Validation & QA Specialist for [FHIR R4/R5] and a FHIR Implementation Guide Troubleshooting Specialist.
@@ -125,9 +125,9 @@ Please:
 4. State if the fix should pass `sushi` + IGPublisher validation; if unsure, note assumptions.
 ```
 
-## 📋 Common Problem Categories
+### 📋 Common Problem Categories
 
-### Configuration Issues
+#### Configuration Issues
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist and Configuration & Dependency Management Specialist.
@@ -144,7 +144,7 @@ Please help me:
 I want to fix my configuration and prevent future issues.
 ```
 
-### Dependency and Reference Problems
+#### Dependency and Reference Problems
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist and Configuration & Dependency Management Specialist.
@@ -161,7 +161,7 @@ Please help me:
 I want to resolve these dependency issues and ensure proper references.
 ```
 
-### Resource and File Issues
+#### Resource and File Issues
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -180,9 +180,9 @@ Please help me:
 I want to fix these file issues and improve organization.
 ```
 
-## 🚨 Critical Issues and Emergencies
+### 🚨 Critical Issues and Emergencies
 
-### Build Failures
+#### Build Failures
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -201,7 +201,7 @@ Please help me:
 I need to get my IG building again as quickly as possible.
 ```
 
-### Validation Failures
+#### Validation Failures
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -218,7 +218,7 @@ Please help me:
 I need to get my IG passing validation immediately.
 ```
 
-### Publication Blockers
+#### Publication Blockers
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -235,9 +235,9 @@ Please help me:
 I need to resolve this publication blocker immediately.
 ```
 
-## 🔧 Systematic Troubleshooting
+### 🔧 Systematic Troubleshooting
 
-### Troubleshooting Methodology
+#### Troubleshooting Methodology
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -254,7 +254,7 @@ Please help me:
 I want to be more systematic and efficient at troubleshooting.
 ```
 
-### Problem Prevention Strategies
+#### Problem Prevention Strategies
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -271,7 +271,7 @@ Please help me:
 I want to prevent problems before they occur.
 ```
 
-### Troubleshooting Documentation
+#### Troubleshooting Documentation
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -288,9 +288,9 @@ Please help me:
 I want to create comprehensive troubleshooting documentation.
 ```
 
-## 🤖 LLM-Assisted Troubleshooting
+### 🤖 LLM-Assisted Troubleshooting
 
-### LLM-Enhanced Problem Solving
+#### LLM-Enhanced Problem Solving
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -307,7 +307,7 @@ Please help me:
 I want to use LLMs to [describe your LLM goals] while maintaining [describe your quality standards].
 ```
 
-### Troubleshooting Prompt Design
+#### Troubleshooting Prompt Design
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -324,9 +324,9 @@ Please help me:
 I want to design prompts that produce effective troubleshooting results.
 ```
 
-## 📚 Troubleshooting Resources
+### 📚 Troubleshooting Resources
 
-### Tool and Resource Identification
+#### Tool and Resource Identification
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -343,7 +343,7 @@ Please help me:
 I want to build a comprehensive troubleshooting toolkit.
 ```
 
-### Community and Support Resources
+#### Community and Support Resources
 
 ```plaintext
 You are a FHIR Implementation Guide Troubleshooting Specialist.
@@ -362,7 +362,7 @@ I want to build a support network for troubleshooting help.
 
 ---
 
-## 💡 Tips for Using These Prompts
+### 💡 Tips for Using These Prompts
 
 1. **Customize the prompts** by replacing the bracketed text with your specific details
 2. **Provide context** about your IG components, tools, and specific issues
@@ -370,15 +370,15 @@ I want to build a support network for troubleshooting help.
 4. **Save successful prompts** for future use and share them with the community
 5. **Iterate and refine** prompts based on the responses you receive
 
-## 🤖 LLM-Specific Tips for Troubleshooting
+### 🤖 LLM-Specific Tips for Troubleshooting
 
-### Three Core Prompting Principles (Based on Real-World Experience)
+#### Three Core Prompting Principles (Based on Real-World Experience)
 
 1. **Be Descriptive** - Clearly explain your issue and include specific error messages when possible
 2. **Be Specific** - Focus the LLM on specific troubleshooting tasks, avoid vague requests
 3. **Break It Down** - Divide complex troubleshooting into smaller, manageable steps
 
-### LLM Integration Strategies
+#### LLM Integration Strategies
 
 - **Start with simple troubleshooting tasks** and build complexity iteratively
 - **Use the same LLM consistently** for related troubleshooting tasks to maintain context

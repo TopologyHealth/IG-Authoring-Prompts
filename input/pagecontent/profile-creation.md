@@ -1,10 +1,10 @@
-# Profile Creation Prompts
+## Profile Creation Prompts
 
 This section contains prompts to help you create and design FHIR profiles. Use these prompts with AI assistants to guide your profile development process.
 
-## 🏗️ Profile Design and Planning
+### 🏗️ Profile Design and Planning
 
-### Profile Scope Definition
+#### Profile Scope Definition
 
 ```plaintext
 You are a FHIR Implementation Guide Authoring Expert specializing in FHIR Shorthand (FSH) and IGPublisher.
@@ -23,7 +23,7 @@ Please help me:
 My profile will be used by [describe your implementers] for [describe your specific scenarios].
 ```
 
-### Profile Requirements Analysis
+#### Profile Requirements Analysis
 
 ```plaintext
 You are a FHIR Profile Requirements Analyst specializing in translating user needs into FHIR profiles.
@@ -42,9 +42,9 @@ Please help me:
 I want to ensure my profile is both flexible and constrained appropriately.
 ```
 
-## 🔧 Profile Structure and Elements
+### 🔧 Profile Structure and Elements
 
-### Element Selection and Organization
+#### Element Selection and Organization
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist with expertise in designing profile structures using FSH.
@@ -63,7 +63,7 @@ Please help me:
 My profile should be [simple/complex] and focus on [describe your primary use case].
 ```
 
-### Element Constraints and Bindings
+#### Element Constraints and Bindings
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist with expertise in creating valid FSH profiles for IGPublisher.
@@ -82,9 +82,9 @@ Please help me:
 I want my profile to be [describe your constraint philosophy].
 ```
 
-## 📊 Cardinality and Slicing
+### 📊 Cardinality and Slicing
 
-### Cardinality Planning
+#### Cardinality Planning
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist experienced in cardinality planning for FHIR profiles.
@@ -103,7 +103,7 @@ Please help me:
 My profile will be used in [describe your scenarios] where [describe your data availability].
 ```
 
-### Slicing Strategy
+#### Slicing Strategy
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist with expertise in slicing strategies for FHIR profiles.
@@ -122,9 +122,9 @@ Please help me:
 My slices will represent [describe your different categories] and need to be [describe your relationship].
 ```
 
-## 🔌 Extensions and Modifiers
+### 🔌 Extensions and Modifiers
 
-### Extension Integration
+#### Extension Integration
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist experienced in integrating extensions into FHIR profiles.
@@ -143,7 +143,7 @@ Please help me:
 My extensions will support [describe your specific functionality] and be used by [describe your audience].
 ```
 
-### Modifier Extension Usage
+#### Modifier Extension Usage
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist knowledgeable in modifier extensions and their appropriate use.
@@ -162,9 +162,9 @@ Please help me:
 My modifier extensions will change the interpretation of [describe your elements] to mean [describe your modified meaning].
 ```
 
-## 🔗 Profile Relationships
+### 🔗 Profile Relationships
 
-### Profile Inheritance and Composition
+#### Profile Inheritance and Composition
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist with expertise in profile inheritance and composition.
@@ -183,7 +183,7 @@ Please help me:
 My profiles will be used together to support [describe your complete workflow].
 ```
 
-### Reference Constraints
+#### Reference Constraints
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist experienced in defining reference constraints.
@@ -202,9 +202,9 @@ Please help me:
 My profile references will support [describe your workflow] and ensure [describe your data integrity].
 ```
 
-## 📝 Profile Documentation
+### 📝 Profile Documentation
 
-### Profile Narrative Content
+#### Profile Narrative Content
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist skilled in writing clear and comprehensive profile documentation.
@@ -223,7 +223,7 @@ Please help me:
 I want my profile documentation to be [describe your documentation goals].
 ```
 
-### Profile Invariant Creation
+#### Profile Invariant Creation
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist with expertise in FHIRPath/XPath and invariant authoring in FHIR Shorthand (FSH). Ensure outputs meet [FHIR R4/R5] conformance and pass `sushi` and IGPublisher validation without errors.
@@ -259,7 +259,7 @@ Usage:
 * name obeys ca-core-pat-1
 ```
 
-### Profile Review Checklist
+#### Profile Review Checklist
 
 ```plaintext
 You are a FHIR Profile Authoring Specialist tasked with reviewing profiles for quality and compliance.
@@ -281,7 +281,7 @@ I want my profile to be [describe your quality goals].
 
 ---
 
-## 💡 Tips for Using These Prompts
+### 💡 Tips for Using These Prompts
 
 1. **Start with scope definition** to ensure your profile meets actual needs
 2. **Consider your audience** - technical vs. clinical implementers have different needs
@@ -289,16 +289,16 @@ I want my profile to be [describe your quality goals].
 4. **Document everything** - clear documentation is crucial for adoption
 5. **Test thoroughly** - validation catches many issues before they become problems
 
-## 🤖 LLM-Specific Tips for Profile Creation
+### 🤖 LLM-Specific Tips for Profile Creation
 
-### FSH Development with LLMs
+#### FSH Development with LLMs
 
 - **Break down complex profiles** into smaller, focused prompts
 - **Use LLMs for repetitive tasks** like RuleSet application across multiple profiles
 - **Validate LLM-generated FSH** with SUSHI before committing
 - **Provide existing FSH examples** to improve LLM output quality
 
-### Common LLM Pitfalls to Avoid
+#### Common LLM Pitfalls to Avoid
 
 - **Don't ask for complete profiles** in one prompt - break them down
 - **Always validate FSH syntax** - LLMs can make syntax errors
