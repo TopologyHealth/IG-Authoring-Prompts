@@ -14,7 +14,7 @@ This IG contains practical prompts and templates that you can use with AI assist
 
 This guide was created based on the content from Alex Goel's FHIR DevDays 2025 Presentation **LLMs for jurisdictional FHIR IG authorship**:
 
-<iframe width="560" height="315" src="https://youtu.be/JUK73n0Egu4" title="LLMs for jurisdictional FHIR IG authorship - on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JUK73n0Egu4" title="LLMs for jurisdictional FHIR IG authorship - on YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 Authoring FHIR Implementation Guides is complex and time-consuming. Alex shows how LLMs can streamline IG development, profile generation, and harmonization efforts, using real-world healthcare implementation as a case study.
 
