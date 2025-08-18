@@ -53,7 +53,7 @@ A **FHIR Implementation Guide (IG)** is a set of rules, examples, and documentat
 
 | Category | Description |
 |----------|-------------|
-| 🚀 [Getting Started](getting-started.html) | For new IG projects — setup, planning, and initial configuration. |
+| 🚀 [Getting Started](getting-started.html) | Setup, planning, and initial configuration for new IG projects. |
 | 🔧 [Profile Creation](profile-creation.html) | Designing and constraining FHIR profiles, applying cardinalities, and slicing. |
 | 🔌 [Extension Definition](extension-definition.html) | Creating and documenting reusable extensions with accurate bindings. |
 | 📋 [Value Set Creation](value-set-creation.html) | Building value sets from spreadsheets or existing code systems. |
