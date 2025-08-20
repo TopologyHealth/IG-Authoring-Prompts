@@ -1,14 +1,14 @@
 /* Product families should override the following colors with family-specific colors */
 :root {
     --navbar-bg-color: #222373; /* 2. Header container color - Updated to blue */
-    --footer-bg-color: #222373; /* 3. Footer background color - Updated to blue */
+    --footer-bg-color: #707070; /* 3. Footer background color - Updated to blue */
     --footer-container-bg-color: #222373; /* 4. Footer container color - Updated to blue */
     --btn-hover-color: #e7bad7;  /* 6. Menu button hover color - Updated to pink */
   }
   
   /* Generic settings common to all HL7 IGs */
   :root {
-    --stripe-bg-color: #222373; /* 5. Header strip color - Updated to blue */
+    --stripe-bg-color: #999999; /* 5. Header strip color - Updated to blue */
     --btn-active-color: #222373; /* 7. Menu button active color - Updated to blue */
     --btn-text-color: #ffffff; /* 8. Menu button text color - Updated to white for better contrast */
     --stu-note-background-color: #fef7fd; /* 19. (STU) Note box background color - Updated to light pink */
@@ -16,8 +16,8 @@
   }
   
   #segment-footer > .container {background-color: #222373;}
-        .navbar-inverse {background-color: #222373;}
-  
+      .navbar-inverse {background-color: #222373;}
+      
   #hl7-nav {
     line-height: 50px;
     float: left;
@@ -32,7 +32,6 @@
     float: left;
     margin-left: 6px;
   }
-
   #project-nav {
     line-height: 50px;
     float: left;
@@ -43,62 +42,4 @@
   #project-logo {
     float: left;
     margin-left: 3px;
-  }
-
-  /* Custom header with logo and title side by side */
-  #custom-header {
-    background-color: #f8f9fa !important;
-    border-bottom: 2px solid #222373 !important;
-    padding: 20px 0 !important;
-    margin-bottom: 20px !important;
-  }
-
-  .header-content {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 30px !important;
-  }
-
-  .logo-section {
-    flex-shrink: 0 !important;
-  }
-
-  .title-section {
-    flex-grow: 1 !important;
-  }
-
-  #project-title {
-    color: #222373 !important;
-    font-size: 2.5em !important;
-    font-weight: bold !important;
-    margin: 0 !important;
-    text-align: left !important;
-  }
-
-  #project-version {
-    color: #666 !important;
-    font-size: 1.2em !important;
-    margin: 10px 0 0 0 !important;
-    text-align: left !important;
-    font-weight: 500 !important;
-  }
-
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .header-content {
-      flex-direction: column;
-      text-align: center;
-      gap: 15px;
-    }
-    
-    #project-title {
-      font-size: 2em;
-      text-align: center;
-    }
-    
-    #project-version {
-      font-size: 1em;
-      text-align: center;
-    }
   }
