@@ -33,7 +33,7 @@ Here's a quick "Do & Don't" reference for effective prompt writing:
 
 #### Good Prompt Checklist
 
-<div>{% include goodpromptchecklist.svg %}</div>
+![Good Prompt Checklist](../images-source/goodpromptchecklist.svg)
 <br clear="all"/>
 
 ### New to FHIR IGs?
