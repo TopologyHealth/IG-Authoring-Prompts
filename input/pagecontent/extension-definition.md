@@ -1,6 +1,20 @@
-## Extension Definition Prompts
-
 This section contains prompts to help you create and design FHIR extensions. Use these prompts with AI assistants to guide your extension development process.
+
+### 🤖 LLM-Specific Tips for Extension Development
+
+#### Extension Generation with LLMs
+
+- **Provide existing extension examples** to improve LLM output quality
+- **Use LLMs for repetitive extension patterns** across multiple resources
+- **Validate extension context** - LLMs can suggest inappropriate placement
+- **Test extension integration** with profiles to ensure proper usage
+
+#### LLM-Assisted Extension Workflows
+
+- **Generate extension structure** with LLMs, then refine manually
+- **Use LLMs for extension documentation** and examples
+- **Validate extension constraints** against FHIR best practices
+- **Iterate on extension design** using LLM feedback
 
 ### 🏗️ Extension Design and Planning
 
@@ -172,21 +186,5 @@ I want my extension to evolve with [describe your changing needs] while maintain
 3. **Keep extensions focused** - one extension should serve one clear purpose
 4. **Document everything** - clear documentation is crucial for adoption
 5. **Test thoroughly** - validation catches many issues before they become problems
-
-### 🤖 LLM-Specific Tips for Extension Development
-
-#### Extension Generation with LLMs
-
-- **Provide existing extension examples** to improve LLM output quality
-- **Use LLMs for repetitive extension patterns** across multiple resources
-- **Validate extension context** - LLMs can suggest inappropriate placement
-- **Test extension integration** with profiles to ensure proper usage
-
-#### LLM-Assisted Extension Workflows
-
-- **Generate extension structure** with LLMs, then refine manually
-- **Use LLMs for extension documentation** and examples
-- **Validate extension constraints** against FHIR best practices
-- **Iterate on extension design** using LLM feedback
 
 

@@ -1,6 +1,25 @@
-## Getting Started with FHIR IGs
-
 This section contains prompts to help you get started with FHIR Implementation Guide development. Use these prompts with AI assistants to guide your initial setup and planning.
+
+### 🤖 LLM-Specific Tips for Getting Started
+
+#### Role Assumption
+
+Unless otherwise specified, you should specify in the prompt that the LLM is acting as a **FHIR Implementation Guide Authoring Expert** with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
+
+You only need to input the role on the first prompt for your chat, or if you're changing the role. If you've already specified a role, feel free to remove it from the prompt.
+
+#### Three Core Prompting Principles (Based on Real-World Experience)
+
+1. **Be Descriptive** - Clearly explain what you want and include examples when possible
+2. **Be Specific** - Focus the LLM on a tightly scoped task, avoid vague requests
+3. **Break It Down** - Divide complex goals into smaller, manageable steps
+
+#### LLM Integration Strategies
+
+- **Start with simple prompts** and build complexity iteratively
+- **Use the same LLM consistently** for related tasks to maintain context
+- **Provide examples** of what you want to achieve
+- **Validate LLM outputs** against FHIR specifications and best practices
 
 ### 🏗️ Project Setup and Planning
 
@@ -193,26 +212,3 @@ I want to create an IG that others can easily understand and implement.
 3. **Ask follow-up questions** to dive deeper into specific areas
 4. **Save successful prompts** for future use and share them with the community
 5. **Iterate and refine** prompts based on the responses you receive
-
-### 🤖 LLM-Specific Tips for Getting Started
-
-#### Role Assumption
-
-Unless otherwise specified, you should specify in the prompt that the LLM is acting as a **FHIR Implementation Guide Authoring Expert** with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
-
-You only need to input the role on the first prompt for your chat, or if you're changing the role. If you've already specified a role, feel free to remove it from the prompt.
-
-#### Three Core Prompting Principles (Based on Real-World Experience)
-
-1. **Be Descriptive** - Clearly explain what you want and include examples when possible
-2. **Be Specific** - Focus the LLM on a tightly scoped task, avoid vague requests
-3. **Break It Down** - Divide complex goals into smaller, manageable steps
-
-#### LLM Integration Strategies
-
-- **Start with simple prompts** and build complexity iteratively
-- **Use the same LLM consistently** for related tasks to maintain context
-- **Provide examples** of what you want to achieve
-- **Validate LLM outputs** against FHIR specifications and best practices
-
-

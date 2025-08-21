@@ -1,5 +1,3 @@
-## Publishing & Deployment Prompts
-
 This section contains prompts to help you publish and deploy your FHIR Implementation Guide. Use these prompts with AI assistants to ensure successful publication and deployment of your IG.
 
 ### 📋 Pre-Publication Preparation

@@ -1,5 +1,3 @@
-## Prompt Templates
-
 This section provides reusable templates and guidelines for creating effective prompts for FHIR IG authoring. Use these templates as a starting point and customize them for your specific needs.
 
 ### 🚀 Three Core Prompting Principles (Based on Real-World Experience)

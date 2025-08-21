@@ -1,6 +1,20 @@
-## Validation & Testing Prompts
-
 This section contains prompts to help you validate and test your FHIR Implementation Guide. Use these prompts with AI assistants to ensure your IG meets quality standards and passes all validation checks.
+
+### 🤖 LLM-Specific Tips for Validation
+
+#### Three Core Prompting Principles (Based on Real-World Experience)
+
+1. **Be Descriptive** - Clearly explain what you want to validate and include examples when possible  
+2. **Be Specific** - Focus the LLM on specific validation tasks, avoid vague requests  
+3. **Break It Down** - Divide complex validation into smaller, manageable tasks  
+
+#### LLM Integration Strategies
+
+- **Start with simple validation tasks** and build complexity iteratively  
+- **Use the same LLM consistently** for related validation tasks to maintain context  
+- **Provide examples** of validation results you want to achieve  
+- **Validate LLM outputs** against FHIR specifications and your quality standards  
+
 
 ### 🔍 Validation Strategy and Planning
 
@@ -283,20 +297,3 @@ I want to design prompts that produce accurate validation results.
 3. **Ask follow-up questions** to dive deeper into specific validation areas  
 4. **Save successful prompts** for future use and share them with the community  
 5. **Iterate and refine** prompts based on the responses you receive  
-
-### 🤖 LLM-Specific Tips for Validation
-
-#### Three Core Prompting Principles (Based on Real-World Experience)
-
-1. **Be Descriptive** - Clearly explain what you want to validate and include examples when possible  
-2. **Be Specific** - Focus the LLM on specific validation tasks, avoid vague requests  
-3. **Break It Down** - Divide complex validation into smaller, manageable tasks  
-
-#### LLM Integration Strategies
-
-- **Start with simple validation tasks** and build complexity iteratively  
-- **Use the same LLM consistently** for related validation tasks to maintain context  
-- **Provide examples** of validation results you want to achieve  
-- **Validate LLM outputs** against FHIR specifications and your quality standards  
-
-

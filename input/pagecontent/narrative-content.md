@@ -1,6 +1,19 @@
-## Narrative Content Prompts
+This section contains prompts to help you write effective narrative content for your FHIR Implementation Guide. Use these prompts with AI assistants to create clear, comprehensive documentation. Writing clear and explicit documentation is essential for ensuring that implementers understanding how the IG authors (you) intended a given profile or artifact to be used.
 
-This section contains prompts to help you write effective narrative content for your FHIR Implementation Guide. Use these prompts with AI assistants to create clear, comprehensive documentation.
+### 🤖 LLM-Specific Tips for Narrative Content
+
+#### Three Core Prompting Principles (Based on Real-World Experience)
+
+1. **Be Descriptive** - Clearly explain what you want and include the [examples](examples-creation.html) you've generated when possible
+2. **Be Specific** - Focus the LLM on a tightly scoped task, avoid vague requests
+3. **Break It Down** - Divide complex content creation into smaller, manageable sections
+
+#### LLM Integration Strategies
+
+- **Start with content outlines** and build detail iteratively
+- **Use the same LLM consistently** for related content to maintain style consistency
+- **Provide examples** of the writing style and tone you want
+- **Validate LLM outputs** against FHIR specifications and your IG requirements
 
 ### 📝 Content Planning and Structure
 
@@ -278,20 +291,3 @@ I want to refine my content to [describe your refinement goals].
 3. **Ask follow-up questions** to dive deeper into specific content areas
 4. **Save successful prompts** for future use and share them with the community
 5. **Iterate and refine** prompts based on the responses you receive
-
-### 🤖 LLM-Specific Tips for Narrative Content
-
-#### Three Core Prompting Principles (Based on Real-World Experience)
-
-1. **Be Descriptive** - Clearly explain what you want and include examples when possible
-2. **Be Specific** - Focus the LLM on a tightly scoped task, avoid vague requests
-3. **Break It Down** - Divide complex content creation into smaller, manageable sections
-
-#### LLM Integration Strategies
-
-- **Start with content outlines** and build detail iteratively
-- **Use the same LLM consistently** for related content to maintain style consistency
-- **Provide examples** of the writing style and tone you want
-- **Validate LLM outputs** against FHIR specifications and your IG requirements
-
-

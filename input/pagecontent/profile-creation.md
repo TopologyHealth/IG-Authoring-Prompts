@@ -1,6 +1,20 @@
-## Profile Creation Prompts
-
 This section contains prompts to help you create and design FHIR profiles. Use these prompts with AI assistants to guide your profile development process.
+
+### 🤖 LLM-Specific Tips for Profile Creation
+
+#### FSH Development with LLMs
+
+- **Break down complex profiles** into smaller, focused prompts
+- **Use LLMs for repetitive tasks** like RuleSet application across multiple profiles
+- **Validate LLM-generated FSH** with SUSHI before committing
+- **Provide existing FSH examples** to improve LLM output quality
+
+#### Common LLM Pitfalls to Avoid
+
+- **Don't ask for complete profiles** in one prompt - break them down
+- **Always validate FSH syntax** - LLMs can make syntax errors
+- **Provide context** about your IG and existing profiles
+- **Use iterative prompting** for complex profile structures
 
 ### 🏗️ Profile Design and Planning
 
@@ -288,21 +302,3 @@ I want my profile to be [describe your quality goals].
 3. **Balance constraints** - too many constraints limit flexibility, too few reduce interoperability
 4. **Document everything** - clear documentation is crucial for adoption
 5. **Test thoroughly** - validation catches many issues before they become problems
-
-### 🤖 LLM-Specific Tips for Profile Creation
-
-#### FSH Development with LLMs
-
-- **Break down complex profiles** into smaller, focused prompts
-- **Use LLMs for repetitive tasks** like RuleSet application across multiple profiles
-- **Validate LLM-generated FSH** with SUSHI before committing
-- **Provide existing FSH examples** to improve LLM output quality
-
-#### Common LLM Pitfalls to Avoid
-
-- **Don't ask for complete profiles** in one prompt - break them down
-- **Always validate FSH syntax** - LLMs can make syntax errors
-- **Provide context** about your IG and existing profiles
-- **Use iterative prompting** for complex profile structures
-
-

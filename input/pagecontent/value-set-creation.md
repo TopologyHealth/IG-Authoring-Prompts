@@ -1,6 +1,20 @@
-## Value Set Creation Prompts
-
 This section contains prompts to help you create and manage FHIR value sets. Use these prompts with AI assistants to guide your value set development process.
+
+### 🤖 LLM-Specific Tips for Value Set Creation
+
+#### Value Set Generation from Structured Data
+
+- **Provide Excel or structured data** to improve LLM accuracy  
+- **Use LLMs for code system selection** and evaluation  
+- **Generate FSH ValueSets directly** from structured data sources  
+- **Validate terminology bindings** against FHIR specifications  
+
+#### LLM-Assisted Terminology Workflows
+
+- **Break down large value sets** into manageable components  
+- **Use LLMs for terminology mapping** between different code systems  
+- **Generate value set documentation** and examples with LLMs  
+- **Iterate on value set design** using LLM feedback and validation  
 
 ### 🏗️ Value Set Design and Planning
 
@@ -310,21 +324,3 @@ My value set mapping should support [describe your integration needs] and be mai
 3. **Balance comprehensiveness** - too many codes can overwhelm, too few may not cover needs  
 4. **Document everything** - clear documentation is crucial for adoption  
 5. **Test thoroughly** - validation catches many issues before they become problems  
-
-### 🤖 LLM-Specific Tips for Value Set Creation
-
-#### Value Set Generation from Structured Data
-
-- **Provide Excel or structured data** to improve LLM accuracy  
-- **Use LLMs for code system selection** and evaluation  
-- **Generate FSH ValueSets directly** from structured data sources  
-- **Validate terminology bindings** against FHIR specifications  
-
-#### LLM-Assisted Terminology Workflows
-
-- **Break down large value sets** into manageable components  
-- **Use LLMs for terminology mapping** between different code systems  
-- **Generate value set documentation** and examples with LLMs  
-- **Iterate on value set design** using LLM feedback and validation  
-
-

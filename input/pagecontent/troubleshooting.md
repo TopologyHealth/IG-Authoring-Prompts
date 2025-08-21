@@ -1,6 +1,19 @@
-## Troubleshooting Prompts
-
 This section contains prompts to help you troubleshoot common issues in FHIR Implementation Guide development. Use these prompts with AI assistants to quickly identify and resolve problems.
+
+### 🤖 LLM-Specific Tips for Troubleshooting
+
+#### Three Core Prompting Principles (Based on Real-World Experience)
+
+1. **Be Descriptive** - Clearly explain your issue and include specific error messages when possible
+2. **Be Specific** - Focus the LLM on specific troubleshooting tasks, avoid vague requests
+3. **Break It Down** - Divide complex troubleshooting into smaller, manageable steps
+
+#### LLM Integration Strategies
+
+- **Start with simple troubleshooting tasks** and build complexity iteratively
+- **Use the same LLM consistently** for related troubleshooting tasks to maintain context
+- **Provide examples** of troubleshooting results you want to achieve
+- **Validate LLM outputs** against FHIR specifications and your troubleshooting standards
 
 ### 🔍 Problem Identification and Analysis
 
@@ -369,20 +382,3 @@ I want to build a support network for troubleshooting help.
 3. **Ask follow-up questions** to dive deeper into specific troubleshooting areas
 4. **Save successful prompts** for future use and share them with the community
 5. **Iterate and refine** prompts based on the responses you receive
-
-### 🤖 LLM-Specific Tips for Troubleshooting
-
-#### Three Core Prompting Principles (Based on Real-World Experience)
-
-1. **Be Descriptive** - Clearly explain your issue and include specific error messages when possible
-2. **Be Specific** - Focus the LLM on specific troubleshooting tasks, avoid vague requests
-3. **Break It Down** - Divide complex troubleshooting into smaller, manageable steps
-
-#### LLM Integration Strategies
-
-- **Start with simple troubleshooting tasks** and build complexity iteratively
-- **Use the same LLM consistently** for related troubleshooting tasks to maintain context
-- **Provide examples** of troubleshooting results you want to achieve
-- **Validate LLM outputs** against FHIR specifications and your troubleshooting standards
-
-

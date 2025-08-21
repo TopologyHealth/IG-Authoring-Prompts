@@ -1,6 +1,4 @@
-## FHIR IG Prompt Library
-
-Welcome to the FHIR Implementation Guide Prompt Library! This resource provides curated prompts and guidance to help you author high-quality FHIR Implementation Guides using LLMs.
+Welcome to the FHIR Implementation Guide Prompt Library! This resource provides curated prompts and guidance to help you author high-quality FHIR Implementation Guides using LLMs. Feel free to visit the [GitHub](https://github.com/TopologyHealth/IG-Authoring-Prompts) page to suggest items for inclusion, or submit a change yourself.
 
 ### 🎯 Purpose
 

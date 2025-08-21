@@ -1,5 +1,3 @@
-## Examples Creation Prompts
-
 This section contains prompts to help you create effective FHIR examples for your Implementation Guide. Based on real-world experience, these prompts will guide you through creating realistic, useful examples that demonstrate proper usage of your profiles, extensions, and value sets.
 
 ### 🎯 Why Examples Matter
@@ -427,5 +425,3 @@ I want my example documentation to be [describe your documentation goals].
 5. **Test examples thoroughly** - validate with SUSHI and IG Publisher
 6. **Create ExampleScenarios** - document how resources work together in workflows
 7. **Reference existing instances** - build ExampleScenarios from your patient-based examples
-
-

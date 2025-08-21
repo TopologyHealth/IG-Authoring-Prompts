@@ -1,5 +1,3 @@
-## LLM Strategy & Integration
-
 This section provides comprehensive guidance for integrating Large Language Models (LLMs) into your FHIR IG authoring workflow. Based on real-world experience from jurisdictional FHIR IG development, these strategies will help you leverage LLMs effectively while maintaining quality and FHIR compliance. This page contains what might be used a system prompt for developing an LLM based assistant for FHIR IG Authoring.
 
 ### 🎯 Purpose: Developing LLM-Based FHIR IG Authoring Assistants
