@@ -14,35 +14,35 @@ on:
   pull_request:
     branches: [ master ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-     
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-      - name: Update the image to the latest publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: ./_updatePublisher.sh --force
+      # Ensure scripts are present (optional if you committed them)
+      - name: Fetch publisher scripts (if missing)
+        run: |
+          [ -f _updatePublisher.sh ] || curl -sSL https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main/_updatePublisher.sh -o _updatePublisher.sh
+          [ -f _genonce.sh ] || curl -sSL https://raw.githubusercontent.com/HL7/ig-publisher-scripts/main/_genonce.sh -o _genonce.sh
+          chmod +x _updatePublisher.sh _genonce.sh
 
-      - name: Run sushi to generate the ig.ini file
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: sushi
+      - name: Update IG Publisher
+        run: bash -euo pipefail _updatePublisher.sh -y
 
-      - name: Run the IG publisher
-        uses: docker://hl7fhir/ig-publisher-base:latest
-        with:
-          args: ./_genonce.sh -no-sushi
-          
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      # If you use FHIR Shorthand, run SUSHI first to generate ig.ini, etc.
+      # - name: Run SUSHI
+      #   run: npx -y fsh-sushi
+
+      - name: Build IG (genonce)
+        run: bash -euo pipefail _genonce.sh
+
+      - name: Verify output exists
+        run: test -f output/index.html || { echo "No IG output produced"; exit 1; }
+
+      - name: Deploy to GitHub Pages
+        if: success()
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
