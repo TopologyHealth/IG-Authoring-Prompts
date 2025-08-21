@@ -36,3 +36,63 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
           enable_jekyll: false
+name: Build & Deploy FHIR IG
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Make publisher scripts executable (no-op if already)
+        run: chmod +x _updatePublisher.sh _genonce.sh || true
+
+      - name: Update the image to the latest publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ./_updatePublisher.sh --force
+
+      - name: Run SUSHI to generate the ig.ini file
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: sushi
+
+      - name: Run the IG Publisher
+        uses: docker://hl7fhir/ig-publisher-base:latest
+        with:
+          args: ./_genonce.sh -no-sushi
+
+      - name: Verify generated output contains index.html
+        run: |
+          echo "Generated files (top-level):"
+          ls -la output || true
+          echo "A few key files (2 levels):"
+          find output -maxdepth 2 -type f | sort | head -n 200
+          if [ ! -f output/index.html ]; then
+            echo "::error::output/index.html not found. The site cannot be deployed."
+            exit 1
+          fi
+
+      - name: Upload build output for PRs (debug/preview)
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-output-pr-${{ github.run_id }}
+          path: output
+
+      - name: Deploy to GitHub Pages (gh-pages branch)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./output
+          enable_jekyll: false
