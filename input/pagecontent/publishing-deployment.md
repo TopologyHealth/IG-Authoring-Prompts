@@ -1,4 +1,6 @@
-This section contains prompts to help you publish and deploy your FHIR Implementation Guide. Use these prompts with AI assistants to ensure successful publication and deployment of your IG.
+This section contains prompts to help you publish and deploy your FHIR Implementation Guide. Use these prompts with AI assistants to ensure successful publication and deployment of your IG. Ultimately for publishing an LLM code assistant can likely help run and publish your IG successfully. However there are some publishing tasks it might still not be able to completely do for you like publishing your guide on [https://build.fhir.org/](https://build.fhir.org/) or a GitHub Pages site. 
+
+> I recommend Elliot Silver's guide on [How to Publish a FHIR Implementation Guide](https://build.fhir.org/ig/ElliotSilver/how-to-publish/) to learn how to publish a GitHub guide. Also check out [his blog](https://www.argentixinfo.com/archives/156) on setting up webhooks to get your CI Build (web hosted build) up and running.
 
 ### 📋 Pre-Publication Preparation
 
