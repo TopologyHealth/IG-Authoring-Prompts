@@ -1,42 +1,38 @@
-name: CI
+name: Build & Deploy FHIR IG
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
-    branches: [ gh-pages ]
+    branches: [ main ]
   pull_request:
-    branches: [ gh-pages ]
+    branches: [ main ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+permissions:
+  contents: write
+
 jobs:
-  # This workflow contains a single job called "build"
   build:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
-     
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Update the image to the latest publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           args: ./_updatePublisher.sh --force
 
-      - name: Run sushi to generate the ig.ini file
+      - name: Run SUSHI to generate the ig.ini file
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           args: sushi
 
-      - name: Run the IG publisher
+      - name: Run the IG Publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           args: ./_genonce.sh -no-sushi
-          
-      - name: Deploy
+
+      - name: Deploy to GitHub Pages (gh-pages branch)
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./output
+          enable_jekyll: false
