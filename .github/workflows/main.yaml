@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ Create-FHIR-IG ]
   pull_request:
     branches: [ master ]
 
@@ -20,7 +20,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v2
 
       - name: Update the image to the latest publisher
         uses: docker://hl7fhir/ig-publisher-base:latest
