@@ -33,6 +33,8 @@ jobs:
       #   run: npx -y fsh-sushi
 
       - name: Build IG (genonce)
+        env:
+          JAVA_TOOL_OPTIONS: ""
         run: bash -euo pipefail _genonce.sh
 
       - name: Verify output exists
