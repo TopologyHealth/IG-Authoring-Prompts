@@ -1,48 +1,77 @@
-# This is a basic workflow to help you get started with Actions
-
-permissions:
-  contents: write         # needed to push commits/tags
-  pull-requests: write
-
 name: CI
 
-# Controls when the action will run. Triggers the workflow on push or pull request
-# events but only for the master branch
 on:
   push:
     branches: [ Create-FHIR-IG ]
   pull_request:
-    branches: [ master ]
+    branches: [ gh-pages ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-      # Ensure scripts are present (optional if you committed them)
-      - name: Fetch publisher scripts (if missing)
-        run: |
-          chmod +x _updatePublisher.sh _genonce.sh
-
-      - name: Update IG Publisher
-        run: bash -euo pipefail _updatePublisher.sh -y
-
-      # If you use FHIR Shorthand, run SUSHI first to generate ig.ini, etc.
-      # - name: Run SUSHI
-      #   run: npx -y fsh-sushi
-
-      - name: Build IG (genonce)
-        env:
-          JAVA_TOOL_OPTIONS: ""
-        run: bash -euo pipefail _genonce.sh
-
-      - name: Verify output exists
-        run: test -f output/index.html || { echo "No IG output produced"; exit 1; }
-
-      - name: Deploy to GitHub Pages
-        if: success()
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          node-version: '20'
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install SUSHI
+        run: npm i -g fsh-sushi
+
+      - name: Install Ruby and Jekyll
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          sudo gem install bundler jekyll
+
+      - name: Restore IG Publisher cache
+        uses: actions/cache@v4
+        with:
+          path: input-cache
+          key: ${{ runner.os }}-igpublisher-${{ hashFiles('_updatePublisher.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-igpublisher-
+
+      - name: Update IG Publisher (non-interactive)
+        run: bash _updatePublisher.sh -y
+
+      - name: Run SUSHI (generate ig.ini and FHIR definitions)
+        run: sushi
+
+      - name: Run IG Publisher
+        run: bash _genonce.sh -no-sushi
+
+      - name: Upload static site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./output
+
+  deploy:
+    if: github.event_name == 'push' && (github.ref == 'refs/heads/gh-pages' || github.ref == 'refs/heads/Create-FHIR-IG')
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
