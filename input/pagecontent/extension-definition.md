@@ -1,20 +1,7 @@
 This section contains prompts to help you create and design FHIR extensions. Use these prompts with AI assistants to guide your extension development process.
 
-### 🤖 LLM-Specific Tips for Extension Development
-
-#### Extension Generation with LLMs
-
-- **Provide existing extension examples** to improve LLM output quality
-- **Use LLMs for repetitive extension patterns** across multiple resources
-- **Validate extension context** - LLMs can suggest inappropriate placement
-- **Test extension integration** with profiles to ensure proper usage
-
-#### LLM-Assisted Extension Workflows
-
-- **Generate extension structure** with LLMs, then refine manually
-- **Use LLMs for extension documentation** and examples
-- **Validate extension constraints** against FHIR best practices
-- **Iterate on extension design** using LLM feedback
+### Assumptions & Core Principles
+{% include core-principles.md %}
 
 ### 🏗️ Extension Design and Planning
 

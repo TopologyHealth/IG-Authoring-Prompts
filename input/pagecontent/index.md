@@ -45,7 +45,7 @@ A **FHIR Implementation Guide (IG)** is a set of rules, examples, and documentat
 - [FHIR IG Publishing by Elliot Silver](https://www.argentixinfo.com/ig/howtopub/)
 - [HL7 Resource Authoring](https://confluence.hl7.org/spaces/FHIR/pages/35718853/Resource+Authoring)
 - [FSH School (SUSHI and FSH)](https://fshschool.org/)
-- [Get help from real people on chat.fhir.org](chat.fhir.org/)
+- [Get help from real people on chat.fhir.org](https://chat.fhir.org/)
 
 ### 📚 Prompt Categories
 

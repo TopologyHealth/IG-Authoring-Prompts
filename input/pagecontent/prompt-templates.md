@@ -27,8 +27,6 @@ This section provides reusable templates and guidelines for creating effective p
 ### 📋 Basic Prompt Template
 
 ```plaintext
-You are a FHIR Implementation Guide Authoring Expert.
-
 You are a FHIR Implementation Guide Authoring Expert with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
 
 I'm working on [describe your FHIR IG task] and need help with [describe your specific need].

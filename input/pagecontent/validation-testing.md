@@ -1,19 +1,7 @@
 This section contains prompts to help you validate and test your FHIR Implementation Guide. Use these prompts with AI assistants to ensure your IG meets quality standards and passes all validation checks.
 
-### 🤖 LLM-Specific Tips for Validation
-
-#### Three Core Prompting Principles (Based on Real-World Experience)
-
-1. **Be Descriptive** - Clearly explain what you want to validate and include examples when possible  
-2. **Be Specific** - Focus the LLM on specific validation tasks, avoid vague requests  
-3. **Break It Down** - Divide complex validation into smaller, manageable tasks  
-
-#### LLM Integration Strategies
-
-- **Start with simple validation tasks** and build complexity iteratively  
-- **Use the same LLM consistently** for related validation tasks to maintain context  
-- **Provide examples** of validation results you want to achieve  
-- **Validate LLM outputs** against FHIR specifications and your quality standards  
+### Assumptions & Core Principles
+{% include core-principles.md %}
 
 
 ### 🔍 Validation Strategy and Planning

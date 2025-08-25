@@ -1,5 +1,8 @@
 This section contains prompts to help you publish and deploy your FHIR Implementation Guide. Use these prompts with AI assistants to ensure successful publication and deployment of your IG. Ultimately for publishing an LLM code assistant can likely help run and publish your IG successfully. However there are some publishing tasks it might still not be able to completely do for you like publishing your guide on [https://build.fhir.org/](https://build.fhir.org/) or a GitHub Pages site. 
 
+### Assumptions & Core Principles
+{% include core-principles.md %}
+
 > I recommend Elliot Silver's guide on [How to Publish a FHIR Implementation Guide](https://build.fhir.org/ig/ElliotSilver/how-to-publish/) to learn how to publish a GitHub guide. Also check out [his blog](https://www.argentixinfo.com/archives/156) on setting up webhooks to get your CI Build (web hosted build) up and running.
 
 ### 📋 Pre-Publication Preparation
@@ -332,19 +335,6 @@ I want to design prompts that produce successful publication results.
 4. **Save successful prompts** for future use and share them with the community
 5. **Iterate and refine** prompts based on the responses you receive
 
-### 🤖 LLM-Specific Tips for Publishing
-
-#### Three Core Prompting Principles (Based on Real-World Experience)
-
-1. **Be Descriptive** - Clearly explain what you want to publish and include examples when possible
-2. **Be Specific** - Focus the LLM on specific publication tasks, avoid vague requests
-3. **Break It Down** - Divide complex publication into smaller, manageable steps
-
-#### LLM Integration Strategies
-
-- **Start with simple publication tasks** and build complexity iteratively
-- **Use the same LLM consistently** for related publication tasks to maintain context
-- **Provide examples** of publication results you want to achieve
-- **Validate LLM outputs** against FHIR specifications and your publication standards
+<!-- LLM-specific tips are covered in the shared core principles include -->
 
 

@@ -1,25 +1,11 @@
 This section contains prompts to help you get started with FHIR Implementation Guide development. Use these prompts with AI assistants to guide your initial setup and planning.
 
-### 🤖 LLM-Specific Tips for Getting Started
+### Assumptions & Core Principles
+{% include core-principles.md %}
 
 #### Role Assumption
 
-Unless otherwise specified, you should specify in the prompt that the LLM is acting as a **FHIR Implementation Guide Authoring Expert** with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
-
-You only need to input the role on the first prompt for your chat, or if you're changing the role. If you've already specified a role, feel free to remove it from the prompt.
-
-#### Three Core Prompting Principles (Based on Real-World Experience)
-
-1. **Be Descriptive** - Clearly explain what you want and include examples when possible
-2. **Be Specific** - Focus the LLM on a tightly scoped task, avoid vague requests
-3. **Break It Down** - Divide complex goals into smaller, manageable steps
-
-#### LLM Integration Strategies
-
-- **Start with simple prompts** and build complexity iteratively
-- **Use the same LLM consistently** for related tasks to maintain context
-- **Provide examples** of what you want to achieve
-- **Validate LLM outputs** against FHIR specifications and best practices
+Specify once per chat that the model acts as a **FHIR Implementation Guide Authoring Expert** (FSH, IGPublisher, HL7 guidelines). Omit repeating it in every prompt unless the role changes.
 
 ### 🏗️ Project Setup and Planning
 

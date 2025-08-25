@@ -1,20 +1,7 @@
 This section contains prompts to help you create and design FHIR profiles. Use these prompts with AI assistants to guide your profile development process.
 
-### 🤖 LLM-Specific Tips for Profile Creation
-
-#### FSH Development with LLMs
-
-- **Break down complex profiles** into smaller, focused prompts
-- **Use LLMs for repetitive tasks** like RuleSet application across multiple profiles
-- **Validate LLM-generated FSH** with SUSHI before committing
-- **Provide existing FSH examples** to improve LLM output quality
-
-#### Common LLM Pitfalls to Avoid
-
-- **Don't ask for complete profiles** in one prompt - break them down
-- **Always validate FSH syntax** - LLMs can make syntax errors
-- **Provide context** about your IG and existing profiles
-- **Use iterative prompting** for complex profile structures
+### Assumptions & Core Principles
+{% include core-principles.md %}
 
 ### 🏗️ Profile Design and Planning
 

@@ -4,6 +4,8 @@ This section provides comprehensive guidance for integrating Large Language Mode
 
 This page is designed for **developers building AI assistants** that help with FHIR Implementation Guide development. It provides system prompt templates, role definitions, and configuration guidance for creating effective LLM-based FHIR IG authoring tools.
 
+For general prompting tips used across the guide, see: {% include core-principles.md %}
+
 ### 🔧 System Prompt Development
 
 #### Core System Prompt Template
