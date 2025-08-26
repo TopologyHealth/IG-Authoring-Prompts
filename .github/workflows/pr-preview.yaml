@@ -1,17 +1,13 @@
-name: CI - Prod Only
+name: Pages (PR previews)
 
 on:
-  push:
-    branches: [ main ]
+  pull_request:
+    types: [opened, reopened, synchronize, closed]
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
+  pull-requests: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
 
 jobs:
   build:
@@ -62,13 +58,11 @@ jobs:
         with:
           path: ./output
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+            # Deploy PR preview into a subdir and comment the URL on the PR
+      - name: Deploy PR preview
+        uses: rossjrw/pr-preview-action@v1
+        with:
+          source-dir: output                # your built static files
+          preview-branch: gh-pages        # branch used for previews
+          umbrella-dir: pr-preview        # previews live under /pr-preview/
+          action: auto                    # deploy on open/sync, clean on close
