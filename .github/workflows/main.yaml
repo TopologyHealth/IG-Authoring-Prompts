@@ -65,10 +65,19 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      contents: write  # required by the deploy action
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Checkout (empty tree for deploy)
+        uses: actions/checkout@v4
+
+      - name: Deploy to gh-pages (keep /pr-preview)
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./output
+          clean: true
+          clean-exclude: |
+            pr-preview/**
+            CNAME
+            .nojekyll
