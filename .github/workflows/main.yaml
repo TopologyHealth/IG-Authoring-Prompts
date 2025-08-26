@@ -61,6 +61,9 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./output
+      - name: Ensure .nojekyll
+        run: touch output/.nojekyll
+
 
   deploy:
     needs: build
