@@ -10,59 +10,16 @@ permissions:
 
 
 jobs:
-  build:
+  preview:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Setup Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '17'
-
-      - name: Install SUSHI
-        run: npm i -g fsh-sushi
-
-      - name: Install Ruby and Jekyll
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ruby-full build-essential zlib1g-dev
-          sudo gem install bundler jekyll
-
-      - name: Restore IG Publisher cache
-        uses: actions/cache@v4
-        with:
-          path: input-cache
-          key: ${{ runner.os }}-igpublisher-${{ hashFiles('_updatePublisher.sh') }}
-          restore-keys: |
-            ${{ runner.os }}-igpublisher-
-
-      - name: Update IG Publisher (non-interactive)
-        run: bash _updatePublisher.sh -y
-
-      - name: Run SUSHI (generate ig.ini and FHIR definitions)
-        run: sushi
-
-      - name: Run IG Publisher
-        run: bash _genonce.sh -no-sushi
-
-      - name: Upload static site artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./output
-
-            # Deploy PR preview into a subdir and comment the URL on the PR
+      # Deploy PR preview into a subdir and comment the URL on the PR
       - name: Deploy PR preview
         uses: rossjrw/pr-preview-action@v1
         with:
-          source-dir: output                # your built static files
+          source-dir: output             # your built static files
           preview-branch: gh-pages        # branch used for previews
           umbrella-dir: pr-preview        # previews live under /pr-preview/
           action: auto                    # deploy on open/sync, clean on close
