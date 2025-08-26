@@ -4,8 +4,6 @@ on:
   push:
     branches: [ main ]
   pull_request:
-    branches: [ main ]
-    types: [ opened, reopened, synchronize, edited, ready_for_review, closed ]
 
 permissions:
   contents: read
@@ -66,7 +64,6 @@ jobs:
           path: ./output
 
   deploy:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'main'
     needs: build
     runs-on: ubuntu-latest
     environment:
@@ -74,17 +71,5 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
-
-  deploy_dev:
-    if: github.event_name == 'pull_request' && github.event.action != 'closed' && github.event.pull_request.base.ref == 'main'
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: dev
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy preview to GitHub Pages (dev)
         id: deployment
         uses: actions/deploy-pages@v4
