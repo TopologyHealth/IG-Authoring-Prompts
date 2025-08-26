@@ -3,7 +3,7 @@ FHIRIGpromptLibrary : Validation Results
 
 err = 0, warn = 4, info = 1
 IG Publisher Version: 2.0.15
-Generated Tue Aug 26 20:22:38 UTC 2025. FHIR version 4.0.1 for ig.prompt.library#0.1.0 (canonical = http://topology.health)
+Generated Tue Aug 26 20:32:32 UTC 2025. FHIR version 4.0.1 for ig.prompt.library#0.1.0 (canonical = http://topology.health)
  Build Errors : 5 / 0 / 0
  /home/runner/work/IG-Authoring-Prompts/IG-Authoring-Prompts/fsh-generated/resources/CodeSystem-common-colors : 0 / 0 / 1
  /home/runner/work/IG-Authoring-Prompts/IG-Authoring-Prompts/fsh-generated/resources/ImplementationGuide-ig.prompt.library : 0 / 0 / 1
