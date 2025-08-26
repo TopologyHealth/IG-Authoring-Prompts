@@ -2,7 +2,7 @@ name: CI - Prod Only
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Create-FHIR-IG ]
 
 permissions:
   contents: read
@@ -70,6 +70,18 @@ jobs:
     steps:
       - name: Checkout (empty tree for deploy)
         uses: actions/checkout@v4
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages          # must match the name used by upload-pages-artifact
+          path: _site_artifact
+
+      - name: Unpack artifact to ./output
+        run: |
+          mkdir -p output
+          tar -xf _site_artifact/artifact.tar -C output
+          test -d output && echo "Restored output:" && ls -la output | head -n 50
 
       - name: Deploy to gh-pages (keep /pr-preview)
         uses: JamesIves/github-pages-deploy-action@v4
