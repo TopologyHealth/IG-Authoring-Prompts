@@ -2,7 +2,7 @@ name: CI - Prod Only
 
 on:
   push:
-    branches: [ Create-FHIR-IG ]
+    branches: [ main ]
 
 permissions:
   contents: read
