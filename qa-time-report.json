@@ -1,0 +1,302 @@
+{
+  "date" : "Tue, 26 Aug, 2025 19:03:52 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-ig.prompt.library.json",
+      "size" : 4296,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 24
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 27,
+          "length" : 753
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 1837
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 65
+        },
+        {
+          "activity" : "generate2",
+          "start" : 41,
+          "length" : 82
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 50,
+          "length" : 4
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 52,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-common-colors.json",
+      "size" : 1721,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 28
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 55
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 14
+        },
+        {
+          "activity" : "generate2",
+          "start" : 41,
+          "length" : 680
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 50,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Patient-PatientExample.json",
+      "size" : 595,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 14
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 33,
+          "length" : 286
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 10
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-MyPatient.json",
+      "size" : 1502,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 20
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 13
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 79
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 79
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 1478
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 133
+        },
+        {
+          "activity" : "generate2",
+          "start" : 42,
+          "length" : 971
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 810
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 50,
+          "length" : 12
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 52,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-patient-favorite-color.json",
+      "size" : 1496,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 19
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 16
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 25,
+          "length" : 24
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 27,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 28
+        },
+        {
+          "activity" : "validate",
+          "start" : 29,
+          "length" : 1627
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 39
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 150
+        },
+        {
+          "activity" : "generate2",
+          "start" : 44,
+          "length" : 70
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 50,
+          "length" : 3
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 52,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-favorite-colors.json",
+      "size" : 549,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 25,
+          "length" : 12
+        },
+        {
+          "activity" : "load",
+          "start" : 25,
+          "length" : 13
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 28,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 28,
+          "length" : 17
+        },
+        {
+          "activity" : "generate1",
+          "start" : 33,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 43,
+          "length" : 110
+        }
+      ]
+    }
+  ]
+}

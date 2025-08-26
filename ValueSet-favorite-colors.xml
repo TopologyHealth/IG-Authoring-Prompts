@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="favorite-colors"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet favorite-colors</b></p><a name="favorite-colors"> </a><a name="hcfavorite-colors"> </a><ul><li>Include all codes defined in <a href="CodeSystem-common-colors.html"><code>http://topology.health/CodeSystem/common-colors</code></a></li></ul></div>
+  </text>
+  <url value="http://topology.health/ValueSet/favorite-colors"/>
+  <version value="0.1.0"/>
+  <name value="FavoriteColors"/>
+  <title value="Favorite Colors"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-01-01"/>
+  <publisher value="Topology Health"/>
+  <contact>
+    <name value="Topology Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://topology.health/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="help@topology.health"/>
+    </telecom>
+  </contact>
+  <description value="A value set containing common colors that can be used to specify a patient's favorite color."/>
+  <compose>
+    <include>
+      <system value="http://topology.health/CodeSystem/common-colors"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="61fa3dc8-2a0b-460b-9e20-4741e3a9adc9"/>
+  <meta>
+    <lastUpdated value="2025-08-26T19:03:52.796+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://topology.health/ValueSet/favorite-colors"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-common-colors.html">codesystem Common Colors v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 10 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-RED"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-RED">RED</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Red</td>
+                <td>The color red</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-BLUE"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-BLUE">BLUE</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Blue</td>
+                <td>The color blue</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-GREEN"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-GREEN">GREEN</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Green</td>
+                <td>The color green</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-YELLOW"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-YELLOW">YELLOW</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Yellow</td>
+                <td>The color yellow</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-PURPLE"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-PURPLE">PURPLE</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Purple</td>
+                <td>The color purple</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-ORANGE"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-ORANGE">ORANGE</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Orange</td>
+                <td>The color orange</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-PINK"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-PINK">PINK</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Pink</td>
+                <td>The color pink</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-BROWN"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-BROWN">BROWN</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Brown</td>
+                <td>The color brown</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-BLACK"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-BLACK">BLACK</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>Black</td>
+                <td>The color black</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://topology.health/CodeSystem/common-colors-WHITE"> </a>  
+                  <a href="CodeSystem-common-colors.html#common-colors-WHITE">WHITE</a>
+                </td>
+                <td>http://topology.health/CodeSystem/common-colors</td>
+                <td>White</td>
+                <td>The color white</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://topology.health/ValueSet/favorite-colors"/>
+        <version value="0.1.0"/>
+        <name value="FavoriteColors"/>
+        <title value="Favorite Colors"/>
+        <status value="active"/>
+        <experimental value="true"/>
+        <date value="2024-01-01"/>
+        <expansion>
+          <identifier value="urn:uuid:c4ac928d-cfef-4969-9630-a43901e94fa5"/>
+          <timestamp value="2025-08-26T19:04:10+00:00"/>
+          <total value="10"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://topology.health/CodeSystem/common-colors|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="RED"/>
+            <display value="Red"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="BLUE"/>
+            <display value="Blue"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="GREEN"/>
+            <display value="Green"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="YELLOW"/>
+            <display value="Yellow"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="PURPLE"/>
+            <display value="Purple"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="ORANGE"/>
+            <display value="Orange"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="PINK"/>
+            <display value="Pink"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="BROWN"/>
+            <display value="Brown"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="BLACK"/>
+            <display value="Black"/>
+          </contains>
+          <contains>
+            <system value="http://topology.health/CodeSystem/common-colors"/>
+            <code value="WHITE"/>
+            <display value="White"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>
