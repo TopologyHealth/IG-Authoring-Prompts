@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Getting Started with FHIR IGs - FHIR IG Prompt Library v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/topology.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Custom header with logo and title side by side -->
+
+<div id="hl7-nav"> 
+    <a id="hl7-logo" no-external="true" href="https://topology.health">
+    <img height="100" alt="Visit Topology Health" src="assets/images/Topology Health Perfect Logo Package_Pro_1 Logo_Brand_Name_Tagine_Normal.svg"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR IG Prompt Library</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="getting-started.html">Getting Started</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Development
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profile-creation.html">Profile Creation</a>
+      </li>
+      <li>
+        <a href="extension-definition.html">Extensions</a>
+      </li>
+      <li>
+        <a href="value-set-creation.html">Value Sets</a>
+      </li>
+      <li>
+        <a href="examples-creation.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Quality &amp; Testing
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="validation-testing.html">Validation</a>
+      </li>
+      <li>
+        <a href="troubleshooting.html">Troubleshooting</a>
+      </li>
+      <li>
+        <a href="narrative-content.html">Narrative</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tools &amp; Templates
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="prompt-templates.html">Prompt Templates</a>
+      </li>
+      <li>
+        <a href="llm-integration.html">LLM Integration</a>
+      </li>
+      <li>
+        <a href="publishing-deployment.html">Publishing</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Getting Started with FHIR IGs</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR IG Prompt Library - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://topology.health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Getting Started with FHIR IGs</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#assumptions--core-principles" id="markdown-toc-assumptions--core-principles">Assumptions &amp; Core Principles</a></li>
+  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+  <li><a href="#three-core-prompting-principles" id="markdown-toc-three-core-prompting-principles">Three Core Prompting Principles</a></li>
+  <li><a href="#llm-integration-tips" id="markdown-toc-llm-integration-tips">LLM Integration Tips</a></li>
+  <li><a href="#️-project-setup-and-planning" id="markdown-toc-️-project-setup-and-planning">🏗️ Project Setup and Planning</a></li>
+  <li><a href="#-first-ig-creation" id="markdown-toc--first-ig-creation">🚀 First IG Creation</a></li>
+  <li><a href="#-planning-and-organization" id="markdown-toc--planning-and-organization">📋 Planning and Organization</a></li>
+  <li><a href="#-configuration-and-setup" id="markdown-toc--configuration-and-setup">🔧 Configuration and Setup</a></li>
+  <li><a href="#-learning-and-resources" id="markdown-toc--learning-and-resources">📚 Learning and Resources</a></li>
+  <li><a href="#-tips-for-using-these-prompts" id="markdown-toc--tips-for-using-these-prompts">💡 Tips for Using These Prompts</a></li>
+</ul>
+
+</div>
+<p>This section contains prompts to help you get started with FHIR Implementation Guide development. Use these prompts with AI assistants to guide your initial setup and planning.</p>
+
+<h3 id="assumptions--core-principles">Assumptions &amp; Core Principles</h3>
+<!-- Shared core principles and assumptions for all prompt pages -->
+
+<h3 id="assumptions">Assumptions</h3>
+<ul>
+  <li>Default to FHIR R4 unless otherwise stated</li>
+  <li>Validate outputs with SUSHI and IG Publisher</li>
+  <li>Use canonical URLs for IGs, profiles, extensions, and value sets</li>
+  <li>Prefer small, iterative prompts over large, monolithic ones</li>
+</ul>
+
+<h3 id="three-core-prompting-principles">Three Core Prompting Principles</h3>
+<ol>
+  <li>Be Descriptive — clearly state the goal and provide examples/context</li>
+  <li>Be Specific — scope the task tightly; avoid vague requests</li>
+  <li>Break It Down — split complex tasks into smaller steps</li>
+</ol>
+
+<h3 id="llm-integration-tips">LLM Integration Tips</h3>
+<ul>
+  <li>Start simple and increase complexity iteratively</li>
+  <li>Reuse the same chat/session to preserve context</li>
+  <li>Provide samples (FSH, JSON, text) to shape outputs</li>
+  <li>Always validate LLM outputs with your tooling and specs</li>
+</ul>
+
+<h4 id="role-assumption">Role Assumption</h4>
+
+<p>Specify once per chat that the model acts as a <strong>FHIR Implementation Guide Authoring Expert</strong> (FSH, IGPublisher, HL7 guidelines). Omit repeating it in every prompt unless the role changes.</p>
+
+<h3 id="️-project-setup-and-planning">🏗️ Project Setup and Planning</h3>
+
+<h4 id="project-scope-definition">Project Scope Definition</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert. You are also a FHIR IG Authoring Assistant.
+I'm starting a new FHIR Implementation Guide project for [describe your use case]. 
+Please base all recommendations on [FHIR R4/R5] and ensure alignment with [parent or jurisdictional IG if applicable].
+
+Help me:
+1. Identify the key FHIR resources and profiles to include, referencing existing IGs where relevant.
+2. Suggest a logical IG structure and navigation plan.
+3. Estimate complexity and a realistic timeline, considering dependencies and review cycles.
+4. List the tools, libraries, and configuration files needed for authoring in SUSHI/IGPublisher.
+5. Suggest any prerequisite terminologies or value sets to include.
+
+Context:
+- Domain: [describe your healthcare domain]
+- Target audience: [describe your audience]
+- Existing artifacts: [link or describe any existing profiles, extensions, or ValueSets]
+</code></pre></div></div>
+
+<h4 id="tool-selection-guidance">Tool Selection Guidance</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+I'm new to FHIR IG development and need help choosing the right tools. 
+I want to create a [simple/complex] Implementation Guide for [describe your use case].
+
+Please recommend:
+1. The best FHIR IG authoring tools for my skill level
+2. Required dependencies and setup steps
+3. Learning resources to get started
+4. Common pitfalls to avoid
+
+I'm comfortable with [describe your technical background].
+</code></pre></div></div>
+
+<h3 id="-first-ig-creation">🚀 First IG Creation</h3>
+
+<h4 id="basic-ig-structure">Basic IG Structure</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+I'm creating my first FHIR Implementation Guide using SUSHI. 
+I want to create a basic structure for [describe your IG purpose].
+
+Please help me:
+1. Set up the basic SUSHI configuration
+2. Create the initial IG structure
+3. Add basic pages and navigation
+4. Include essential metadata
+
+My IG will focus on [describe your main resources/profiles].
+</code></pre></div></div>
+
+<h4 id="ig-metadata-setup">IG Metadata Setup</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+I need help setting up the metadata for my FHIR Implementation Guide. 
+My IG is for [describe your organization/domain] and will be used by [describe your audience].
+
+Please help me configure:
+1. IG identifier and canonical URL
+2. Publisher information and contact details
+3. License and copyright information
+4. FHIR version compatibility
+5. Dependencies on other IGs
+
+My organization is [describe your organization].
+</code></pre></div></div>
+
+<h3 id="-planning-and-organization">📋 Planning and Organization</h3>
+
+<h4 id="resource-planning">Resource Planning</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+I'm planning my FHIR IG and need help organizing the resources. 
+My IG will cover [describe your scope] and include [list main resources].
+
+Please help me:
+1. Organize resources into logical groups
+2. Plan the profile hierarchy and relationships
+3. Identify required extensions and value sets
+4. Structure the narrative content and examples
+5. Plan validation and testing strategies
+
+I want to ensure my IG follows FHIR best practices.
+</code></pre></div></div>
+
+<h4 id="implementation-strategy">Implementation Strategy</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+I'm planning the implementation of my FHIR Implementation Guide. 
+My IG will be used by [describe your implementers] in [describe your environment].
+
+Please help me:
+1. Create an implementation roadmap
+2. Identify key milestones and deliverables
+3. Plan testing and validation phases
+4. Consider deployment and maintenance
+5. Address potential challenges and risks
+
+I want to ensure smooth adoption by my target audience.
+</code></pre></div></div>
+
+<h3 id="-configuration-and-setup">🔧 Configuration and Setup</h3>
+
+<h4 id="sushi-configuration">SUSHI Configuration</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert and a FHIR Shorthand (FSH) and IGPublisher expert.
+I'm setting up SUSHI for my FHIR IG project ([describe your IG]).
+
+Please:
+1. Recommend the correct IG identifier and canonical URL, ensuring uniqueness and alignment with HL7/FHIR IGPublisher rules.
+2. Configure publisher information in the correct YAML format.
+3. Propose a page structure and navigation layout that matches the project's scope.
+4. Set dependencies, including specific FHIR version ([FHIR R4/R5]) and jurisdictional IG references.
+5. Suggest flags and options to optimize validation and publishing.
+6. Ensure the `sushi-config.yaml` passes `sushi` validation without errors.
+
+My IG will be published at [your canonical URL].
+Existing artifacts: [list or link]
+</code></pre></div></div>
+
+<h4 id="development-environment">Development Environment</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+I'm setting up my development environment for FHIR IG authoring. 
+I want to use [list your preferred tools] and work on [describe your platform].
+
+Please help me:
+1. Install and configure required tools
+2. Set up version control and project structure
+3. Configure linting and validation
+4. Set up testing and preview capabilities
+5. Create development workflows
+
+I'm working on [Windows/Mac/Linux] and prefer [describe your tool preferences].
+</code></pre></div></div>
+
+<h3 id="-learning-and-resources">📚 Learning and Resources</h3>
+
+<h4 id="fhir-basics-review">FHIR Basics Review</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+I need to refresh my understanding of FHIR basics before starting my IG. 
+I'm focusing on [describe your specific FHIR areas of interest].
+
+Please help me:
+1. Review key FHIR concepts relevant to IG authoring
+2. Understand the relationship between resources, profiles, and IGs
+3. Learn about extensions, value sets, and terminology
+4. Understand validation and conformance
+5. Identify common patterns and best practices
+
+I have [basic/intermediate/advanced] FHIR knowledge.
+</code></pre></div></div>
+
+<h4 id="ig-authoring-best-practices">IG Authoring Best Practices</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+I want to learn the best practices for FHIR IG authoring. 
+I'm creating an IG for [describe your use case] and want to ensure quality.
+
+Please help me understand:
+1. IG structure and organization principles
+2. Profile design best practices
+3. Documentation and narrative requirements
+4. Validation and testing approaches
+5. Publishing and maintenance considerations
+
+I want to create an IG that others can easily understand and implement.
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-tips-for-using-these-prompts">💡 Tips for Using These Prompts</h3>
+
+<ol>
+  <li><strong>Customize the prompts</strong> by replacing the bracketed text with your specific details</li>
+  <li><strong>Provide context</strong> about your domain, audience, and technical background</li>
+  <li><strong>Ask follow-up questions</strong> to dive deeper into specific areas</li>
+  <li><strong>Save successful prompts</strong> for future use and share them with the community</li>
+  <li><strong>Iterate and refine</strong> prompts based on the responses you receive</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://topology.health/">Topology Health</a>.  Package ig.prompt.library#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 26, 2025 18:32+0000">2025-08-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

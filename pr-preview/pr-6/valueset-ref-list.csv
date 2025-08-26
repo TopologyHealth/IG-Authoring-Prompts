@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://topology.health/ValueSet/favorite-colors,0.1.0,active,,FavoriteColors,Favorite Colors,"A value set containing common colors that can be used to specify a patient's favorite color.","StructureDefinition/patient-favorite-color","Internal"

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Troubleshooting Guidance - FHIR IG Prompt Library v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/topology.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Custom header with logo and title side by side -->
+
+<div id="hl7-nav"> 
+    <a id="hl7-logo" no-external="true" href="https://topology.health">
+    <img height="100" alt="Visit Topology Health" src="assets/images/Topology Health Perfect Logo Package_Pro_1 Logo_Brand_Name_Tagine_Normal.svg"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR IG Prompt Library</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="getting-started.html">Getting Started</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Development
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profile-creation.html">Profile Creation</a>
+      </li>
+      <li>
+        <a href="extension-definition.html">Extensions</a>
+      </li>
+      <li>
+        <a href="value-set-creation.html">Value Sets</a>
+      </li>
+      <li>
+        <a href="examples-creation.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Quality &amp; Testing
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="validation-testing.html">Validation</a>
+      </li>
+      <li>
+        <a href="troubleshooting.html">Troubleshooting</a>
+      </li>
+      <li>
+        <a href="narrative-content.html">Narrative</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tools &amp; Templates
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="prompt-templates.html">Prompt Templates</a>
+      </li>
+      <li>
+        <a href="llm-integration.html">LLM Integration</a>
+      </li>
+      <li>
+        <a href="publishing-deployment.html">Publishing</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Troubleshooting Guidance</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR IG Prompt Library - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://topology.health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Troubleshooting Guidance</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#assumptions--core-principles" id="markdown-toc-assumptions--core-principles">Assumptions &amp; Core Principles</a></li>
+  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+  <li><a href="#three-core-prompting-principles" id="markdown-toc-three-core-prompting-principles">Three Core Prompting Principles</a></li>
+  <li><a href="#llm-integration-tips" id="markdown-toc-llm-integration-tips">LLM Integration Tips</a></li>
+  <li><a href="#-problem-identification-and-analysis" id="markdown-toc--problem-identification-and-analysis">🔍 Problem Identification and Analysis</a></li>
+  <li><a href="#️-tool-specific-troubleshooting" id="markdown-toc-️-tool-specific-troubleshooting">🛠️ Tool-Specific Troubleshooting</a></li>
+  <li><a href="#-common-problem-categories" id="markdown-toc--common-problem-categories">📋 Common Problem Categories</a></li>
+  <li><a href="#-critical-issues-and-emergencies" id="markdown-toc--critical-issues-and-emergencies">🚨 Critical Issues and Emergencies</a></li>
+  <li><a href="#-systematic-troubleshooting" id="markdown-toc--systematic-troubleshooting">🔧 Systematic Troubleshooting</a></li>
+  <li><a href="#-llm-assisted-troubleshooting" id="markdown-toc--llm-assisted-troubleshooting">🤖 LLM-Assisted Troubleshooting</a></li>
+  <li><a href="#-troubleshooting-resources" id="markdown-toc--troubleshooting-resources">📚 Troubleshooting Resources</a></li>
+  <li><a href="#-tips-for-using-these-prompts" id="markdown-toc--tips-for-using-these-prompts">💡 Tips for Using These Prompts</a></li>
+</ul>
+
+</div>
+<p>This section contains prompts to help you troubleshoot common issues in FHIR Implementation Guide development. Use these prompts with AI assistants to quickly identify and resolve problems.</p>
+
+<h3 id="assumptions--core-principles">Assumptions &amp; Core Principles</h3>
+<!-- Shared core principles and assumptions for all prompt pages -->
+
+<h3 id="assumptions">Assumptions</h3>
+<ul>
+  <li>Default to FHIR R4 unless otherwise stated</li>
+  <li>Validate outputs with SUSHI and IG Publisher</li>
+  <li>Use canonical URLs for IGs, profiles, extensions, and value sets</li>
+  <li>Prefer small, iterative prompts over large, monolithic ones</li>
+</ul>
+
+<h3 id="three-core-prompting-principles">Three Core Prompting Principles</h3>
+<ol>
+  <li>Be Descriptive — clearly state the goal and provide examples/context</li>
+  <li>Be Specific — scope the task tightly; avoid vague requests</li>
+  <li>Break It Down — split complex tasks into smaller steps</li>
+</ol>
+
+<h3 id="llm-integration-tips">LLM Integration Tips</h3>
+<ul>
+  <li>Start simple and increase complexity iteratively</li>
+  <li>Reuse the same chat/session to preserve context</li>
+  <li>Provide samples (FSH, JSON, text) to shape outputs</li>
+  <li>Always validate LLM outputs with your tooling and specs</li>
+</ul>
+
+<h3 id="-problem-identification-and-analysis">🔍 Problem Identification and Analysis</h3>
+
+<h4 id="issue-analysis-framework">Issue Analysis Framework</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I'm experiencing an issue with my [describe your IG component] and need help troubleshooting.
+The problem is [describe your issue] and I'm seeing [describe your symptoms].
+
+Please help me:
+1. Analyze the root cause of this issue
+2. Identify potential contributing factors
+3. Suggest diagnostic steps and tools
+4. Provide troubleshooting approaches
+5. Help prevent similar issues in the future
+
+I want to resolve this issue quickly and understand what went wrong.
+</code></pre></div></div>
+
+<h4 id="error-message-interpretation">Error Message Interpretation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I'm getting an error message while working with my FHIR IG.
+The error is: [paste the exact error message]
+
+My context: [describe what you were doing when the error occurred]
+
+Please help me:
+1. Interpret what this error means
+2. Identify the root cause of the issue
+3. Suggest specific steps to resolve it
+4. Provide alternative approaches if needed
+5. Help prevent this error in the future
+
+I need to understand and resolve this error quickly.
+</code></pre></div></div>
+
+<h4 id="symptom-based-troubleshooting">Symptom-Based Troubleshooting</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I'm experiencing [describe your symptoms] with my [describe your IG component].
+The symptoms include [describe specific behaviors or issues] and started [describe when].
+
+Please help me:
+1. Identify potential causes for these symptoms
+2. Suggest diagnostic tests and checks
+3. Provide step-by-step troubleshooting steps
+4. Recommend tools and resources for diagnosis
+5. Help establish a troubleshooting plan
+
+I want to systematically identify and resolve the underlying issue.
+</code></pre></div></div>
+
+<h3 id="️-tool-specific-troubleshooting">🛠️ Tool-Specific Troubleshooting</h3>
+
+<h4 id="sushi-issues">SUSHI Issues</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist and SUSHI Troubleshooting Specialist.
+I'm having problems with SUSHI while processing my FHIR IG.
+The issue is [describe your SUSHI problem] and I'm seeing [describe your error messages].
+
+My SUSHI configuration: [describe your setup]
+
+Please help me:
+1. Identify the cause of this SUSHI issue
+2. Suggest specific configuration changes
+3. Provide troubleshooting steps and commands
+4. Check for common SUSHI problems
+5. Help resolve the issue and get SUSHI working
+
+I need to get SUSHI processing my IG correctly.
+</code></pre></div></div>
+
+<h4 id="ig-publisher-problems">IG Publisher Problems</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist and IG Publisher Debugging Specialist.
+I'm encountering issues with IG Publisher while building my FHIR IG.
+The problem is [describe your IG Publisher issue] and I'm getting [describe your errors].
+
+My IG structure: [describe your IG components]
+
+Please help me:
+1. Identify the cause of this IG Publisher issue
+2. Suggest configuration changes and fixes
+3. Provide troubleshooting steps and commands
+4. Check for common IG Publisher problems
+5. Help resolve the issue and get the IG building
+
+I need to successfully build my IG with IG Publisher.
+</code></pre></div></div>
+
+<h4 id="fsh-syntax-errors">FSH Syntax Errors</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Validation &amp; QA Specialist for [FHIR R4/R5] and a FHIR Implementation Guide Troubleshooting Specialist.
+You are a FHIR Validation &amp; QA Specialist for [FHIR R4/R5].
+I will paste errors from [SUSHI|IGPublisher|HL7 FHIR Validator]. Provide minimal, specific fixes.
+
+Context:
+- Profile/Resource: [name]
+- Dependencies/Extensions: [list]
+- Target IG constraints/jurisdiction: [list or link]
+- Relevant FSH snippet(s):
+"""
+[paste the exact FSH sections referenced by the errors]
+"""
+
+Errors:
+"""
+[paste exact error output]
+"""
+
+Please:
+1. Identify the root cause(s) for each error.
+2. Provide corrected FSH snippets only (no prose), using canonical URLs where required.
+3. Briefly explain each fix in 1–2 sentences.
+4. State if the fix should pass `sushi` + IGPublisher validation; if unsure, note assumptions.
+</code></pre></div></div>
+
+<h3 id="-common-problem-categories">📋 Common Problem Categories</h3>
+
+<h4 id="configuration-issues">Configuration Issues</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist and Configuration &amp; Dependency Management Specialist.
+I'm having configuration problems with my [describe your tool or component].
+The configuration includes [describe your current settings] and I'm seeing [describe your issues].
+
+Please help me:
+1. Review and validate my configuration
+2. Identify configuration errors or conflicts
+3. Suggest correct configuration settings
+4. Provide configuration examples and templates
+5. Help establish proper configuration practices
+
+I want to fix my configuration and prevent future issues.
+</code></pre></div></div>
+
+<h4 id="dependency-and-reference-problems">Dependency and Reference Problems</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist and Configuration &amp; Dependency Management Specialist.
+I'm having dependency or reference issues with my [describe your IG component].
+The problem involves [describe your dependencies/references] and I'm seeing [describe your errors].
+
+Please help me:
+1. Identify dependency or reference issues
+2. Check for missing or incorrect references
+3. Validate dependency versions and compatibility
+4. Suggest dependency resolution strategies
+5. Help establish proper dependency management
+
+I want to resolve these dependency issues and ensure proper references.
+</code></pre></div></div>
+
+<h4 id="resource-and-file-issues">Resource and File Issues</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I'm having problems with resources or files in my FHIR IG.
+The issue involves [describe your resources/files] and I'm seeing [describe your problems].
+
+My file structure: [describe your organization]
+
+Please help me:
+1. Identify file or resource issues
+2. Check file organization and structure
+3. Validate file content and format
+4. Suggest file management improvements
+5. Help establish proper file organization
+
+I want to fix these file issues and improve organization.
+</code></pre></div></div>
+
+<h3 id="-critical-issues-and-emergencies">🚨 Critical Issues and Emergencies</h3>
+
+<h4 id="build-failures">Build Failures</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+My FHIR IG build is completely failing and I need immediate help.
+The build fails at [describe where it fails] with [describe your error messages].
+
+My IG includes [describe your components] and I need to [describe your urgency].
+
+Please help me:
+1. Identify the critical issue causing the build failure
+2. Provide immediate fixes and workarounds
+3. Suggest emergency troubleshooting steps
+4. Help get the build working again
+5. Plan for preventing future build failures
+
+I need to get my IG building again as quickly as possible.
+</code></pre></div></div>
+
+<h4 id="validation-failures">Validation Failures</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+My FHIR IG is failing all validation checks and I need urgent help.
+The validation failures include [describe your validation errors] and affect [describe your components].
+
+Please help me:
+1. Identify the critical validation issues
+2. Provide immediate fixes and corrections
+3. Suggest emergency validation steps
+4. Help get validation passing again
+5. Plan for preventing future validation failures
+
+I need to get my IG passing validation immediately.
+</code></pre></div></div>
+
+<h4 id="publication-blockers">Publication Blockers</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I have a critical publication blocker for my FHIR IG that needs immediate resolution.
+The blocker is [describe your publication issue] and prevents [describe what you can't do].
+
+Please help me:
+1. Identify the critical publication issue
+2. Provide immediate solutions and workarounds
+3. Suggest emergency troubleshooting steps
+4. Help resolve the publication blocker
+5. Plan for preventing future publication issues
+
+I need to resolve this publication blocker immediately.
+</code></pre></div></div>
+
+<h3 id="-systematic-troubleshooting">🔧 Systematic Troubleshooting</h3>
+
+<h4 id="troubleshooting-methodology">Troubleshooting Methodology</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I want to establish a systematic troubleshooting approach for my FHIR IG development.
+My IG includes [describe your components] and I encounter [describe your common issues].
+
+Please help me:
+1. Design a systematic troubleshooting methodology
+2. Create troubleshooting checklists and procedures
+3. Establish diagnostic tools and approaches
+4. Plan for issue prevention and early detection
+5. Help establish troubleshooting best practices
+
+I want to be more systematic and efficient at troubleshooting.
+</code></pre></div></div>
+
+<h4 id="problem-prevention-strategies">Problem Prevention Strategies</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I want to prevent common problems in my FHIR IG development.
+My IG includes [describe your components] and I want to avoid [describe your common issues].
+
+Please help me:
+1. Identify common problem patterns and causes
+2. Suggest prevention strategies and best practices
+3. Plan for early warning and detection systems
+4. Establish quality gates and checkpoints
+5. Help create a proactive problem prevention approach
+
+I want to prevent problems before they occur.
+</code></pre></div></div>
+
+<h4 id="troubleshooting-documentation">Troubleshooting Documentation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I need to document troubleshooting procedures for my FHIR IG development.
+My IG includes [describe your components] and I want to document [describe your troubleshooting needs].
+
+Please help me:
+1. Create troubleshooting documentation structure
+2. Document common problems and solutions
+3. Include diagnostic steps and procedures
+4. Provide troubleshooting examples and case studies
+5. Help establish troubleshooting knowledge management
+
+I want to create comprehensive troubleshooting documentation.
+</code></pre></div></div>
+
+<h3 id="-llm-assisted-troubleshooting">🤖 LLM-Assisted Troubleshooting</h3>
+
+<h4 id="llm-enhanced-problem-solving">LLM-Enhanced Problem Solving</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I want to use LLMs to enhance my troubleshooting capabilities for FHIR IG development.
+My IG includes [describe your components] and I want to improve [describe your troubleshooting goals].
+
+Please help me:
+1. Identify troubleshooting tasks suitable for LLM assistance
+2. Design LLM prompts for troubleshooting tasks
+3. Plan LLM integration with troubleshooting workflow
+4. Consider troubleshooting quality and accuracy
+5. Plan for human oversight and validation
+
+I want to use LLMs to [describe your LLM goals] while maintaining [describe your quality standards].
+</code></pre></div></div>
+
+<h4 id="troubleshooting-prompt-design">Troubleshooting Prompt Design</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I need to design effective prompts for LLM-assisted troubleshooting.
+My troubleshooting tasks include [describe your tasks] and target [describe your resolution goals].
+
+Please help me:
+1. Design clear and specific troubleshooting prompts
+2. Include appropriate context and examples
+3. Plan for troubleshooting result interpretation
+4. Consider troubleshooting accuracy and reliability
+5. Plan for troubleshooting workflow integration
+
+I want to design prompts that produce effective troubleshooting results.
+</code></pre></div></div>
+
+<h3 id="-troubleshooting-resources">📚 Troubleshooting Resources</h3>
+
+<h4 id="tool-and-resource-identification">Tool and Resource Identification</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I need to identify troubleshooting tools and resources for my FHIR IG development.
+My IG includes [describe your components] and I need help with [describe your troubleshooting areas].
+
+Please help me:
+1. Identify appropriate troubleshooting tools
+2. Recommend diagnostic and testing resources
+3. Suggest reference materials and documentation
+4. Plan for tool integration and automation
+5. Help establish a troubleshooting toolkit
+
+I want to build a comprehensive troubleshooting toolkit.
+</code></pre></div></div>
+
+<h4 id="community-and-support-resources">Community and Support Resources</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Troubleshooting Specialist.
+I need to identify community and support resources for FHIR IG troubleshooting.
+My IG includes [describe your components] and I need help with [describe your issues].
+
+Please help me:
+1. Identify relevant community forums and groups
+2. Recommend support channels and resources
+3. Suggest expert contacts and mentors
+4. Plan for community engagement and contribution
+5. Help establish support network connections
+
+I want to build a support network for troubleshooting help.
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-tips-for-using-these-prompts">💡 Tips for Using These Prompts</h3>
+
+<ol>
+  <li><strong>Customize the prompts</strong> by replacing the bracketed text with your specific details</li>
+  <li><strong>Provide context</strong> about your IG components, tools, and specific issues</li>
+  <li><strong>Ask follow-up questions</strong> to dive deeper into specific troubleshooting areas</li>
+  <li><strong>Save successful prompts</strong> for future use and share them with the community</li>
+  <li><strong>Iterate and refine</strong> prompts based on the responses you receive</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://topology.health/">Topology Health</a>.  Package ig.prompt.library#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 26, 2025 18:32+0000">2025-08-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

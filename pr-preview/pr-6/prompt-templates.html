@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Prompt Templates - FHIR IG Prompt Library v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/topology.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"10"}
+    h3,h4,h5,h6{--heading-prefix:"10"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Custom header with logo and title side by side -->
+
+<div id="hl7-nav"> 
+    <a id="hl7-logo" no-external="true" href="https://topology.health">
+    <img height="100" alt="Visit Topology Health" src="assets/images/Topology Health Perfect Logo Package_Pro_1 Logo_Brand_Name_Tagine_Normal.svg"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR IG Prompt Library</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="getting-started.html">Getting Started</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Development
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profile-creation.html">Profile Creation</a>
+      </li>
+      <li>
+        <a href="extension-definition.html">Extensions</a>
+      </li>
+      <li>
+        <a href="value-set-creation.html">Value Sets</a>
+      </li>
+      <li>
+        <a href="examples-creation.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Quality &amp; Testing
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="validation-testing.html">Validation</a>
+      </li>
+      <li>
+        <a href="troubleshooting.html">Troubleshooting</a>
+      </li>
+      <li>
+        <a href="narrative-content.html">Narrative</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tools &amp; Templates
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="prompt-templates.html">Prompt Templates</a>
+      </li>
+      <li>
+        <a href="llm-integration.html">LLM Integration</a>
+      </li>
+      <li>
+        <a href="publishing-deployment.html">Publishing</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Prompt Templates</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR IG Prompt Library - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://topology.health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Prompt Templates</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#-three-core-prompting-principles-based-on-real-world-experience" id="markdown-toc--three-core-prompting-principles-based-on-real-world-experience">🚀 Three Core Prompting Principles (Based on Real-World Experience)</a></li>
+  <li><a href="#-basic-prompt-template" id="markdown-toc--basic-prompt-template">📋 Basic Prompt Template</a></li>
+  <li><a href="#-specialized-prompt-templates" id="markdown-toc--specialized-prompt-templates">🎯 Specialized Prompt Templates</a></li>
+  <li><a href="#-technical-prompt-templates" id="markdown-toc--technical-prompt-templates">🔧 Technical Prompt Templates</a></li>
+  <li><a href="#-documentation-prompt-templates" id="markdown-toc--documentation-prompt-templates">📝 Documentation Prompt Templates</a></li>
+  <li><a href="#-advanced-prompt-templates" id="markdown-toc--advanced-prompt-templates">🚀 Advanced Prompt Templates</a></li>
+  <li><a href="#-tips-for-using-these-templates" id="markdown-toc--tips-for-using-these-templates">💡 Tips for Using These Templates</a></li>
+  <li><a href="#-template-examples-by-use-case" id="markdown-toc--template-examples-by-use-case">📚 Template Examples by Use Case</a></li>
+</ul>
+
+</div>
+<p>This section provides reusable templates and guidelines for creating effective prompts for FHIR IG authoring. Use these templates as a starting point and customize them for your specific needs.</p>
+
+<h3 id="-three-core-prompting-principles-based-on-real-world-experience">🚀 Three Core Prompting Principles (Based on Real-World Experience)</h3>
+
+<h4 id="1-be-descriptive">1. Be Descriptive</h4>
+
+<ul>
+  <li><strong>Clearly explain what you want</strong> and include examples when possible</li>
+  <li><strong>Provide context</strong> about your domain, audience, and requirements</li>
+  <li><strong>Include relevant details</strong> about your current situation and constraints</li>
+</ul>
+
+<h4 id="2-be-specific">2. Be Specific</h4>
+
+<ul>
+  <li><strong>Focus the LLM on a tightly scoped task</strong> - avoid vague requests</li>
+  <li><strong>Break large tasks into smaller, focused prompts</strong></li>
+  <li><strong>Specify which IG, spec, and context to follow</strong></li>
+  <li><strong>Include your goals and quality criteria</strong></li>
+</ul>
+
+<h4 id="3-break-it-down">3. Break It Down</h4>
+
+<ul>
+  <li><strong>Divide complex goals into smaller, manageable steps</strong></li>
+  <li><strong>Use iterative prompting</strong> for complex tasks</li>
+  <li><strong>Build on previous successful prompts</strong></li>
+  <li><strong>Ask for step-by-step guidance rather than complete solutions</strong></li>
+</ul>
+
+<hr />
+
+<h3 id="-basic-prompt-template">📋 Basic Prompt Template</h3>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
+
+I'm working on [describe your FHIR IG task] and need help with [describe your specific need].
+
+[Provide relevant context about your domain, audience, and requirements]
+
+Please help me:
+1. [First specific request]
+2. [Second specific request]
+3. [Third specific request]
+4. [Fourth specific request]
+5. [Fifth specific request]
+
+[Additional context about constraints, preferences, or specific scenarios]
+
+I want to ensure [describe your goals or quality criteria].
+</code></pre></div></div>
+
+<h4 id="example-usage">Example Usage</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert.
+
+You are a FHIR Implementation Guide Authoring Expert with deep knowledge of HL7 FHIR, FHIR Shorthand (FSH), IGPublisher, and HL7 authoring guidelines.
+
+I'm working on creating a Patient profile for my oncology IG and need help with defining appropriate constraints.
+
+My IG will be used by [specify use case].
+
+Please help me:
+1. Identify which Patient elements are most relevant for oncology
+2. Set appropriate cardinality for contact and communication elements
+3. Define value set bindings for ethnicity and race
+4. Plan extensions for cancer-specific patient information
+5. Ensure the profile follows FHIR best practices
+
+I want to ensure the profile is flexible enough for different cancer types but constrained enough for interoperability.
+</code></pre></div></div>
+
+<h3 id="-specialized-prompt-templates">🎯 Specialized Prompt Templates</h3>
+
+<h4 id="problem-solving-template">Problem-Solving Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, Problem-Solving Specialist.
+
+I'm encountering [describe the problem] while [describe what you're trying to do].
+
+[Describe what you've already tried and the current error/issue]
+
+Please help me:
+1. Identify the root cause of this problem
+2. Suggest specific solutions to resolve it
+3. Provide step-by-step guidance for implementation
+4. Recommend tools or resources for troubleshooting
+5. Help prevent this issue in the future
+
+[Include any error messages, logs, or specific symptoms]
+
+I need to resolve this quickly because [describe your timeline or urgency].
+</code></pre></div></div>
+
+<h4 id="learning-and-understanding-template">Learning and Understanding Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, Educational Specialist.
+
+I need to understand [describe the concept or topic] in the context of FHIR IG authoring.
+
+[Describe your current level of knowledge and specific areas of confusion]
+
+Please help me:
+1. Explain [concept] in simple terms
+2. Show how it relates to [related FHIR concept]
+3. Provide practical examples of its use
+4. Identify common misconceptions or pitfalls
+5. Suggest resources for deeper learning
+
+[Include any specific scenarios or use cases you're working with]
+
+I want to ensure I understand this correctly before [describe your next steps].
+</code></pre></div></div>
+
+<h4 id="review-and-validation-template">Review and Validation Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, Validation and QA Specialist.
+
+I need to review and validate [describe what you're reviewing] for my FHIR IG.
+
+[Describe the current state and what you want to achieve]
+
+Please help me:
+1. Identify potential issues or problems
+2. Suggest improvements for clarity and usability
+3. Check for FHIR compliance and best practices
+4. Verify consistency with other parts of my IG
+5. Recommend testing strategies
+
+[Include the specific content or code you want reviewed]
+
+I want to ensure this meets [describe your quality standards] before publishing.
+</code></pre></div></div>
+
+<h3 id="-technical-prompt-templates">🔧 Technical Prompt Templates</h3>
+
+<h4 id="fshsushi-template">FSH/SUSHI Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, FSH/SUSHI Specialist.
+
+I need help with [describe your FSH/SUSHI task] for my FHIR IG.
+
+[Describe your current FSH code and what you're trying to achieve]
+
+Please help me:
+1. Write the correct FSH syntax for [describe your need]
+2. Explain the FSH rules and their purpose
+3. Suggest improvements to my current approach
+4. Handle any validation errors or warnings
+5. Ensure the FSH follows best practices
+
+[Include your current FSH code if applicable]
+
+I want to ensure my FSH is correct and follows SUSHI conventions.
+</code></pre></div></div>
+
+<h4 id="ig-publisher-template">IG Publisher Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, IG Publisher Specialist.
+
+I'm having issues with the IG Publisher for my FHIR IG.
+
+[Describe the specific problem or error you're encountering]
+
+Please help me:
+1. Identify the cause of this issue
+2. Provide specific configuration changes needed
+3. Suggest troubleshooting steps
+4. Recommend alternative approaches if needed
+5. Help prevent similar issues in the future
+
+[Include error messages, configuration files, or specific symptoms]
+
+I need to get my IG published by [describe your deadline].
+</code></pre></div></div>
+
+<h4 id="validation-template">Validation Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, Validation and QA Specialist.
+
+I need to validate [describe what you're validating] in my FHIR IG.
+
+[Describe your validation goals and current approach]
+
+Please help me:
+1. Choose appropriate validation tools and approaches
+2. Create effective test cases and examples
+3. Interpret validation results and errors
+4. Resolve any validation issues found
+5. Establish ongoing validation processes
+
+[Include any specific validation requirements or constraints]
+
+I want to ensure my IG passes all validation checks before publication.
+</code></pre></div></div>
+
+<h3 id="-documentation-prompt-templates">📝 Documentation Prompt Templates</h3>
+
+<h4 id="narrative-content-template">Narrative Content Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, Profile Documentation Specialist.
+
+I need to write narrative content for [describe your IG component].
+
+[Describe the purpose, audience, and scope of this content]
+
+Please help me:
+1. Structure the content logically and clearly
+2. Write clear, actionable guidance
+3. Include appropriate examples and use cases
+4. Ensure consistency with other documentation
+5. Make the content accessible to [describe your audience]
+
+[Include any specific requirements or constraints]
+
+I want the content to be [describe your quality goals].
+</code></pre></div></div>
+
+<h4 id="example-creation-template">Example Creation Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, Profile Documentation Specialist.
+
+I need to create examples for [describe your IG component].
+
+[Describe what the examples should demonstrate]
+
+Please help me:
+1. Design realistic and useful examples
+2. Show different scenarios and edge cases
+3. Ensure examples follow FHIR best practices
+4. Make examples easy to understand and implement
+5. Include appropriate narrative explanations
+
+[Include any specific requirements or constraints]
+
+I want the examples to help implementers understand [describe your key concepts].
+</code></pre></div></div>
+
+<h3 id="-advanced-prompt-templates">🚀 Advanced Prompt Templates</h3>
+
+<h4 id="architecture-and-design-template">Architecture and Design Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, Architecture and Design Specialist.
+
+I'm designing the architecture for [describe your IG component or system].
+
+[Describe your requirements, constraints, and goals]
+
+Please help me:
+1. Design an effective architecture that meets my needs
+2. Consider scalability, maintainability, and performance
+3. Ensure compliance with FHIR standards and best practices
+4. Plan for future evolution and extension
+5. Address potential challenges and risks
+
+[Include any specific technical or business constraints]
+
+I want to create an architecture that supports [describe your long-term goals].
+</code></pre></div></div>
+
+<h4 id="integration-template">Integration Template</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert, Integration Specialist.
+
+I need to integrate my FHIR IG with [describe the external system or standard].
+
+[Describe your current IG and the integration requirements]
+
+Please help me:
+1. Plan the integration approach and architecture
+2. Identify potential challenges and solutions
+3. Ensure compliance with both FHIR and [external standard]
+4. Design appropriate mappings and transformations
+5. Plan testing and validation strategies
+
+[Include any specific integration requirements or constraints]
+
+I want to ensure seamless integration that maintains [describe your quality criteria].
+</code></pre></div></div>
+
+<h3 id="-tips-for-using-these-templates">💡 Tips for Using These Templates</h3>
+
+<h4 id="customization-guidelines">Customization Guidelines</h4>
+
+<ol>
+  <li><strong>Replace bracketed text</strong> with your specific details</li>
+  <li><strong>Add relevant context</strong> about your domain and requirements</li>
+  <li><strong>Adjust the number of requests</strong> based on your needs</li>
+  <li><strong>Include specific examples</strong> or code when relevant</li>
+  <li><strong>Specify your audience</strong> and their technical level</li>
+</ol>
+
+<h4 id="best-practices">Best Practices</h4>
+
+<ol>
+  <li><strong>Be specific</strong> about what you need help with</li>
+  <li><strong>Provide context</strong> about your situation and constraints</li>
+  <li><strong>Ask for actionable guidance</strong> rather than general information</li>
+  <li><strong>Include relevant details</strong> about your current approach</li>
+  <li><strong>Specify your goals</strong> and quality criteria</li>
+</ol>
+
+<h4 id="common-mistakes-to-avoid">Common Mistakes to Avoid</h4>
+
+<ol>
+  <li><strong>Vague requests</strong> that don't give enough context</li>
+  <li><strong>Too many requests</strong> in a single prompt</li>
+  <li><strong>Missing technical details</strong> that are relevant to the problem</li>
+  <li><strong>Unclear goals</strong> or success criteria</li>
+  <li><strong>Ignoring the audience</strong> of your IG</li>
+</ol>
+
+<hr />
+
+<h3 id="-template-examples-by-use-case">📚 Template Examples by Use Case</h3>
+
+<h4 id="for-beginners">For Beginners</h4>
+
+<ul>
+  <li>Use the <strong>Basic Prompt Template</strong> with simple, clear language</li>
+  <li>Focus on understanding concepts before implementation</li>
+  <li>Ask for step-by-step guidance</li>
+</ul>
+
+<h4 id="for-intermediate-users">For Intermediate Users</h4>
+
+<ul>
+  <li>Use <strong>Technical Prompt Templates</strong> for specific implementation needs</li>
+  <li>Include your current approach and ask for improvements</li>
+  <li>Request best practices and optimization suggestions</li>
+</ul>
+
+<h4 id="for-advanced-users">For Advanced Users</h4>
+
+<ul>
+  <li>Use <strong>Advanced Prompt Templates</strong> for complex architectural decisions</li>
+  <li>Focus on scalability, maintainability, and future-proofing</li>
+  <li>Request validation of your approach and identification of potential issues</li>
+</ul>
+
+<h4 id="for-contributors">For Contributors</h4>
+
+<ul>
+  <li>Use <strong>Review and Validation Templates</strong> to ensure quality</li>
+  <li>Focus on consistency and best practices</li>
+  <li>Request feedback on clarity and usability</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://topology.health/">Topology Health</a>.  Package ig.prompt.library#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 26, 2025 18:32+0000">2025-08-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
