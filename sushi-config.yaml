@@ -6,8 +6,7 @@
 id: ig.prompt.library
 canonical: http://topology.health
 name: FHIRIGpromptLibrary
-# title: Example Title
-# description: Example Implementation Guide for getting started with SUSHI
+description: A guide on how to use LLMs to create FHIR artifacts and an implementation guide.
 title: FHIR IG Prompt Library
 status: draft # draft | active | retired | unknown
 version: 0.1.0
