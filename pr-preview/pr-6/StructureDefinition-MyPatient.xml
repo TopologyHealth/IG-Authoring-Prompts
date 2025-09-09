@@ -13,7 +13,7 @@
   <version value="0.1.0"/>
   <name value="MyPatient"/>
   <status value="draft"/>
-  <date value="2025-08-26T20:31:46+00:00"/>
+  <date value="2025-09-09T12:13:04+00:00"/>
   <publisher value="Topology Health"/>
   <contact>
     <name value="Topology Health"/>
@@ -242,7 +242,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
       </binding>
     </element>
     <element id="Patient.text">
@@ -789,7 +789,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="The domestic partnership status of a person."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/marital-status"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/marital-status|4.0.1"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1067,7 +1067,7 @@
         </extension>
         <strength value="extensible"/>
         <description value="The nature of the relationship between a patient and a contact person for that patient."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/patient-contactrelationship"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/patient-contactrelationship|4.0.1"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1257,7 +1257,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
       </type>
       <condition value="pat-1"/>
       <constraint>
@@ -1494,7 +1494,7 @@
         </extension>
         <strength value="preferred"/>
         <description value="A human language."/>
-        <valueSet value="http://hl7.org/fhir/ValueSet/languages"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/languages|4.0.1"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1563,9 +1563,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Practitioner|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/PractitionerRole|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1605,7 +1605,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Organization|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1787,8 +1787,8 @@
           <valueBoolean value="false"/>
         </extension>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient"/>
-        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Patient|4.0.1"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/RelatedPerson|4.0.1"/>
       </type>
       <constraint>
         <key value="ele-1"/>
