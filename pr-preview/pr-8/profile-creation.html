@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Profile Creation Prompts - FHIR IG Prompt Library v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/topology.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Custom header with logo and title side by side -->
+
+<div id="hl7-nav"> 
+    <a id="hl7-logo" no-external="true" href="https://topology.health">
+    <img height="100" alt="Visit Topology Health" src="assets/images/Topology Health Perfect Logo Package_Pro_1 Logo_Brand_Name_Tagine_Normal.svg"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR IG Prompt Library</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="getting-started.html">Getting Started</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Development
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profile-creation.html">Profile Creation</a>
+      </li>
+      <li>
+        <a href="extension-definition.html">Extensions</a>
+      </li>
+      <li>
+        <a href="value-set-creation.html">Value Sets</a>
+      </li>
+      <li>
+        <a href="examples-creation.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Quality &amp; Testing
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="validation-testing.html">Validation</a>
+      </li>
+      <li>
+        <a href="troubleshooting.html">Troubleshooting</a>
+      </li>
+      <li>
+        <a href="narrative-content.html">Narrative</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tools &amp; Templates
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="prompt-templates.html">Prompt Templates</a>
+      </li>
+      <li>
+        <a href="llm-integration.html">LLM Integration</a>
+      </li>
+      <li>
+        <a href="publishing-deployment.html">Publishing</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Profile Creation Prompts</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR IG Prompt Library - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://topology.health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Profile Creation Prompts</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#assumptions--core-principles" id="markdown-toc-assumptions--core-principles">Assumptions &amp; Core Principles</a></li>
+  <li><a href="#assumptions" id="markdown-toc-assumptions">Assumptions</a></li>
+  <li><a href="#three-core-prompting-principles" id="markdown-toc-three-core-prompting-principles">Three Core Prompting Principles</a></li>
+  <li><a href="#llm-integration-tips" id="markdown-toc-llm-integration-tips">LLM Integration Tips</a></li>
+  <li><a href="#️-profile-design-and-planning" id="markdown-toc-️-profile-design-and-planning">🏗️ Profile Design and Planning</a></li>
+  <li><a href="#-profile-structure-and-elements" id="markdown-toc--profile-structure-and-elements">🔧 Profile Structure and Elements</a></li>
+  <li><a href="#-cardinality-and-slicing" id="markdown-toc--cardinality-and-slicing">📊 Cardinality and Slicing</a></li>
+  <li><a href="#-extensions-and-modifiers" id="markdown-toc--extensions-and-modifiers">🔌 Extensions and Modifiers</a></li>
+  <li><a href="#-profile-relationships" id="markdown-toc--profile-relationships">🔗 Profile Relationships</a></li>
+  <li><a href="#-profile-documentation" id="markdown-toc--profile-documentation">📝 Profile Documentation</a></li>
+  <li><a href="#-tips-for-using-these-prompts" id="markdown-toc--tips-for-using-these-prompts">💡 Tips for Using These Prompts</a></li>
+</ul>
+
+</div>
+<p>This section contains prompts to help you create and design FHIR profiles. Use these prompts with AI assistants to guide your profile development process.</p>
+
+<h3 id="assumptions--core-principles">Assumptions &amp; Core Principles</h3>
+<!-- Shared core principles and assumptions for all prompt pages -->
+
+<h3 id="assumptions">Assumptions</h3>
+<ul>
+  <li>Default to FHIR R4 unless otherwise stated</li>
+  <li>Validate outputs with SUSHI and IG Publisher</li>
+  <li>Use canonical URLs for IGs, profiles, extensions, and value sets</li>
+  <li>Prefer small, iterative prompts over large, monolithic ones</li>
+</ul>
+
+<h3 id="three-core-prompting-principles">Three Core Prompting Principles</h3>
+<ol>
+  <li>Be Descriptive — clearly state the goal and provide examples/context</li>
+  <li>Be Specific — scope the task tightly; avoid vague requests</li>
+  <li>Break It Down — split complex tasks into smaller steps</li>
+</ol>
+
+<h3 id="llm-integration-tips">LLM Integration Tips</h3>
+<ul>
+  <li>Start simple and increase complexity iteratively</li>
+  <li>Reuse the same chat/session to preserve context</li>
+  <li>Provide samples (FSH, JSON, text) to shape outputs</li>
+  <li>Always validate LLM outputs with your tooling and specs</li>
+</ul>
+
+<h3 id="️-profile-design-and-planning">🏗️ Profile Design and Planning</h3>
+
+<h4 id="profile-scope-definition">Profile Scope Definition</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Implementation Guide Authoring Expert specializing in FHIR Shorthand (FSH) and IGPublisher.
+Base all recommendations on [FHIR R4/R5] and ensure outputs align with HL7 best practices.
+
+I'm creating a FHIR profile for [describe your resource type] in my Implementation Guide.
+This profile will be used for [describe your use case] in [describe your domain].
+
+Please help me:
+1. Define the scope and purpose of this profile
+2. Identify which base FHIR resource to extend
+3. Determine the level of constraint needed
+4. Plan the relationship with other profiles in my IG
+5. Consider backwards compatibility requirements
+
+My profile will be used by [describe your implementers] for [describe your specific scenarios].
+</code></pre></div></div>
+
+<h4 id="profile-requirements-analysis">Profile Requirements Analysis</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Requirements Analyst specializing in translating user needs into FHIR profiles.
+Base all analysis on [FHIR R4/R5] standards and best practices.
+
+I need to analyze the requirements for my [resource type] profile.
+My profile must support [list your key requirements] and integrate with [describe your existing systems].
+
+Please help me:
+1. Break down functional requirements into FHIR elements
+2. Identify required vs. optional elements
+3. Determine appropriate cardinality for each element
+4. Plan extension points for custom needs
+5. Consider validation and business rule requirements
+
+I want to ensure my profile is both flexible and constrained appropriately.
+</code></pre></div></div>
+
+<h3 id="-profile-structure-and-elements">🔧 Profile Structure and Elements</h3>
+
+<h4 id="element-selection-and-organization">Element Selection and Organization</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist with expertise in designing profile structures using FSH.
+Ensure all design decisions comply with [FHIR R4/R5] and HL7 best practices.
+
+I'm designing the structure for my [resource type] profile.
+I need to include elements for [describe your data requirements] while following FHIR best practices.
+
+Please help me:
+1. Select appropriate base FHIR elements to include
+2. Organize elements in logical groups
+3. Determine which elements should be constrained
+4. Identify elements that can use default FHIR behavior
+5. Plan for future extensibility
+
+My profile should be [simple/complex] and focus on [describe your primary use case].
+</code></pre></div></div>
+
+<h4 id="element-constraints-and-bindings">Element Constraints and Bindings</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist with expertise in creating valid FSH profiles for IGPublisher.
+Ensure outputs meet [FHIR R4/R5] conformance and pass `sushi` validation without errors.
+
+I need to define constraints for elements in my [resource type] profile.
+I want to ensure [describe your constraint goals] while maintaining flexibility.
+
+Please help me:
+1. Set appropriate minimum and maximum cardinality
+2. Define value set bindings for coded elements
+3. Set length and pattern constraints for string elements
+4. Define reference constraints for related resources
+5. Balance constraint vs. flexibility appropriately
+
+I want my profile to be [describe your constraint philosophy].
+</code></pre></div></div>
+
+<h3 id="-cardinality-and-slicing">📊 Cardinality and Slicing</h3>
+
+<h4 id="cardinality-planning">Cardinality Planning</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist experienced in cardinality planning for FHIR profiles.
+Ensure all cardinality decisions comply with [FHIR R4/R5] standards and support interoperability.
+
+I'm planning the cardinality for elements in my [resource type] profile.
+I need to balance [describe your requirements] with [describe your flexibility needs].
+
+Please help me:
+1. Set appropriate min/max cardinality for each element
+2. Consider optional vs. required elements
+3. Plan for conditional requirements
+4. Ensure cardinality supports my use cases
+5. Avoid overly restrictive cardinality
+
+My profile will be used in [describe your scenarios] where [describe your data availability].
+</code></pre></div></div>
+
+<h4 id="slicing-strategy">Slicing Strategy</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist with expertise in slicing strategies for FHIR profiles.
+Ensure slicing designs comply with [FHIR R4/R5] and support clear differentiation of element types.
+
+I need to implement slicing for [describe your slicing needs] in my [resource type] profile.
+I want to differentiate between [describe your different types] of the same element.
+
+Please help me:
+1. Design an effective slicing strategy
+2. Choose appropriate slice discriminators
+3. Define slice-specific constraints
+4. Ensure slices are mutually exclusive or ordered correctly
+5. Document the purpose of each slice
+
+My slices will represent [describe your different categories] and need to be [describe your relationship].
+</code></pre></div></div>
+
+<h3 id="-extensions-and-modifiers">🔌 Extensions and Modifiers</h3>
+
+<h4 id="extension-integration">Extension Integration</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist experienced in integrating extensions into FHIR profiles.
+Ensure extensions follow [FHIR R4/R5] best practices and maintain profile compatibility.
+
+I need to integrate extensions into my [resource type] profile.
+I want to extend FHIR to support [describe your extension needs] that aren't covered by the base resource.
+
+Please help me:
+1. Identify where extensions should be added
+2. Choose between modifier extensions vs. regular extensions
+3. Plan extension cardinality and constraints
+4. Consider extension context and usage
+5. Ensure extensions follow FHIR best practices
+
+My extensions will support [describe your specific functionality] and be used by [describe your audience].
+</code></pre></div></div>
+
+<h4 id="modifier-extension-usage">Modifier Extension Usage</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist knowledgeable in modifier extensions and their appropriate use.
+Ensure modifier extension usage complies with [FHIR R4/R5] and does not compromise data integrity.
+
+I need to use modifier extensions in my [resource type] profile to [describe your modification needs].
+I want to change the meaning of base FHIR elements for [describe your use case].
+
+Please help me:
+1. Identify appropriate use cases for modifier extensions
+2. Choose the right elements to modify
+3. Set appropriate cardinality for modifier extensions
+4. Document the modified meaning clearly
+5. Ensure modifier extensions are used correctly
+
+My modifier extensions will change the interpretation of [describe your elements] to mean [describe your modified meaning].
+</code></pre></div></div>
+
+<h3 id="-profile-relationships">🔗 Profile Relationships</h3>
+
+<h4 id="profile-inheritance-and-composition">Profile Inheritance and Composition</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist with expertise in profile inheritance and composition.
+Ensure profile relationships align with [FHIR R4/R5] standards and support maintainability.
+
+I'm designing a family of related profiles for [describe your domain].
+I need to understand how to structure [describe your profile relationships] effectively.
+
+Please help me:
+1. Plan profile inheritance hierarchies
+2. Design profile composition strategies
+3. Manage dependencies between profiles
+4. Ensure consistent constraint patterns
+5. Plan for profile versioning and evolution
+
+My profiles will be used together to support [describe your complete workflow].
+</code></pre></div></div>
+
+<h4 id="reference-constraints">Reference Constraints</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist experienced in defining reference constraints.
+Ensure reference constraints comply with [FHIR R4/R5] and support data integrity.
+
+I need to define reference constraints in my [resource type] profile.
+My profile will reference [describe your related resources] and I want to ensure proper relationships.
+
+Please help me:
+1. Set appropriate reference targets
+2. Define reference cardinality
+3. Consider conditional references
+4. Plan for circular reference prevention
+5. Document reference relationships clearly
+
+My profile references will support [describe your workflow] and ensure [describe your data integrity].
+</code></pre></div></div>
+
+<h3 id="-profile-documentation">📝 Profile Documentation</h3>
+
+<h4 id="profile-narrative-content">Profile Narrative Content</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist skilled in writing clear and comprehensive profile documentation.
+Ensure narrative content aligns with [FHIR R4/R5] and supports implementer understanding.
+
+I need to write narrative content for my [resource type] profile.
+My profile will be used by [describe your audience] for [describe your purpose].
+
+Please help me:
+1. Write a clear profile description
+2. Document the purpose and scope
+3. Explain key constraints and their rationale
+4. Provide usage examples and guidance
+5. Include implementation considerations
+
+I want my profile documentation to be [describe your documentation goals].
+</code></pre></div></div>
+
+<h4 id="profile-invariant-creation">Profile Invariant Creation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist with expertise in FHIRPath/XPath and invariant authoring in FHIR Shorthand (FSH). Ensure outputs meet [FHIR R4/R5] conformance and pass `sushi` and IGPublisher validation without errors.
+
+I need to define an invariant for my [resource type] profile to enforce this business rule:
+"[state the rule in plain language, e.g., Either Patient.name.given and/or Patient.name.family SHALL be present.]"
+
+Please provide:
+1. A precise **FHIRPath** expression implementing the rule.
+2. A corresponding **XPath** expression.
+3. A complete **FSH invariant** snippet with: `Invariant: [id]`, `Description`, `* severity = #[error|warning]`, `* expression = "[...]"`, `* xpath = "[...]"`.
+4. The **FSH usage** showing how to apply the invariant with `* obeys [id]` at the correct element path (root vs. specific element) and any required `^constraint` metadata if applicable.
+5. A minimal **test instance** outline (JSON) that should **pass**, and one that should **fail**, with a one-line explanation for each.
+6. Notes on edge cases and how the invariant interacts with cardinality, bindings, and slicing (if relevant).
+
+Context:
+- Resource/Profile: [name]
+- Element scope for invariant (root or element path): [e.g., Patient.name]
+- Severity: [#error or #warning]
+- Related constraints or slices: [list]
+
+Example (for reference only; do not copy blindly):
+Plain rule: "Either Patient.name.given and/or Patient.name.family SHALL be present."
+FHIRPath: `(family.exists() or given.exists())`
+XPath: `(/f:name/f:family or /f:name/f:given)`
+FSH:
+Invariant: ca-core-pat-1
+Description: "Either Patient.name.given and/or Patient.name.family SHALL be present."
+* severity = #error
+* expression = "(family.exists() or given.exists())"
+* xpath = "(/f:name/f:family or /f:name/f:given)"
+Usage:
+* name obeys ca-core-pat-1
+</code></pre></div></div>
+
+<h4 id="profile-review-checklist">Profile Review Checklist</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist tasked with reviewing profiles for quality and compliance.
+Ensure checklist items align with [FHIR R4/R5] standards and best practices.
+
+I'm reviewing my [resource type] profile before finalizing it.
+I want to ensure quality and compliance with FHIR standards.
+
+Please help me create a checklist to verify:
+1. Profile structure and organization
+2. Constraint appropriateness and consistency
+3. Extension usage and documentation
+4. Cardinality and slicing correctness
+5. Documentation completeness and clarity
+6. FHIR compliance and best practices
+
+I want my profile to be [describe your quality goals].
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-tips-for-using-these-prompts">💡 Tips for Using These Prompts</h3>
+
+<ol>
+  <li><strong>Start with scope definition</strong> to ensure your profile meets actual needs</li>
+  <li><strong>Consider your audience</strong> - technical vs. clinical implementers have different needs</li>
+  <li><strong>Balance constraints</strong> - too many constraints limit flexibility, too few reduce interoperability</li>
+  <li><strong>Document everything</strong> - clear documentation is crucial for adoption</li>
+  <li><strong>Test thoroughly</strong> - validation catches many issues before they become problems</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://topology.health/">Topology Health</a>.  Package ig.prompt.library#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 18, 2025 18:17+0000">2025-09-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

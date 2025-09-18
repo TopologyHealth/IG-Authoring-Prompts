@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Examples Creation Prompts - FHIR IG Prompt Library v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/topology.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Custom header with logo and title side by side -->
+
+<div id="hl7-nav"> 
+    <a id="hl7-logo" no-external="true" href="https://topology.health">
+    <img height="100" alt="Visit Topology Health" src="assets/images/Topology Health Perfect Logo Package_Pro_1 Logo_Brand_Name_Tagine_Normal.svg"/>
+    </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FHIR IG Prompt Library</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="getting-started.html">Getting Started</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Core Development
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="profile-creation.html">Profile Creation</a>
+      </li>
+      <li>
+        <a href="extension-definition.html">Extensions</a>
+      </li>
+      <li>
+        <a href="value-set-creation.html">Value Sets</a>
+      </li>
+      <li>
+        <a href="examples-creation.html">Examples</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Quality &amp; Testing
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="validation-testing.html">Validation</a>
+      </li>
+      <li>
+        <a href="troubleshooting.html">Troubleshooting</a>
+      </li>
+      <li>
+        <a href="narrative-content.html">Narrative</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Tools &amp; Templates
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="prompt-templates.html">Prompt Templates</a>
+      </li>
+      <li>
+        <a href="llm-integration.html">LLM Integration</a>
+      </li>
+      <li>
+        <a href="publishing-deployment.html">Publishing</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Examples Creation Prompts</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">FHIR IG Prompt Library - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://topology.health/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Examples Creation Prompts</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#-why-examples-matter" id="markdown-toc--why-examples-matter">🎯 Why Examples Matter</a></li>
+  <li><a href="#️-example-planning-and-strategy" id="markdown-toc-️-example-planning-and-strategy">🏗️ Example Planning and Strategy</a></li>
+  <li><a href="#-patient-based-example-creation" id="markdown-toc--patient-based-example-creation">👤 Patient-Based Example Creation</a></li>
+  <li><a href="#-example-structure-and-content" id="markdown-toc--example-structure-and-content">🔧 Example Structure and Content</a></li>
+  <li><a href="#-example-file-organization" id="markdown-toc--example-file-organization">📁 Example File Organization</a></li>
+  <li><a href="#-example-content-and-realism" id="markdown-toc--example-content-and-realism">🎭 Example Content and Realism</a></li>
+  <li><a href="#-llm-assisted-example-generation" id="markdown-toc--llm-assisted-example-generation">🤖 LLM-Assisted Example Generation</a></li>
+  <li><a href="#-example-validation-and-testing" id="markdown-toc--example-validation-and-testing">✅ Example Validation and Testing</a></li>
+  <li><a href="#-example-maintenance-and-evolution" id="markdown-toc--example-maintenance-and-evolution">🔄 Example Maintenance and Evolution</a></li>
+  <li><a href="#-tips-for-using-these-prompts" id="markdown-toc--tips-for-using-these-prompts">💡 Tips for Using These Prompts</a></li>
+</ul>
+
+</div>
+<p>This section contains prompts to help you create effective FHIR examples for your Implementation Guide. Based on real-world experience, these prompts will guide you through creating realistic, useful examples that demonstrate proper usage of your profiles, extensions, and value sets.</p>
+
+<h3 id="-why-examples-matter">🎯 Why Examples Matter</h3>
+
+<h4 id="key-benefits">Key Benefits</h4>
+
+<ul>
+  <li><strong>Demonstrate proper usage</strong> of your IG components</li>
+  <li><strong>Validate profile constraints</strong> with real data</li>
+  <li><strong>Show extension integration</strong> in context</li>
+  <li><strong>Provide implementation guidance</strong> for developers</li>
+  <li><strong>Test value set bindings</strong> with actual codes</li>
+  <li><strong>Create realistic scenarios</strong> that implementers can relate to</li>
+</ul>
+
+<h4 id="real-world-workflow-based-on-fhir-devdays-2025-experience">Real-World Workflow (Based on FHIR DevDays 2025 Experience)</h4>
+
+<ol>
+  <li><strong>Define a patient instance</strong> based on your FHIR profile</li>
+  <li><strong>Create related instances</strong> that demonstrate your IG's scope</li>
+  <li><strong>Store examples</strong> in the <code class="language-plaintext highlighter-rouge">fsh/instances/</code> folder for SUSHI processing</li>
+  <li><strong>Use examples</strong> to validate profiles and test constraints</li>
+</ol>
+
+<h3 id="️-example-planning-and-strategy">🏗️ Example Planning and Strategy</h3>
+
+<h4 id="simple-example-generation">Simple Example Generation</h4>
+
+<p>Use this prompt to define some simple examples. Provide your profiles as part of the context.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Profile Authoring Specialist experienced in creating example instances for profiles.
+Ensure examples comply with [FHIR R4/R5] and demonstrate best practices.
+
+I need to create examples for my [resource type] profile.
+My profile will be used in [describe your scenarios] and I want to demonstrate proper usage.
+
+Please help me:
+1. Design realistic example instances
+2. Show different constraint scenarios
+3. Demonstrate extension usage
+4. Include edge cases and variations
+5. Ensure examples follow FHIR best practices
+
+My examples should help implementers understand [describe your key concepts].
+</code></pre></div></div>
+
+<h4 id="example-scope-definition">Example Scope Definition</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Example Authoring and Implementation Guide Specialist. Generate a plan to define the scope and purpose of examples for your [describe your IG component] in your Implementation Guide. Design scenarios that cover realistic patient data and clinical situations, including edge cases and variations. Ensure examples support your IG's objectives.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples where applicable, and pass `sushi` and IGPublisher validation without errors or warnings. Reference applicable FHIR specification sections as needed.
+
+Please help me:
+1. Define the scope and purpose of these examples
+2. Identify which scenarios to cover
+3. Plan for realistic patient data and clinical situations
+4. Consider edge cases and variations
+5. Ensure examples support my IG's objectives
+
+My examples should help implementers understand [describe your key concepts].
+</code></pre></div></div>
+
+<h4 id="example-requirements-analysis">Example Requirements Analysis</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Example Design and Validation Expert. Design a structure that breaks down functional requirements into example scenarios for your [describe your IG component]. Identify required versus optional example elements, determine appropriate complexity levels, and plan for example validation and testing. Consider maintenance and updates to ensure long-term usability.
+
+All examples must comply with FHIR R4/R5 standards, include FSH and JSON samples, and successfully pass `sushi` and IGPublisher validation without errors or warnings. Reference relevant FHIR specification sections where appropriate.
+
+Please help me:
+1. Break down functional requirements into example scenarios
+2. Identify required vs. optional example elements
+3. Determine appropriate complexity for each example
+4. Plan for example validation and testing
+5. Consider example maintenance and updates
+
+I want to ensure my examples are both comprehensive and follow FHIR best practices.
+</code></pre></div></div>
+
+<h3 id="-patient-based-example-creation">👤 Patient-Based Example Creation</h3>
+
+<h4 id="patient-instance-definition">Patient Instance Definition</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Clinical Data Modeling Specialist. Generate realistic patient instances based on your [describe your Patient profile] profile that demonstrate [describe your patient characteristics] and support [describe your use cases]. Include appropriate identifiers, contact information, profile constraints, and extensions. Create variations for different patient types to support diverse example scenarios.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON representations, and pass `sushi` and IGPublisher validation with no errors or warnings. Use proper medical terminology and clinically coherent workflows.
+
+Please help me:
+1. Generate realistic patient demographics
+2. Include appropriate identifiers and contact information
+3. Apply profile constraints and extensions correctly
+4. Ensure patient data supports my example scenarios
+5. Create variations for different patient types
+
+My patient instance should be realistic and demonstrate proper profile usage.
+</code></pre></div></div>
+
+<h4 id="related-resource-instances">Related Resource Instances</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Clinical Data Modeling Specialist. Design comprehensive related resource instances for your IG that demonstrate your scope [describe your scope] and workflow [describe your workflow]. Create realistic clinical scenarios with proper resource relationships, references, value set codes, and extensions. Demonstrate the complete workflow from start to finish.
+
+All examples must comply with FHIR R4/R5, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings. Use appropriate clinical terminology and ensure clinical coherence.
+
+Please help me:
+1. Identify which resources to include in the episode of care
+2. Create realistic clinical scenarios and data
+3. Ensure proper resource relationships and references
+4. Apply appropriate value set codes and extensions
+5. Demonstrate the complete workflow from start to finish
+
+I want to create a comprehensive example that shows how all my IG components work together.
+</code></pre></div></div>
+
+<h3 id="-example-structure-and-content">🔧 Example Structure and Content</h3>
+
+<h4 id="examplescenario-resource-creation">ExampleScenario Resource Creation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Workflow and ExampleScenario Specialist. Identify all resources referencing the patient instance with ID [describe your patient instance]. Create an ExampleScenario FHIR Resource instance in FSH that documents the complete workflow, including proper resource references, relationships, and a detailed scenario narrative and purpose.
+
+Ensure the ExampleScenario is FHIR R4/R5 compliant, includes both FSH and JSON examples, and passes `sushi` and IGPublisher validation without errors or warnings. Reference applicable FHIR specification sections as needed.
+
+Please help me:
+1. Identify all resources that reference the patient instance
+2. Create an ExampleScenario that documents the complete workflow
+3. Include proper resource references and relationships
+4. Document the scenario narrative and purpose
+5. Ensure the ExampleScenario follows FHIR best practices
+
+I want to create a comprehensive ExampleScenario that shows how all my resources work together.
+</code></pre></div></div>
+
+<h4 id="complete-episode-of-care">Complete Episode of Care</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Clinical Data Modeling Specialist. Design a realistic clinical episode of care example for your [describe your IG]. Include all necessary resources, ensure proper relationships and references, apply appropriate terminology and extensions, and create a narrative that explains the example clearly.
+
+All examples must be FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings. Use realistic clinical data and terminology consistent with FHIR standards.
+
+Please help me:
+1. Design a realistic clinical scenario
+2. Include all necessary resources for the episode
+3. Ensure proper resource relationships and references
+4. Apply appropriate terminology and extensions
+5. Create a narrative that explains the example
+
+My episode of care should be clinically realistic and demonstrate proper IG usage.
+</code></pre></div></div>
+
+<h4 id="extension-integration-examples">Extension Integration Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Extension and Profiling Specialist. Generate examples that correctly use your [describe your extension] extension, based on the provided StructureDefinition [paste your extension definition]. Use appropriate values for extension elements, demonstrate proper cardinality and constraints, and create variations showing different extension values.
+
+Ensure all examples comply with FHIR R4/R5, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings. Reference relevant FHIR specification sections about extensions.
+
+Please help me:
+1. Generate examples that include this extension
+2. Use appropriate values for extension elements
+3. Ensure extension usage follows FHIR best practices
+4. Create variations showing different extension values
+5. Demonstrate proper extension cardinality and constraints
+
+I want examples that show implementers how to use my extensions correctly.
+</code></pre></div></div>
+
+<h4 id="value-set-demonstration">Value Set Demonstration</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Terminology Binding Specialist. Generate examples that demonstrate your [describe your value set] value set, which includes [describe your codes] and is used for [describe your purpose]. Show different code combinations and scenarios, demonstrate proper terminology binding, and include edge cases and variations.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings. Reference relevant FHIR terminology binding specifications.
+
+Please help me:
+1. Generate examples using appropriate value set codes
+2. Show different code combinations and scenarios
+3. Demonstrate proper terminology binding
+4. Include edge cases and variations
+5. Ensure examples are clinically realistic
+
+I want examples that help implementers understand proper value set usage.
+</code></pre></div></div>
+
+<h3 id="-example-file-organization">📁 Example File Organization</h3>
+
+<h4 id="examplescenario-resources">ExampleScenario Resources</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Workflow and ExampleScenario Specialist. Design ExampleScenario resource structures for your use cases that show how [describe your resources] work together in [describe your clinical scenarios]. Include proper actor definitions, workflow steps, resource relationships, dependencies, and realistic clinical narratives.
+
+Ensure ExampleScenarios are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Design ExampleScenario structure for my use cases
+2. Include proper actor definitions and workflow steps
+3. Document resource relationships and dependencies
+4. Create realistic clinical narratives
+5. Ensure ExampleScenarios complement my individual examples
+
+I want ExampleScenarios that help implementers understand the complete picture.
+</code></pre></div></div>
+
+<h4 id="fsh-instance-structure">FSH Instance Structure</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR IG File Organization and Standards Specialist. Plan the folder structure for your examples in the `fsh/instances` folder for SUSHI processing. Define naming conventions for instance files, organize examples by resource type or scenario, and ensure all examples can be processed correctly. Plan for example maintenance and updates.
+
+Ensure organization and naming comply with FHIR R4/R5 IG standards, and all examples pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Plan the folder structure for my examples
+2. Name conventions for instance files
+3. Organize examples by resource type or scenario
+4. Ensure SUSHI can process all examples correctly
+5. Plan for example maintenance and updates
+
+I want my examples to be well-organized and easy to maintain.
+</code></pre></div></div>
+
+<h4 id="instance-file-naming">Instance File Naming</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR IG File Organization and Standards Specialist. Create clear and consistent naming conventions for your FSH instance files, including resource type and scenario information. Ensure names are descriptive, searchable, and support versioning and updates.
+
+Comply with FHIR R4/R5 IG naming standards and ensure all files pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Create clear naming conventions for instance files
+2. Include resource type and scenario information
+3. Ensure names are descriptive and searchable
+4. Plan for versioning and updates
+5. Maintain consistency across all examples
+
+I want my instance files to be easy to find and understand.
+</code></pre></div></div>
+
+<h3 id="-example-content-and-realism">🎭 Example Content and Realism</h3>
+
+<h4 id="clinical-realism">Clinical Realism</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a Clinical Informatics and FHIR Authoring Specialist. Generate clinically realistic examples for your [describe your IG], intended for [describe your audience] in [describe your environment]. Include realistic clinical scenarios, appropriate medical terminology, believable patient demographics, clinically coherent workflows, and relevant clinical context and details.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Generate realistic clinical scenarios
+2. Include appropriate medical terminology
+3. Create believable patient demographics
+4. Ensure clinical workflow makes sense
+5. Include relevant clinical context and details
+
+I want my examples to be believable and useful for clinical implementers.
+</code></pre></div></div>
+
+<h4 id="edge-cases-and-variations">Edge Cases and Variations</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a Clinical Informatics and FHIR Authoring Specialist. Identify important edge cases and variations for your [describe your IG]. Create examples showing boundary conditions, different usage patterns, error conditions, exceptions, and demonstrate flexibility and adaptability.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Identify important edge cases to cover
+2. Create examples showing boundary conditions
+3. Demonstrate different usage patterns
+4. Include error conditions and exceptions
+5. Show flexibility and adaptability
+
+I want my examples to help implementers understand the full scope of my IG.
+</code></pre></div></div>
+
+<h3 id="-llm-assisted-example-generation">🤖 LLM-Assisted Example Generation</h3>
+
+<h4 id="examplescenario-from-patient-instances">ExampleScenario from Patient Instances</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Workflow and ExampleScenario Specialist. Identify all resources referencing the patient instance with ID [describe your patient instance ID] in your `fsh/instances` folder. Create an ExampleScenario documenting the complete workflow with proper resource references, relationships, scenario narrative, and purpose. Generate the FSH code for the ExampleScenario.
+
+Ensure the ExampleScenario is FHIR R4/R5 compliant, includes FSH and JSON examples, and passes `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Identify all resources that reference this patient instance
+2. Create an ExampleScenario that documents the complete workflow
+3. Include proper resource references and relationships
+4. Document the scenario narrative and purpose
+5. Generate the FSH code for the ExampleScenario
+
+I want to create a comprehensive ExampleScenario that demonstrates my IG's capabilities.
+</code></pre></div></div>
+
+<h4 id="context-aware-example-creation">Context-Aware Example Creation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Clinical Data Modeling Specialist. Generate examples for your [describe your profile] profile using an LLM. Include extensions for [describe your extensions] and value sets for [describe your terminology]. Generate realistic patient demographics, relevant conditions and procedures, proper use of extensions, appropriate value set codes, and a complete episode of care example.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Generate realistic patient demographics
+2. Include relevant conditions and procedures
+3. Properly use the extensions I've defined
+4. Apply appropriate value set codes
+5. Create a complete episode of care example
+
+I want examples that demonstrate proper extension usage and realistic clinical scenarios.
+</code></pre></div></div>
+
+<h4 id="structuredefinition-enhanced-examples">StructureDefinition-Enhanced Examples</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Extension and Profiling Specialist. Generate examples that properly use your [describe your extension] extension, based on the provided StructureDefinition [paste your extension definition]. Use appropriate values for extension elements, demonstrate proper cardinality and constraints, and create variations showing different extension values.
+
+Ensure all examples comply with FHIR R4/R5, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Generate examples that include this extension
+2. Use appropriate values for extension elements
+3. Ensure extension usage follows FHIR best practices
+4. Create variations showing different extension values
+5. Demonstrate proper extension cardinality and constraints
+
+I want examples that show implementers how to use my extensions correctly.
+</code></pre></div></div>
+
+<h4 id="medication-example-generation">Medication Example Generation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Medication Resource Specialist. Generate a clinically realistic medication example for your [describe your profile] profile. Include appropriate SNOMED CT codes for substances, proper dosage and administration details, and variations for different medication scenarios.
+
+Ensure the example complies with FHIR R4/R5 medication resource standards, includes FSH and JSON examples, and passes `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Generate a clinically realistic medication example
+2. Use appropriate SNOMED CT codes for substances
+3. Include proper dosage and administration details
+4. Ensure the example follows FHIR medication best practices
+5. Create variations for different medication scenarios
+
+I want examples that demonstrate proper medication representation in FHIR.
+</code></pre></div></div>
+
+<h3 id="-example-validation-and-testing">✅ Example Validation and Testing</h3>
+
+<h4 id="example-testing-strategy">Example Testing Strategy</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Validation and QA Specialist. Generate a comprehensive testing approach for your examples before publishing your IG. Test examples with IG Publisher and validation tools, verify profile constraints and bindings, test extension usage and context, and validate value set bindings and terminology.
+
+Ensure all examples are FHIR R4/R5 compliant, include FSH and JSON examples, and pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Plan a comprehensive testing approach for examples
+2. Test examples with IG Publisher and validation tools
+3. Verify profile constraints and bindings
+4. Test extension usage and context
+5. Validate value set bindings and terminology
+
+I want to catch any issues before [describe your deployment timeline].
+</code></pre></div></div>
+
+<h4 id="example-review-checklist">Example Review Checklist</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR Validation and QA Specialist. Create a checklist to verify example structure and organization, clinical realism and accuracy, profile constraint compliance, extension usage and context, value set binding correctness, FHIR compliance and best practices, and file organization and naming.
+
+Ensure the checklist supports producing examples compliant with FHIR R4/R5, includes FSH and JSON examples, and passes `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me create a checklist to verify:
+1. Example structure and organization
+2. Clinical realism and accuracy
+3. Profile constraint compliance
+4. Extension usage and context
+5. Value set binding correctness
+6. FHIR compliance and best practices
+7. File organization and naming
+
+I want my examples to be [describe your quality goals].
+</code></pre></div></div>
+
+<h3 id="-example-maintenance-and-evolution">🔄 Example Maintenance and Evolution</h3>
+
+<h4 id="example-versioning-strategy">Example Versioning Strategy</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR IG Governance and Documentation Specialist. Plan for the evolution of your examples as your IG evolves. Consider versioning strategies, backwards compatibility requirements, updates and maintenance, extensibility, governance, and quality.
+
+Ensure all versioning and maintenance plans align with FHIR R4/R5 IG standards and support examples that pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Plan for example versioning strategies
+2. Consider backwards compatibility requirements
+3. Plan for example updates and maintenance
+4. Design for example extensibility
+5. Plan for example governance and quality
+
+I want my examples to evolve with [describe your changing needs] while maintaining [describe your quality standards].
+</code></pre></div></div>
+
+<h4 id="example-documentation">Example Documentation</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are a FHIR IG Governance and Documentation Specialist. Write clear documentation for each example to ensure maintainability and clarity. Explain the purpose and scope, document relationships and dependencies, provide usage guidance and best practices, and include maintenance and update procedures.
+
+Ensure documentation supports FHIR R4/R5 compliance and helps examples pass `sushi` and IGPublisher validation without errors or warnings.
+
+Please help me:
+1. Write clear documentation for each example
+2. Explain the purpose and scope of examples
+3. Document example relationships and dependencies
+4. Provide usage guidance and best practices
+5. Include maintenance and update procedures
+
+I want my example documentation to be [describe your documentation goals].
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="-tips-for-using-these-prompts">💡 Tips for Using These Prompts</h3>
+
+<ol>
+  <li><strong>Start with patient instances</strong> - build examples around realistic patient data</li>
+  <li><strong>Create complete episodes of care</strong> - show how resources work together</li>
+  <li><strong>Use your actual profiles</strong> - provide StructureDefinitions for better LLM results</li>
+  <li><strong>Organize examples systematically</strong> - use the fsh/instances folder structure</li>
+  <li><strong>Test examples thoroughly</strong> - validate with SUSHI and IG Publisher</li>
+  <li><strong>Create ExampleScenarios</strong> - document how resources work together in workflows</li>
+  <li><strong>Reference existing instances</strong> - build ExampleScenarios from your patient-based examples</li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://topology.health/">Topology Health</a>.  Package ig.prompt.library#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Sep 18, 2025 18:17+0000">2025-09-18</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://topology.health/CodeSystem/common-colors",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "CommonColors",
+      "title" : "Common Colors",
+      "description" : "A code system containing common color names that can be used to describe a patient's favorite color."
+    }
+  ]
+}
