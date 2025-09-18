@@ -1,0 +1,98 @@
+name: CI - Prod Only
+
+on:
+  push:
+    branches: [ main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install SUSHI
+        run: npm i -g fsh-sushi
+
+      - name: Install Ruby and Jekyll
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          sudo gem install bundler jekyll
+
+      - name: Restore IG Publisher cache
+        uses: actions/cache@v4
+        with:
+          path: input-cache
+          key: ${{ runner.os }}-igpublisher-${{ hashFiles('_updatePublisher.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-igpublisher-
+
+      - name: Update IG Publisher (non-interactive)
+        run: bash _updatePublisher.sh -y
+
+      - name: Run SUSHI (generate ig.ini and FHIR definitions)
+        run: sushi
+
+      - name: Run IG Publisher
+        run: bash _genonce.sh -no-sushi
+
+      - name: Upload static site artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./output
+      - name: Ensure .nojekyll
+        run: touch output/.nojekyll
+
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # required by the deploy action
+    steps:
+      - name: Checkout (empty tree for deploy)
+        uses: actions/checkout@v4
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages          # must match the name used by upload-pages-artifact
+          path: _site_artifact
+
+      - name: Unpack artifact to ./output
+        run: |
+          mkdir -p output
+          tar -xf _site_artifact/artifact.tar -C output
+          test -d output && echo "Restored output:" && ls -la output | head -n 50
+
+      - name: Deploy to gh-pages (keep /pr-preview)
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./output
+          clean: true
+          clean-exclude: |
+            pr-preview/**
+            CNAME
+            .nojekyll

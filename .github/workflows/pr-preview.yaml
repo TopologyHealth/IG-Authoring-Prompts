@@ -1,0 +1,100 @@
+name: Pages (PR previews)
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, closed]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+
+jobs:
+  build-and-preview:
+    if: github.event.action != 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install SUSHI
+        run: npm i -g fsh-sushi
+
+      - name: Install Ruby and Jekyll
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          sudo gem install bundler jekyll
+
+      - name: Restore IG Publisher cache
+        uses: actions/cache@v4
+        with:
+          path: input-cache
+          key: ${{ runner.os }}-igpublisher-${{ hashFiles('_updatePublisher.sh') }}
+          restore-keys: |
+            ${{ runner.os }}-igpublisher-
+
+      - name: Update IG Publisher (non-interactive)
+        run: bash _updatePublisher.sh -y
+
+      - name: Run SUSHI (generate ig.ini and FHIR definitions)
+        run: sushi
+
+      - name: Run IG Publisher
+        run: bash _genonce.sh -no-sushi
+
+       # --- Publish preview to gh-pages/pr-preview/pr-<number>/ ---
+      - name: Deploy PR preview
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: ./output
+          target-folder: pr-preview/pr-${{ github.event.number }}
+          clean: false    # don't wipe other previews or prod
+          force: false
+
+      - name: Comment preview URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const pr = context.issue.number;
+            const url = `https://${owner}.github.io/${repo}/pr-preview/pr-${pr}/`;
+            await github.rest.issues.createComment({
+              owner, repo, issue_number: pr,
+              body: `🔍 Preview for this PR: ${url}`
+            });
+
+  cleanup:
+    if: github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout gh-pages
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Remove preview directory
+        run: |
+          rm -rf pr-preview/pr-${{ github.event.number }}
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: remove preview for PR #${{ github.event.number }}" || echo "Nothing to commit"
+
+      - name: Push
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
