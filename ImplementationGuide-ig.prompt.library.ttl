@@ -11,14 +11,14 @@
   fhir:id [ fhir:v "ig.prompt.library"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ig.prompt.library</b></p><a name=\"ig.prompt.library\"> </a><a name=\"hcig.prompt.library\"> </a><h2>FHIRIGpromptLibrary</h2><p>The official URL for this implementation guide is: </p><pre>http://topology.health/ImplementationGuide/ig.prompt.library</pre></div>"^^rdf:XMLLiteral
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ig.prompt.library</b></p><a name=\"ig.prompt.library\"> </a><a name=\"hcig.prompt.library\"> </a><h2>FHIRIGpromptLibrary</h2><p>The official URL for this implementation guide is: </p><pre>http://topology.health/ImplementationGuide/ig.prompt.library</pre><div><p>A guide on how to use LLMs to create FHIR artifacts and an implementation guide.</p>\n</div></div>"^^rdf:XMLLiteral
   ] ; # 
   fhir:url [ fhir:v "http://topology.health/ImplementationGuide/ig.prompt.library"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "FHIRIGpromptLibrary"] ; # 
   fhir:title [ fhir:v "FHIR IG Prompt Library"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-08-26T20:22:10+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-09-18T12:32:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Topology Health"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Topology Health" ] ;
@@ -30,6 +30,7 @@
        fhir:value [ fhir:v "help@topology.health" ]
      ] )
   ] ) ; # 
+  fhir:description [ fhir:v "A guide on how to use LLMs to create FHIR artifacts and an implementation guide."] ; # 
   fhir:packageId [ fhir:v "ig.prompt.library"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
@@ -444,7 +445,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
        fhir:value [
          a fhir:code ;
-         fhir:v "hl7.fhir.uv.tools.r4#0.7.1"
+         fhir:v "hl7.fhir.uv.tools.r4#0.8.0"
        ]
      ] [
        fhir:extension ( [

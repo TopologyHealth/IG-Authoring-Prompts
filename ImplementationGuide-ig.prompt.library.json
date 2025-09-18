@@ -3,14 +3,14 @@
   "id" : "ig.prompt.library",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ig.prompt.library</b></p><a name=\"ig.prompt.library\"> </a><a name=\"hcig.prompt.library\"> </a><h2>FHIRIGpromptLibrary</h2><p>The official URL for this implementation guide is: </p><pre>http://topology.health/ImplementationGuide/ig.prompt.library</pre></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide ig.prompt.library</b></p><a name=\"ig.prompt.library\"> </a><a name=\"hcig.prompt.library\"> </a><h2>FHIRIGpromptLibrary</h2><p>The official URL for this implementation guide is: </p><pre>http://topology.health/ImplementationGuide/ig.prompt.library</pre><div><p>A guide on how to use LLMs to create FHIR artifacts and an implementation guide.</p>\n</div></div>"
   },
   "url" : "http://topology.health/ImplementationGuide/ig.prompt.library",
   "version" : "0.1.0",
   "name" : "FHIRIGpromptLibrary",
   "title" : "FHIR IG Prompt Library",
   "status" : "draft",
-  "date" : "2025-08-26T20:22:10+00:00",
+  "date" : "2025-09-18T12:32:11+00:00",
   "publisher" : "Topology Health",
   "contact" : [{
     "name" : "Topology Health",
@@ -23,6 +23,7 @@
       "value" : "help@topology.health"
     }]
   }],
+  "description" : "A guide on how to use LLMs to create FHIR artifacts and an implementation guide.",
   "packageId" : "ig.prompt.library",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
@@ -324,7 +325,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
-      "valueCode" : "hl7.fhir.uv.tools.r4#0.7.1"
+      "valueCode" : "hl7.fhir.uv.tools.r4#0.8.0"
     },
     {
       "extension" : [{

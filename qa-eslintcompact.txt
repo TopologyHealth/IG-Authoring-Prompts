@@ -13,4 +13,4 @@ Generic: line 0, col 0, Error - The link 'examples-creation.html#patient-journey
 /home/runner/work/IG-Authoring-Prompts/IG-Authoring-Prompts/fsh-generated/resources/StructureDefinition-patient-favorite-color.json: line 0, col 0, Warning - The definition for the element 'Extension.value[x]' binds to the value set 'http://topology.health/ValueSet/favorite-colors' which is experimental, but this structure is not labeled as experimental (BUSINESSRULE)
 
 err = 0, warn = 4, info = 1
-IG Publisher Version: 2.0.15
+IG Publisher Version: 2.0.17

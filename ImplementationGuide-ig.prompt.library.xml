@@ -3,14 +3,15 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="ig.prompt.library"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ig.prompt.library</b></p><a name="ig.prompt.library"> </a><a name="hcig.prompt.library"> </a><h2>FHIRIGpromptLibrary</h2><p>The official URL for this implementation guide is: </p><pre>http://topology.health/ImplementationGuide/ig.prompt.library</pre></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide ig.prompt.library</b></p><a name="ig.prompt.library"> </a><a name="hcig.prompt.library"> </a><h2>FHIRIGpromptLibrary</h2><p>The official URL for this implementation guide is: </p><pre>http://topology.health/ImplementationGuide/ig.prompt.library</pre><div><p>A guide on how to use LLMs to create FHIR artifacts and an implementation guide.</p>
+</div></div>
   </text>
   <url value="http://topology.health/ImplementationGuide/ig.prompt.library"/>
   <version value="0.1.0"/>
   <name value="FHIRIGpromptLibrary"/>
   <title value="FHIR IG Prompt Library"/>
   <status value="draft"/>
-  <date value="2025-08-26T20:22:10+00:00"/>
+  <date value="2025-09-18T12:32:11+00:00"/>
   <publisher value="Topology Health"/>
   <contact>
     <name value="Topology Health"/>
@@ -23,6 +24,7 @@
       <value value="help@topology.health"/>
     </telecom>
   </contact>
+  <description value="A guide on how to use LLMs to create FHIR artifacts and an implementation guide."/>
   <packageId value="ig.prompt.library"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
@@ -244,7 +246,7 @@
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools.r4#0.7.1"/>
+      <valueCode value="hl7.fhir.uv.tools.r4#0.8.0"/>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
