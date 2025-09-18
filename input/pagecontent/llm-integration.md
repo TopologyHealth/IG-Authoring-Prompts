@@ -210,16 +210,6 @@ You are an expert in FHIR Implementation Guide development with:
 - Provide additional resources or references
 ```
 
-#### Code Example Format
-
-```plaintext
-### Code Example Format:
-
-#### FSH Code:
-```fsh
-[Include complete, valid FSH code]
-```
-
 #### Explanation
 
 - Brief explanation of what the code does
@@ -238,8 +228,6 @@ You are an expert in FHIR Implementation Guide development with:
 - Link to relevant FHIR specifications
 - Reference to similar examples or patterns
 - Additional documentation or guidance
-
-```
 
 ### ✅ Quality and Validation Rules
 
