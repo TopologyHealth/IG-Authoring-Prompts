@@ -1,7 +1,0 @@
-Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-ig.prompt.library.json	4397	-	0	0	0	0	0	0	14	202	0	0	0	0	0	0	0	1	0	0	74	91	0	0	0	4	0	3
-fsh-generated/resources/CodeSystem-common-colors.json	1721	24	0	0	1	0	0	0	0	46	0	0	0	0	0	0	0	0	0	0	18	464	0	0	0	1	0	0
-fsh-generated/resources/Patient-PatientExample.json	595	21	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	12	12	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-MyPatient.json	1502	22	0	83	0	0	0	0	0	116	0	0	0	0	0	0	0	1	0	0	170	757	0	0	0	12	0	2
-fsh-generated/resources/StructureDefinition-patient-favorite-color.json	1496	20	0	24	1	0	0	0	0	52	0	0	0	0	0	0	0	0	0	0	43	152	0	0	0	2	0	0
-fsh-generated/resources/ValueSet-favorite-colors.json	549	16	0	0	0	0	0	0	1	47	0	0	0	0	0	0	0	0	0	0	11	93	0	0	0	1	0	0
